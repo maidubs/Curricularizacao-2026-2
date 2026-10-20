@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf1">
+  <meta name="description" content="Um quintal de brincadeiras para descobrir cores, números, lugares, animais, sons e letras. Jogo educacional para crianças de 5 a 6 anos.">
+  <title>Quintal das Descobertas · Vamos brincar?</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTgiIGZpbGw9IiNmZmYzZGYiLz48cGF0aCBkPSJNMzIgMjBDMjUgMiAxMCAxMiAxNiAyNCAwIDI1IDUgNDMgMTkgNDFjLTMgMTcgMTggMjAgMjIgNiAxNyA3IDI3LTExIDEyLTE5IDgtMTUtMTAtMjctMjEtOFoiIGZpbGw9IiNlNzc5NjgiIHN0cm9rZT0iIzMxNTY1YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMSIgcj0iMTAiIGZpbGw9IiNmMmNiNjQiIHN0cm9rZT0iIzMxNTY1YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTI3IDM0cTUgNSAxMCAwIiBzdHJva2U9IiMzMTU2NWEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjI4IiBjeT0iMjkiIHI9IjEuNSIgZmlsbD0iIzMxNTY1YSIvPjxjaXJjbGUgY3g9IjM2IiBjeT0iMjkiIHI9IjEuNSIgZmlsbD0iIzMxNTY1YSIvPjwvc3ZnPgo=" type="image/svg+xml">
+  <style>
+/* Quintal das Descobertas — interface estática, sem fontes ou recursos remotos. */
+:root{--cream:#fffaf1;--paper:#fffef9;--ink:#294f53;--muted:#586e6b;--coral:#db745f;--coral-dark:#a74836;--sage:#e6eddb;--green:#46745d;--yellow:#f4cf76;--line:#e1e5d9;--shadow:0 7px 0 #294f5310;--round:22px;--font:ui-rounded,"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}button,a,input{font:inherit}button{color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}button{border:0}button:disabled{cursor:default}a{color:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #215983;outline-offset:5px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.12}h1{font-size:clamp(36px,4.3vw,61px);font-weight:850;letter-spacing:-2px}h2{font-size:clamp(27px,3vw,36px);letter-spacing:-1px}h3{font-size:22px;letter-spacing:-.4px}svg{display:block;width:100%;height:auto;overflow:visible}.icon{width:24px;height:24px;flex:0 0 24px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.skip-link{position:fixed;top:8px;left:8px;z-index:100;background:white;padding:10px 20px;transform:translateY(-200%)}.skip-link:focus{transform:none}.shell{width:min(1160px,calc(100% - 64px));margin:auto}.site-header{border-bottom:1px solid var(--line);background:var(--cream)}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:98px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;border:0;background:none;text-align:left;padding:0}.brand-art{width:46px;height:52px}.brand-word{font-weight:850;font-size:22px;letter-spacing:-.8px;line-height:1.05}.brand-word small{display:block;font-size:12px;letter-spacing:1.1px;line-height:1.8;font-weight:700}.nav{display:flex;align-items:center;gap:10px}.nav-link{background:transparent;padding:11px 17px;border-radius:14px;font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px;min-height:48px}.nav-link:hover{background:#edf0e4}.nav-link.active{background:#e7eddd}.nav-link .icon{width:21px;height:21px;flex-basis:21px}.nav-divider{width:1px;height:25px;background:var(--line);margin:0 8px}.sound-button{border:1px solid var(--line);background:var(--paper);border-radius:50%;height:48px;width:48px;display:grid;place-items:center;flex:0 0 48px}.sound-button:hover{background:var(--sage)}.sound-button[aria-pressed=false]{color:var(--muted)}
+.eyebrow{display:flex;align-items:center;gap:9px;font-size:12px;text-transform:uppercase;letter-spacing:2.1px;font-weight:800;line-height:1.7}.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--coral)}.hero{display:grid;grid-template-columns:1fr 1.18fr;align-items:center;gap:24px;padding:64px 0 44px;min-height:535px}.hero h1{margin:20px 0 23px}.hero h1 .accent{color:var(--coral-dark);position:relative;display:inline-block}.hero h1 .accent:after{content:"";position:absolute;height:7px;background:#f3d69a;width:94%;left:2px;bottom:-7px;transform:rotate(-1.4deg);border-radius:70%}.hero-copy>p{font-size:18px;line-height:1.7;max-width:430px;color:var(--muted)}.hero-actions{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:30px 0 22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:55px;padding:13px 24px;border-radius:16px;font-size:17px;font-weight:800;line-height:1.4;text-decoration:none;transition:transform .15s,background .15s,box-shadow .15s}.btn:hover:not(:disabled){transform:translateY(-2px)}.btn:active:not(:disabled){transform:translateY(1px)}.btn-primary{background:var(--ink);color:var(--paper);box-shadow:0 5px 0 #17383c}.btn-primary:hover{background:#38676b}.btn-coral{background:#c65c47;color:white;box-shadow:0 5px 0 #97402f}.btn-secondary{background:var(--paper);color:var(--ink);border:1.5px solid #cfd6c9;box-shadow:0 4px 0 #e5e7dc}.btn-soft{background:#e8efdf;color:#335741}.btn-danger{background:#a74535;color:#fff}.btn:disabled{opacity:.5;box-shadow:none;transform:none}.btn-text{background:none;padding:10px 4px;min-height:48px;font-size:15px;box-shadow:none}.play-small{width:28px;height:28px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:10px;padding-left:2px}.hero-meta{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}.hero-meta b{font-size:13px;font-weight:500;color:#bbab89}.hero-art{position:relative;align-self:center}.hero-art>svg{width:109%;margin-left:-3%}.hero-bubble{position:absolute;right:6px;top:-17px;background:var(--paper);border:1.5px solid #d8dfcd;border-radius:19px 19px 19px 3px;padding:12px 20px;font-size:15px;transform:rotate(4deg);box-shadow:0 4px 0 #31565a08;font-weight:700}.little-star{position:absolute;width:30px;left:30px;top:3px;transform:rotate(-12deg)}.intro-strip{border:1px solid #dce3ce;background:#edf1e2;border-radius:20px;padding:20px 30px;display:flex;align-items:center;gap:21px;margin:4px 0 42px}.intro-strip .strip-art{width:38px;height:38px;flex:0 0 38px}.intro-strip p{font-size:15px;line-height:1.5}.intro-strip p strong{font-size:17px}.intro-strip .strip-note{margin-left:auto;white-space:nowrap;font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center}.intro-strip .strip-note .icon{width:20px;height:20px;flex-basis:20px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:0 0 23px}.section-title p{font-size:15px;color:var(--muted);margin-top:9px}.section-title .side-note{font-size:12px;letter-spacing:.7px;padding-bottom:4px;white-space:nowrap}.trail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:52px}.trail-card{position:relative;background:var(--paper);border:1.5px solid #e0e4d6;border-radius:22px;box-shadow:var(--shadow);padding:18px 22px 22px;display:flex;flex-direction:column;text-align:left;min-width:0;transition:transform .18s,border-color .18s,box-shadow .18s;overflow:hidden}.trail-card:hover{transform:translateY(-4px);border-color:var(--trail-color);box-shadow:0 9px 0 #294f5310}.trail-top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted)}.trail-number{background:var(--trail-pale);color:var(--ink);border-radius:9px;display:grid;place-items:center;width:29px;height:27px;letter-spacing:.2px;font-size:12px}.trail-art{max-width:240px;width:100%;margin:2px auto 8px}.trail-card .trail-title{font-size:21px}.trail-card .trail-subtitle{font-size:13px;color:var(--muted);margin:7px 0 20px;line-height:1.5}.trail-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}.trail-bottom>span{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700}.round-arrow{width:32px;height:32px;border:1px solid #d8ddcf;border-radius:50%;display:grid;place-items:center;background:var(--trail-pale);color:var(--ink)}.round-arrow .icon{width:22px;height:22px;flex-basis:22px}.trail-dots{display:flex;gap:5px}.trail-dots i{width:8px;height:8px;border-radius:50%;background:#e5e9de}.trail-dots i.filled{background:var(--green)}.home-bottom{padding:30px 28px;margin:0 0 48px;border-top:1px dashed #d9ddcf;text-align:center;color:var(--muted);font-size:14px}.home-bottom strong{color:var(--ink)}.site-footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:11px;color:var(--muted)}.footer-project{line-height:1.8}.footer-project strong{color:var(--ink);font-weight:700;font-size:12px}.footer-about{padding:8px 0;background:none;font-size:12px;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.page-top{padding:45px 0 26px}.page-top .eyebrow{margin-bottom:15px}.page-top h1{font-size:42px}.page-top p{margin-top:13px;color:var(--muted);font-size:17px;max-width:680px}.map-heading{display:flex;justify-content:space-between;align-items:center;gap:30px}.garden-progress{display:flex;align-items:center;gap:15px;background:#edf1e2;border-radius:18px;padding:18px 21px;min-width:205px}.garden-progress>.art-icon{width:40px}.garden-progress strong{display:block;font-size:23px;line-height:1.15}.garden-progress span{font-size:12px;color:var(--muted)}.progress-band{display:flex;align-items:center;gap:20px;margin:7px 0 28px;font-size:13px;color:var(--muted)}.progress-track{height:9px;flex:1;background:#e7e9dd;border-radius:20px;overflow:hidden}.progress-track>span{display:block;height:100%;background:var(--green);border-radius:20px;transition:width .3s}.map-note{display:flex;align-items:center;gap:15px;justify-content:center;margin:0 0 26px;color:var(--muted);font-size:14px}.map-note .icon{width:26px;height:26px}.finish-link{display:flex;justify-content:center;margin:20px 0 40px}.welcome{max-width:790px;padding:42px 0 52px;margin:auto;text-align:center}.welcome-mascot{width:115px;margin:0 auto 13px}.welcome h1{font-size:42px}.welcome>p{color:var(--muted);margin:15px auto 25px;max-width:530px}.friend-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}.friend{position:relative;padding:20px 15px 18px;border:2px solid var(--line);background:var(--paper);border-radius:22px;text-align:center;box-shadow:var(--shadow)}.friend svg{width:95px;height:108px;margin:auto auto 12px}.friend strong{display:block;font-size:19px}.friend span{font-size:13px;color:var(--muted)}.friend[aria-pressed=true]{border-color:var(--green);background:#eef3e5}.friend-tick{position:absolute;right:12px;top:12px;background:var(--green);border-radius:50%;padding:4px;width:24px;height:24px;color:#fff}.friend-tick svg{width:100%;height:100%;margin:0}.tutorial-mini{display:flex;align-items:center;justify-content:center;gap:30px;font-size:14px;margin:28px 0 30px}.tutorial-mini span{display:flex;align-items:center;gap:9px}.tutorial-mini b{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#efe5ce;font-size:13px}.welcome .small-note{font-size:12px;margin-top:23px}.question-wrap{max-width:960px;width:calc(100% - 64px);margin:0 auto;padding:24px 0 40px}.question-nav{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:24px}.back-button{display:inline-flex;align-items:center;gap:6px;background:none;padding:8px 4px;min-height:44px;font-size:14px;font-weight:700}.back-button .icon{transform:rotate(180deg);width:23px;height:23px;flex-basis:23px}.world-tag{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700}.world-tag .icon{width:27px;height:27px;flex-basis:27px}.question-meter{display:flex;align-items:center;gap:10px}.question-meter .step-dots{display:flex;gap:7px}.step-dots i{display:block;width:35px;height:7px;background:#e3e7db;border-radius:9px}.step-dots i.done{background:#63876a}.step-dots i.current{background:#d68b66}.question-meter>span{font-size:12px;color:var(--muted);white-space:nowrap}.play-panel{background:var(--paper);border:1.5px solid var(--line);border-radius:28px;padding:30px 38px 28px;box-shadow:0 9px 0 #294f5309;position:relative}.question-title-row{display:flex;align-items:start;gap:18px;justify-content:center;text-align:center}.question-title-row h1{font-size:clamp(25px,3.1vw,36px);letter-spacing:-.9px;margin:7px 0 9px;line-height:1.24}.question-subtitle{font-size:13px;color:var(--muted)}.listen-button{margin:16px auto 0;padding:9px 18px;border-radius:40px;background:#e9f0e6;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;min-height:46px;font-weight:700}.listen-button:hover{background:#d9e7d4}.listen-button.speaking{box-shadow:0 0 0 3px #89ad9260}.listen-button .icon{width:21px;height:21px;flex-basis:21px}.scene{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px 0 18px;padding:14px;border-radius:20px;background:#f6f6ee;min-height:135px}.scene-focus{gap:19px;margin-left:auto;margin-right:auto;width:fit-content;min-width:200px;padding:12px 25px}.scene-focus svg{width:90px;height:95px}.scene-focus .scene-label{font-size:25px;letter-spacing:2px;font-weight:800}.scene-focus .scene-label.sentence{font-size:13px;letter-spacing:0;font-weight:500}.scene-items{flex-wrap:wrap;column-gap:10px;row-gap:0;max-width:650px;margin-left:auto;margin-right:auto}.scene-item{width:85px;min-width:50px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.scene-item svg{width:85px;height:85px}.scene-items.comparison{height:213px;align-items:flex-end;gap:25px;flex-wrap:nowrap;padding:12px 20px 16px}.comparison .scene-item{width:110px;height:183px}.comparison .scene-item .tree-base{width:100%;display:flex;align-items:flex-end;justify-content:center;height:151px;border-bottom:2px solid #879678}.comparison .scene-item svg{width:var(--item-size);height:var(--item-size);max-width:none;margin-bottom:-1px}.scene-item .scene-label{display:grid;place-items:center;font-size:17px;font-weight:800;margin-top:9px;width:27px;height:27px;background:#e8ecd9;border-radius:7px}.scene-sequence svg{width:74px;height:74px}.sequence-arrow{color:#718272;font-size:23px}.sequence-missing{font-size:40px;border:2px dashed #b9c9b2;color:var(--green);border-radius:15px;width:74px;height:74px;display:grid;place-items:center;font-weight:800}.scene-position svg{max-width:250px}.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:27px auto 20px;max-width:730px}.choice{min-width:0;position:relative;border:2px solid #dce2d4;border-radius:21px;background:#fffefa;box-shadow:0 5px 0 #e4e8db;padding:22px 16px 17px;text-align:center;min-height:163px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .15s,border-color .15s,background .15s}.choice:hover:not(:disabled){transform:translateY(-3px);border-color:#659076;background:#f4f8ed}.choice svg{width:111px;height:111px;margin:0 auto 12px}.choice.spatial svg{width:100%;height:139px;margin-bottom:8px}.choice .choice-label{font-weight:750;font-size:17px;line-height:1.3}.choice.numeric{min-height:125px}.choice.numeric .choice-label{font-size:54px;line-height:1}.choice.correct{background:#e8f2df;border-color:#568565;box-shadow:0 5px 0 #c4d7b5}.choice.wrong{background:#f7f1e9;border-color:#d8b7a2;box-shadow:0 5px 0 #efe1d4}.choice.wrong:not(.correct){opacity:.7}.choice-mark{position:absolute;right:11px;top:11px;background:#537b5a;border-radius:50%;width:27px;height:27px;padding:4px;color:white}.choice-mark .icon{width:100%;height:100%;margin:0}.choice:disabled:not(.correct):not(.wrong){opacity:.65}.choice-note{display:block;font-size:11px;color:#7a5943;margin:9px 0 -4px;font-weight:700}.hint-row{display:flex;justify-content:center}.hint-button{background:none;display:inline-flex;align-items:center;gap:6px;padding:9px 12px;min-height:44px;border-radius:10px;font-size:13px;font-weight:700}.hint-button:hover{background:#f3eedf}.hint-button .icon{width:20px;height:20px;flex-basis:20px}.feedback{display:flex;align-items:center;gap:13px;margin:18px 0 0;padding:16px 20px;border-radius:18px;background:#f8efd9;text-align:left;font-size:15px;line-height:1.5}.feedback.good{background:#e8f0df}.feedback .feedback-art{flex:0 0 49px;width:49px}.feedback strong{display:block;margin-bottom:2px;font-size:17px}.question-actions{display:flex;justify-content:center;margin-top:23px}.support-text{max-width:780px;margin:23px auto 0;padding:0 10px;font-size:13px;color:var(--muted)}.support-text summary{cursor:pointer;min-height:44px;padding:10px 0}.support-text p{background:#f1f1e7;padding:16px 20px;border-radius:14px;line-height:1.7;margin-top:7px}.audio-notice{font-size:13px;color:#774730;background:#fff1de;border-radius:12px;padding:12px 16px;margin:14px 0 0}.replay-note{font-size:11px;color:var(--green);background:#e8edde;border-radius:20px;padding:3px 10px}.companion-line{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;color:var(--muted);margin-top:22px}.companion-line svg{width:29px;height:33px}
+.celebrate{max-width:810px;margin:auto;text-align:center;padding:45px 0}.celebrate-art{width:155px;position:relative;margin:0 auto 16px}.celebrate-art .celebrate-star{position:absolute;width:35px;top:17px;right:-40px;transform:rotate(15deg)}.celebrate-art .celebrate-flower{position:absolute;width:35px;bottom:22px;left:-37px;transform:rotate(-12deg)}.celebrate .eyebrow{justify-content:center;margin:16px 0}.celebrate h1{font-size:43px;line-height:1.17}.celebrate>p{max-width:560px;margin:18px auto 26px;color:var(--muted);line-height:1.7}.badge-row{display:flex;justify-content:center;gap:13px;margin:22px 0 30px}.earned-badge{position:relative;width:71px;height:71px;padding:14px;background:#f1e8d2;border:1px solid #e1d9c7;border-radius:20px;transform:rotate(-5deg)}.earned-badge:nth-child(even){transform:rotate(5deg)}.earned-badge>svg{width:100%;height:100%}.earned-badge.locked{opacity:.32;filter:grayscale(1)}.earned-badge .tiny-tick{position:absolute;right:-5px;bottom:-5px;background:#527b58;border:3px solid var(--cream);width:23px;height:23px;padding:3px;border-radius:50%;color:white}.tiny-tick>svg{width:100%;height:100%}.celebrate-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:18px}.celebrate-card{background:#edf1e4;border:1px solid #d7e0ca;padding:24px;border-radius:22px;margin:26px auto;max-width:640px}.celebrate-card h2{font-size:23px}.celebrate-card p{font-size:14px;margin-top:9px;color:var(--muted)}.celebrate-stats{display:flex;align-items:center;justify-content:center;gap:35px;margin:20px 0}.celebrate-stats span{display:block;font-size:12px}.celebrate-stats strong{font-size:29px;font-weight:800}.confetti{pointer-events:none;position:absolute;inset:-20px -70px}.confetti i{position:absolute;width:8px;height:13px;border-radius:3px;background:var(--coral);transform:rotate(20deg);animation:pop-in .6s backwards}.confetti i:nth-child(2){left:15%;top:45%;background:var(--green);transform:rotate(-32deg)}.confetti i:nth-child(3){right:5%;top:60%;background:var(--yellow);transform:rotate(49deg)}.confetti i:nth-child(4){right:24%;top:1%;background:#8faec7;transform:rotate(-38deg)}.confetti i:nth-child(5){right:0;top:25%;background:var(--coral);transform:rotate(10deg)}.confetti i:nth-child(6){left:16%;top:3%;background:var(--yellow);transform:rotate(42deg)}
+.teacher-page{padding-bottom:35px}.teacher-heading{display:flex;align-items:start;justify-content:space-between;gap:25px}.teacher-heading h1{font-size:38px}.teacher-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;padding:6px 11px;background:#e9efdf;border-radius:30px;font-weight:700;margin-bottom:15px}.teacher-label svg{width:19px;height:19px}.teacher-notice{padding:19px 23px;border:1px solid #d5dfc7;background:#edf2e5;border-radius:16px;margin:20px 0 28px;font-size:14px;color:var(--muted);line-height:1.7}.teacher-notice strong{color:var(--ink)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;margin:25px 0}.stat-card{border:1px solid var(--line);border-radius:17px;background:var(--paper);padding:21px}.stat-card strong{display:block;font-size:35px;letter-spacing:-1px}.stat-card span{font-size:12px;color:var(--muted)}.report-world{border:1px solid var(--line);border-radius:18px;background:var(--paper);margin-bottom:14px;overflow:hidden}.report-world summary{display:flex;align-items:center;gap:13px;cursor:pointer;padding:18px 20px;list-style:none}.report-world summary::-webkit-details-marker{display:none}.report-world summary>.report-icon{width:36px;height:36px;flex-shrink:0}.report-world summary strong{font-size:16px}.report-world summary small{display:block;font-size:12px;color:var(--muted);margin-top:3px}.report-world summary .report-count{margin-left:auto;white-space:nowrap;font-size:13px}.report-world summary .report-expand{font-size:23px;margin-left:8px;transition:transform .15s}.report-world[open] summary .report-expand{transform:rotate(45deg)}.report-table-wrap{overflow-x:auto;padding:0 20px 15px}.report-table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}.report-table th{color:var(--muted);font-size:11px;font-weight:500;background:#f2f4eb}.report-table th,.report-table td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}.report-table td:first-child{min-width:230px}.report-table td small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.status-label{display:inline-block;border-radius:20px;padding:3px 8px;background:#edf1e4;font-size:11px;white-space:nowrap}.status-label.todo{background:#f0eee5;color:#62685b}.teacher-tools{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:30px 0}.teacher-tools .session-note{color:var(--muted);font-size:12px}.teacher-guide{border-top:1px dashed #d3d9c7;margin-top:30px;padding-top:28px}.teacher-guide h2{font-size:23px;margin-bottom:13px}.teacher-guide p{font-size:14px;line-height:1.8;max-width:850px;color:var(--muted)}.teacher-guide ul{font-size:14px;line-height:1.8;color:var(--muted);padding-left:20px}.teacher-guide li{margin:9px 0}.teacher-links{display:flex;gap:24px;flex-wrap:wrap;margin:22px 0;font-size:13px}.teacher-links a{text-underline-offset:4px}.teacher-page .no-records{padding:20px;background:#f3eddc;border-radius:15px;font-size:14px;line-height:1.6;margin-bottom:25px}
+dialog{color:var(--ink);background:var(--cream);border:1px solid #dce2d1;border-radius:25px;max-width:560px;width:calc(100% - 32px);padding:32px;box-shadow:0 20px 80px #16333840;max-height:90vh;overflow-y:auto}dialog::backdrop{background:#24434666;backdrop-filter:blur(3px)}dialog h2{font-size:29px;letter-spacing:-.6px;padding-right:25px}dialog p{font-size:15px;line-height:1.8;margin:17px 0;color:var(--muted)}dialog .dialog-close{position:absolute;right:17px;top:15px;width:39px;height:39px;background:#ebeede;border-radius:50%;display:grid;place-items:center}dialog .dialog-actions{display:flex;justify-content:flex-end;gap:13px;margin-top:24px;flex-wrap:wrap}dialog .dialog-steps{list-style:none;padding:0;margin:25px 0 0;counter-reset:steps}dialog .dialog-steps li{counter-increment:steps;position:relative;padding:0 0 24px 49px;font-size:15px}dialog .dialog-steps li:before{content:counter(steps);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#e2ebd7;color:var(--green);position:absolute;top:0;left:0;font-weight:800}dialog .dialog-steps strong{display:block;font-size:17px;margin-bottom:4px}dialog .dialog-steps li span{color:var(--muted);font-size:14px}.storage-notice{position:fixed;z-index:50;bottom:16px;left:50%;transform:translateX(-50%);background:#fff3d9;color:#664831;border:1px solid #d8b875;border-radius:14px;padding:15px 20px;width:min(650px,calc(100% - 28px));font-size:13px;box-shadow:0 8px 25px #28444320}.noscript{max-width:650px;margin:70px auto;padding:30px}main:focus{outline:none}main{animation:appear .22s both;min-height:55vh}.speaker-status{display:inline-block;width:6px;height:6px;background:#5b9365;border-radius:50%;margin-right:4px}.page-home .site-footer{margin-top:0}@keyframes appear{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}@keyframes pop-in{from{opacity:0;scale:.3}to{opacity:1;scale:1}}
+@media(min-width:1400px){.shell{width:1200px}.hero{padding-top:65px;padding-bottom:50px;min-height:570px}.hero h1{font-size:64px}}
+@media(max-width:950px){.shell{width:calc(100% - 40px)}.header-inner{gap:15px}.brand-word{font-size:20px}.nav{gap:4px}.nav-link{padding:9px 11px}.nav-divider{margin:0 4px}.hero{gap:5px;padding:48px 0 32px;min-height:470px}.hero h1{font-size:46px}.hero-copy>p{font-size:16px}.hero-art>svg{width:105%}.hero-bubble{font-size:12px;top:-24px;padding:10px 15px}.hero-actions{gap:13px}.btn{padding:12px 20px;font-size:16px}.trail-grid{gap:16px}.trail-card{padding:16px}.trail-card .trail-title{font-size:19px}.trail-card .trail-subtitle{font-size:12px}.intro-strip .strip-note{display:none}.question-wrap{width:calc(100% - 40px)}.play-panel{padding:28px}.question-nav{flex-wrap:wrap}.question-meter{margin-left:auto}.choices{gap:17px}.teacher-heading{flex-direction:column;gap:20px}.teacher-heading .btn{align-self:start}}
+@media(max-width:680px){body{font-size:16px}.shell{width:calc(100% - 32px)}.header-inner{min-height:79px;gap:6px;flex-wrap:wrap;padding:13px 0}.brand{gap:6px}.brand-art{width:34px;height:42px}.brand-word{font-size:18px;letter-spacing:-.5px}.brand-word small{font-size:10px;letter-spacing:.6px}.nav-link{min-height:44px;padding:9px;font-size:12px}.nav-link.home-nav{display:none}.nav-link .nav-text{display:none}.nav-link.teacher-nav .icon{display:block;width:25px;height:25px}.nav-divider{display:none}.nav .sound-button{height:42px;width:42px;flex-basis:42px}.nav{gap:3px}.hero{grid-template-columns:1fr;padding:34px 0 21px;gap:19px;min-height:auto}.hero-copy{text-align:center}.eyebrow{font-size:10px;letter-spacing:1.6px}.hero .eyebrow{justify-content:center}.hero h1{font-size:44px;margin:16px 0 23px}.hero-copy>p{font-size:15px;max-width:400px;margin:auto;line-height:1.65}.hero-actions{margin:24px 0 18px;justify-content:center;gap:18px}.hero-meta{justify-content:center;font-size:11px;gap:8px}.hero-art{width:min(430px,96%);margin:12px auto 0}.hero-art>svg{width:100%;margin:0}.hero-bubble{right:-5px;top:0;font-size:12px}.little-star{width:22px;top:15px;left:14px}.intro-strip{padding:16px;gap:13px;margin:0 0 33px;border-radius:16px}.intro-strip p{font-size:12px}.intro-strip p strong{font-size:14px}.intro-strip .strip-art{width:31px;flex-basis:31px}.section-title{align-items:start;gap:10px;margin-bottom:19px}.section-title h2{font-size:26px}.section-title p{font-size:13px;margin-top:8px;max-width:260px}.section-title .side-note{display:none}.trail-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-bottom:32px}.trail-card{padding:13px 12px 16px;border-radius:17px}.trail-top{font-size:8px;letter-spacing:.9px;gap:5px}.trail-number{width:24px;height:22px;font-size:10px;border-radius:7px}.trail-art{margin:6px auto 10px}.trail-card .trail-title{font-size:16px;line-height:1.2;letter-spacing:-.3px}.trail-card .trail-subtitle{font-size:11px;line-height:1.5;margin:6px 0 15px}.trail-bottom>span{font-size:11px;gap:5px}.round-arrow{width:26px;height:26px}.round-arrow .icon{width:19px;height:19px}.trail-dots{gap:4px}.trail-dots i{width:6px;height:6px}.home-bottom{padding:23px 3px;margin:0 0 23px;font-size:12px}.site-footer{padding:20px 0;margin-top:10px}.footer-inner{flex-direction:column;text-align:center;gap:10px;font-size:10px}.footer-project strong{font-size:11px}.footer-about{font-size:11px}.page-top{padding:30px 0 22px}.page-top h1{font-size:34px}.page-top p{font-size:14px}.map-heading{align-items:start;gap:16px}.garden-progress{min-width:0;padding:12px;border-radius:14px;gap:8px;flex-shrink:0}.garden-progress>.art-icon{width:26px}.garden-progress strong{font-size:21px}.garden-progress span{font-size:10px}.map-heading .eyebrow{font-size:9px;letter-spacing:1px}.map-heading h1{font-size:30px}.map-heading p{font-size:12px;max-width:230px}.progress-band{font-size:11px;gap:10px}.map-note{font-size:12px;gap:8px;align-items:start}.map-note .icon{width:23px;height:23px;flex-basis:23px}.welcome{padding:28px 0 30px}.welcome-mascot{width:90px}.welcome h1{font-size:31px;letter-spacing:-1px}.welcome>p{font-size:14px}.friend-list{gap:11px;margin:23px 0}.friend{padding:18px 7px 13px;border-radius:17px}.friend svg{width:67px;height:85px}.friend strong{font-size:14px}.friend span{font-size:11px}.friend-tick{width:20px;height:20px;padding:3px;right:6px;top:6px}.friend-tick svg{height:100%;width:100%}.tutorial-mini{flex-direction:column;gap:13px;align-items:start;width:fit-content;margin:24px auto;font-size:13px}.question-wrap{width:calc(100% - 24px);padding:13px 0 24px}.question-nav{gap:7px;margin-bottom:13px}.world-tag{font-size:11px;gap:6px;order:1}.world-tag .icon{width:22px;height:22px;flex-basis:22px}.question-nav .back-button{font-size:12px}.question-meter{gap:7px}.step-dots i{width:20px;height:6px}.step-dots{gap:4px!important}.question-meter>span{font-size:11px}.question-nav>.world-tag{flex-basis:100%;justify-content:center;padding:3px 0}.play-panel{padding:21px 12px 21px;border-radius:22px}.question-title-row h1{font-size:27px;letter-spacing:-.7px;margin:1px 0 8px}.question-subtitle{font-size:12px}.listen-button{font-size:13px;padding:8px 14px;margin-top:15px;min-height:44px}.choices{gap:10px;margin:23px 0 18px}.choice{min-height:139px;padding:16px 7px 13px;border-radius:16px}.choice svg{width:min(80px,100%);height:80px;margin-bottom:11px}.choice.spatial{padding:10px 4px 13px}.choice.spatial svg{height:84px}.choice .choice-label{font-size:14px}.choice.numeric{min-height:99px}.choice.numeric .choice-label{font-size:45px}.choice-mark{width:21px;height:21px;padding:3px;right:6px;top:6px}.choice-note{font-size:9px}.scene{margin:17px 0 11px;gap:8px;padding:11px;min-height:105px}.scene-focus{gap:13px;padding:9px 19px;min-width:170px}.scene-focus svg{width:73px;height:76px}.scene-focus .scene-label{font-size:23px;letter-spacing:1.8px}.scene-focus .scene-label.sentence{font-size:12px;letter-spacing:0;max-width:110px}.scene-item{width:65px;min-width:44px}.scene-item svg{width:65px;height:65px}.scene-items{max-width:310px;gap:6px}.scene-items.comparison{height:188px;max-width:none;gap:0;padding:10px 0 11px}.comparison .scene-item{height:159px;width:90px}.comparison .scene-item .tree-base{height:125px}.comparison .scene-item svg{width:calc(var(--item-size) * .8);height:calc(var(--item-size) * .8)}.scene-sequence{gap:6px;padding:10px 6px}.scene-sequence svg{width:52px;height:52px}.sequence-missing{width:52px;height:52px;font-size:30px}.sequence-arrow{font-size:15px}.feedback{padding:13px 12px;font-size:13px;gap:10px;margin-top:12px}.feedback strong{font-size:15px}.feedback .feedback-art{flex-basis:39px;width:39px}.question-actions{margin-top:21px}.question-actions .btn{min-width:185px}.support-text{margin-top:18px;font-size:12px}.support-text p{padding:13px}.audio-notice{font-size:12px;padding:10px 12px}.companion-line{font-size:12px;padding:0 9px;gap:8px}.celebrate{padding:30px 0}.celebrate h1{font-size:34px;letter-spacing:-1px}.celebrate-art{width:124px;margin-bottom:10px}.celebrate>p{font-size:14px;line-height:1.7;margin:16px auto 22px}.celebrate .eyebrow{font-size:10px}.badge-row{gap:8px;margin:22px 0}.earned-badge{width:46px;height:49px;padding:8px;border-radius:13px}.earned-badge .tiny-tick{width:19px;height:19px;padding:2px}.celebrate-actions{gap:14px;flex-direction:column;align-items:center}.celebrate-actions .btn{min-width:210px}.celebrate-card{padding:20px 17px}.celebrate-card h2{font-size:21px}.celebrate-card p{font-size:13px}.celebrate-stats{gap:25px}.celebrate-stats strong{font-size:25px}.celebrate-stats span{font-size:11px}.teacher-heading h1{font-size:32px}.teacher-heading .btn{font-size:14px;min-height:48px}.teacher-notice{font-size:12px;padding:15px 17px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}.stat-card{padding:16px;border-radius:14px}.stat-card strong{font-size:29px}.stat-card span{font-size:11px}.report-world summary{padding:13px 12px;gap:9px}.report-world summary strong{font-size:14px}.report-world summary small{font-size:10px;max-width:195px}.report-world summary>.report-icon{width:28px;height:28px}.report-world summary .report-count{font-size:11px}.report-world summary .report-expand{font-size:19px;margin-left:1px}.report-table-wrap{padding:0 12px 10px}.teacher-tools{flex-direction:column;align-items:start;gap:20px}.teacher-guide h2{font-size:22px}.teacher-guide p,.teacher-guide ul{font-size:13px}.teacher-links{gap:15px}.teacher-label{font-size:11px}dialog{padding:26px 23px}dialog h2{font-size:25px}dialog p{font-size:14px}dialog .dialog-actions .btn{font-size:14px;padding:11px 16px}dialog .dialog-steps li{font-size:14px}dialog .dialog-steps strong{font-size:16px}dialog .dialog-steps li span{font-size:13px}}
+@media(max-width:360px){.brand-word{font-size:16px}.brand-art{width:28px}.nav-link{padding:7px}.nav .sound-button{width:39px;height:39px;flex-basis:39px}.hero h1{font-size:39px}.trail-card .trail-title{font-size:15px}.trail-top>span:last-child{font-size:7px}.trail-bottom>span{font-size:10px}.question-title-row h1{font-size:25px}.choices{gap:7px}.choice .choice-label{font-size:12px}.choice svg{height:69px}.choice.spatial svg{height:76px}.map-heading{gap:9px}.map-heading h1{font-size:26px}.garden-progress{padding:9px;gap:5px}.garden-progress>.art-icon{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.btn:hover,.trail-card:hover,.choice:hover{transform:none!important}}
+@media print{.site-header,.site-footer,.btn,.teacher-tools,.teacher-links,.storage-notice{display:none!important}.shell{width:100%}body{background:white;color:#222;font-size:12px}.report-world{break-inside:avoid}details.report-world>div{display:block}.teacher-guide{break-before:page}}
+
+.trail-title{display:block;font-weight:800;line-height:1.15;letter-spacing:-.4px}.trail-subtitle{display:block}#page-title:focus,#feedback:focus{outline:none}
+
+</style>
+  
+  
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header" id="header"></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer" id="footer"></footer>
+  <div class="sr-only" id="live-status" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="storage-notice" class="storage-notice" role="status" hidden></div>
+  <dialog id="overlay" aria-labelledby="dialog-title"></dialog>
+  <noscript><div class="noscript"><h1>Quintal das Descobertas</h1><p>Ative o JavaScript do navegador para abrir as brincadeiras. Peça ajuda a um adulto.</p></div></noscript>
+<script>
+/* Quintal das Descobertas — ilustrações vetoriais originais.
+ * SVGs independentes, sem fontes, imagens externas, filtros ou IDs repetíveis.
+ * As imagens são decorativas; o conteúdo acessível pertence aos controles do jogo.
+ */
+(function () {
+  'use strict';
+
+  const P = Object.freeze({
+    ink: '#31565A', cream: '#FFF8EB', paper: '#FFFCF5', coral: '#E77968',
+    coralLight: '#F6B8A3', blue: '#68A7CA', teal: '#4A8992', yellow: '#F2CB64',
+    green: '#8BAC7D', sage: '#AEC59A', pale: '#E3E9D2', sky: '#D7E9E7',
+    tan: '#D6AB7A', brown: '#9D7656', pink: '#E9A499'
+  });
+  const outline = `stroke="${P.ink}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"`;
+  const cls = value => String(value || '').replace(/[^a-zA-Z0-9_\-\s]/g, '').trim();
+  const wrap = (body, width, height, className) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" class="${cls(className)}" aria-hidden="true" focusable="false" fill="none">${body}</svg>`;
+  const outlined = body => `<g ${outline}>${body}</g>`;
+  const ball = color => `<circle cx="60" cy="60" r="42" fill="${color}"/><path d="M27 42c14-6 34-2 48 13s18 31 14 41M34 91c2-18 11-36 25-50 8-9 16-14 26-17" stroke="${P.paper}" stroke-width="6"/><path d="M33 32c-8 7-13 17-14 27" stroke="${P.paper}" stroke-width="4" opacity=".65"/>`;
+
+  function rabbit(expression) {
+    const delighted = expression === 'celebrate' || expression === 'cheering' || expression === 'excited';
+    const sad = expression === 'sad' || expression === 'try-again';
+    const surprised = expression === 'wow' || expression === 'surprised';
+    const eyes = delighted
+      ? `<path d="M56 88q6-8 12 0m23 0q6-8 12 0"/>`
+      : `<ellipse cx="62" cy="88" rx="3.5" ry="4.5" fill="${P.ink}" stroke="none"/><ellipse cx="98" cy="88" rx="3.5" ry="4.5" fill="${P.ink}" stroke="none"/>`;
+    const mouth = surprised
+      ? `<ellipse cx="80" cy="104" rx="5" ry="6" fill="${P.ink}" stroke="none"/>`
+      : sad ? `<path d="M70 106q10-8 20 0"/>` : `<path d="M80 98v6m-10 0q5 7 10 0 5 7 10 0"/>`;
+    return outlined(`
+      <ellipse cx="80" cy="168" rx="52" ry="8" fill="${P.ink}" stroke="none" opacity=".08"/>
+      <circle cx="124" cy="137" r="15" fill="${P.paper}"/>
+      <path d="M45 121c-8 19-8 40 5 44h60c13-8 11-28 2-45" fill="${P.paper}"/>
+      <path d="M50 67C33 50 31 10 45 7c16-4 24 32 24 52m21 2c0-24 8-55 23-52 16 4 7 43-8 59" fill="${P.paper}"/>
+      <path d="M51 51c-5-11-10-29-7-34 7 3 13 26 13 36m41 1c3-16 9-34 13-35 4 7-3 24-9 36" stroke="${P.pink}" stroke-width="7"/>
+      <path d="M80 56c-27-1-47 14-47 38 0 26 21 39 47 39s47-13 47-39c0-25-20-39-47-38Z" fill="${P.paper}"/>
+      <ellipse cx="49" cy="103" rx="9" ry="5" fill="${P.coralLight}" stroke="none"/>
+      <ellipse cx="111" cy="103" rx="9" ry="5" fill="${P.coralLight}" stroke="none"/>
+      ${eyes}
+      <path d="M75 96q5-5 10 0l-5 4Z" fill="${P.pink}" stroke="none"/>
+      ${mouth}
+      <path d="M57 130q23 12 46 0l-5 18H63Z" fill="${P.teal}"/>
+      <path d="m74 133 7 9 8-9" stroke="${P.paper}" stroke-width="2.4"/>
+      ${delighted ? `<path d="M45 134q-21-3-25-22m94 20q23-5 25-23" stroke-width="12" stroke="${P.paper}"/><path d="M45 135q-22-3-27-22m96 20q24-5 28-23"/>` : `<path d="M44 139q-6 10 2 14m70-14q6 10-2 14"/>`}
+      <path d="M62 153c-12-3-24 2-25 10 0 7 24 10 31 2m25-12c12-3 24 2 25 10 0 7-24 10-31 2" fill="${P.paper}"/>
+    `);
+  }
+
+  const cat = `<path d="M88 92c28 5 29-24 13-25" fill="none" stroke-width="9" stroke="${P.tan}"/><path d="M88 92c28 5 29-24 13-25" fill="none"/><path d="M37 73c-9 13-11 26-3 33h49c8-14 1-30-8-36" fill="${P.tan}"/><path d="M26 45 25 17l27 15c6-2 13-2 19 0l24-15-1 30c11 13 5 39-33 40-35 0-44-25-35-42Z" fill="${P.tan}"/><path d="m32 30 2 17 12-8m30 0 12 8 1-18" fill="${P.coralLight}" stroke="none"/><path d="M51 35v10m11-12v9m11-7-2 10" stroke="${P.brown}"/><ellipse cx="43" cy="56" rx="3.5" ry="4.5" fill="${P.ink}" stroke="none"/><ellipse cx="78" cy="56" rx="3.5" ry="4.5" fill="${P.ink}" stroke="none"/><path d="m56 65 5 5 5-5" fill="${P.pink}"/><path d="M61 70v4m-7 0q4 5 7 0 3 5 7 0m-34-9-17-3m18 11-18 3m70-11 16-3M87 73l16 3M44 97v9m28-9v9"/>`;
+  const bird = `<path d="m26 80-13 3 9-18" fill="${P.teal}"/><path d="M25 71c-2-22 14-35 32-36 2-18 26-23 36-8 6 9 1 24-3 29 10 32-12 44-35 41-17-2-28-10-30-26Z" fill="${P.teal}"/><path d="m93 34 16 8-18 5" fill="${P.yellow}"/><path d="M34 59c9-8 26-7 34 5-4 20-24 24-34-5Z" fill="${P.coralLight}"/><path d="M47 96v12m-6 0h13m17-12v12m-5 0h13"/><circle cx="80" cy="35" r="4" fill="${P.ink}" stroke="none"/><circle cx="81" cy="34" r="1.3" fill="${P.paper}" stroke="none"/><path d="M66 19q5-8 10-8"/>`;
+  const flower = `<path d="M59 61v47m0-17c-20 1-25-12-26-16 17-3 24 6 26 10m1 12c15-1 25-10 25-20-18-1-24 12-25 15" fill="${P.green}"/><path d="M60 34c-10-28-30-15-24 1-29-4-30 22-8 27-21 19-2 36 15 21 4 25 31 25 35 0 18 15 36-3 15-21 23-6 21-31-8-27 7-22-19-28-25-1Z" fill="${P.coral}"/><circle cx="60" cy="57" r="17" fill="${P.yellow}"/><circle cx="54" cy="54" r="2.5" fill="${P.ink}" stroke="none"/><circle cx="66" cy="54" r="2.5" fill="${P.ink}" stroke="none"/><path d="M54 63q6 5 12 0" stroke-width="2.4"/>`;
+  const tree = `<path d="M53 67v43h17V61" fill="${P.tan}"/><path d="M59 92 43 77m21 1 14-12"/><path d="M62 12c-18 0-31 13-29 26-23 4-29 30-11 43 13 9 28 8 39 0 12 9 34 6 42-7 12-19 1-34-15-39 0-15-12-23-26-23Z" fill="${P.green}"/><path d="M36 47q10-8 19-1m16-14q8-3 13 3M58 63q11 8 22 1" stroke="${P.sage}" stroke-width="5"/>`;
+  const star = `<path d="m60 13 13 28 31 4-23 22 6 31-27-15-28 15 6-31-22-22 31-4Z" fill="${P.yellow}"/><path d="m39 48 13-2 6-12" stroke="${P.paper}" stroke-width="4"/>`;
+  const sun = `<g stroke="${P.yellow}" stroke-width="5"><path d="M60 6v10m0 88v10M6 60h10m88 0h10M22 22l8 8m60 60 8 8M22 98l8-8m60-60 8-8"/></g><circle cx="60" cy="60" r="32" fill="${P.yellow}"/><circle cx="49" cy="55" r="3" fill="${P.ink}" stroke="none"/><circle cx="71" cy="55" r="3" fill="${P.ink}" stroke="none"/><path d="M51 69q9 9 18 0"/><ellipse cx="40" cy="65" rx="6" ry="3.5" fill="${P.coral}" stroke="none"/><ellipse cx="80" cy="65" rx="6" ry="3.5" fill="${P.coral}" stroke="none"/>`;
+  const leaf = `<path d="M22 102C7 45 53 15 100 16c3 48-21 88-65 84" fill="${P.green}"/><path d="M20 106 80 39M37 84l-6-22m24 4 23 2M57 61l-1-21"/>`;
+  const icons = {
+    'ball-red': ball(P.coral), 'ball-blue': ball(P.blue), 'ball-yellow': ball(P.yellow), 'ball-green': ball(P.green),
+    apple: `<path d="M61 38c-22-18-49-3-46 27 2 26 21 46 38 37 5-3 10-3 15 0 18 9 38-15 37-39-1-29-24-42-44-25Z" fill="${P.coral}"/><path d="M61 42c-2-17 3-25 10-31" stroke="${P.brown}" stroke-width="6"/><path d="M61 29c-19 2-29-7-32-19 17-3 31 6 32 19Z" fill="${P.green}"/><path d="M32 50c-6 4-10 13-8 22" stroke="${P.paper}" stroke-width="6"/><path d="M56 92q5-3 10 0" stroke="${P.brown}" stroke-width="2.4"/>`,
+    flower, star,
+    butterfly: `<path d="M57 59C44 10 9 13 12 45c1 15 12 20 29 23-31 1-33 26-15 35 16 8 29-7 31-28m6-16C76 10 111 13 108 45c-1 15-12 20-29 23 31 1 33 26 15 35-16 8-29-7-31-28" fill="${P.coral}"/><path d="M48 57C39 28 22 30 24 45c1 8 12 11 24 12Zm24 0c9-29 26-27 24-12-1 8-12 11-24 12Z" fill="${P.yellow}" stroke="none"/><path d="M43 79c-13-4-20 8-10 13m44-13c13-4 20 8 10 13" stroke="${P.coralLight}" stroke-width="9"/><path d="M58 43q-6-15-13-15m17 15q6-15 13-15"/><ellipse cx="60" cy="66" rx="6" ry="25" fill="${P.ink}"/>`,
+    tree,
+    fish: `<path d="m84 58 24-23v51L84 70" fill="${P.yellow}"/><path d="M17 61c11-25 31-40 53-27 29 18 23 40-1 50-24 11-42-4-52-23Z" fill="${P.blue}"/><path d="m47 33 12-16 15 19m-27 50 12 16 14-17" fill="${P.teal}"/><path d="M51 51q16 10 0 23" fill="${P.teal}"/><circle cx="34" cy="54" r="4" fill="${P.ink}" stroke="none"/><path d="M23 67q5 3 8-1" stroke-width="2.6"/><circle cx="15" cy="25" r="5" stroke="${P.blue}"/><circle cx="9" cy="42" r="3" stroke="${P.blue}"/>`,
+    cat,
+    dog: `<path d="M82 89c23 7 27-14 23-22" stroke-width="9" stroke="${P.brown}"/><path d="M82 89c23 7 27-14 23-22"/><path d="M35 76c-9 13-12 29-3 34h53c6-13-1-29-10-35" fill="${P.cream}"/><path d="M36 29c-10-6-18-1-21 9-4 13-6 43 4 45 12 2 18-21 22-29m35-25c10-6 18-1 21 9 4 13 6 43-4 45-12 2-18-21-22-29" fill="${P.brown}"/><path d="M58 22c-23 0-35 17-34 39 2 23 18 34 35 34 21 0 36-13 36-35 0-25-17-38-37-38Z" fill="${P.cream}"/><path d="M58 22c-8 12-8 24 1 36 13-5 20-19 15-32" fill="${P.tan}" stroke="none"/><circle cx="43" cy="55" r="3.5" fill="${P.ink}" stroke="none"/><circle cx="76" cy="55" r="3.5" fill="${P.ink}" stroke="none"/><path d="M53 67q7-6 14 0l-7 7Z" fill="${P.ink}"/><path d="M60 74v6m-10 0q5 7 10 0 5 7 10 0M42 101v8m32-8v8"/>`,
+    duck: `<path d="M23 59c-7-1-10-5-12-11-6 30 4 47 34 48 30 2 48-12 46-31-1-9-6-15-10-20 10-28-25-40-35-17-6 13 3 27 8 30-10 7-23 6-31 1Z" fill="${P.yellow}"/><path d="m82 33 27 6c-4 10-14 15-26 13" fill="${P.coral}"/><circle cx="69" cy="32" r="3.5" fill="${P.ink}" stroke="none"/><path d="M34 74q15 19 34-1"/><path d="M45 97v10l-9 3h17m16-14v11l-8 3h17" stroke="${P.coral}" stroke-width="4"/>`,
+    bird,
+    pond: `<ellipse cx="60" cy="78" rx="51" ry="30" fill="${P.sky}" stroke="${P.teal}"/><path d="M23 75q10-4 18 0m30 20q10-4 19 0m-36-8q10-4 19 0" stroke="${P.blue}" stroke-width="2.8"/><path d="M86 54V18m10 41V28" stroke="${P.green}" stroke-width="4"/><path d="M86 39c-16-4-17-16-16-20 10 2 15 9 16 16m10 13c13-3 17-15 15-19-11 1-14 11-15 14" fill="${P.green}"/><path d="M32 69c-17 5-8 18 6 14 13-4 8-18-1-18l-5 8Z" fill="${P.green}"/><path d="M49 54c-4-9-11-7-10 0-7-4-11 3-5 7 8 5 19-1 15-7Z" fill="${P.coralLight}"/>`,
+    forest: `<ellipse cx="60" cy="106" rx="55" ry="10" fill="${P.pale}" stroke="none"/><g transform="translate(-7 14) scale(.67)">${tree}</g><g transform="translate(49 8) scale(.62)">${tree}</g><path d="M56 75v33h10V76" fill="${P.tan}"/><path d="m61 12-25 38h12L28 79h65L74 50h12Z" fill="${P.teal}"/><path d="m49 54 12-20 12 20m-22 12 10-14 11 14" stroke="${P.sage}" stroke-width="2.5"/>`,
+    nest: `<path d="M14 63c5 32 21 42 47 42 29 0 44-19 47-43" fill="${P.tan}"/><ellipse cx="60" cy="64" rx="47" ry="21" fill="${P.brown}"/><path d="M26 62c-9-15 0-35 10-35s21 22 11 35m0-2c-9-16 0-39 12-39s25 25 13 39m-1 3c-6-17 4-32 14-31s18 21 9 32" fill="${P.cream}"/><path d="M11 65c25 19 62 20 98-1M20 79c27 17 52 17 78-2M31 95l54-10M16 62l-5-10m93 14 6-11" stroke="${P.tan}" stroke-width="5"/><path d="M34 53h1m24-17h1m22 15h1" stroke="${P.tan}" stroke-width="3"/>`,
+    circle: `<circle cx="60" cy="60" r="42" fill="${P.coral}"/>`,
+    triangle: `<path d="M60 16 107 101H13Z" fill="${P.yellow}"/>`,
+    square: `<rect x="20" y="20" width="80" height="80" rx="3" fill="${P.blue}"/>`,
+    boat: `<path d="M61 13v76"/><path d="M56 21 20 73h36Z" fill="${P.cream}"/><path d="M67 28v45h35Z" fill="${P.sage}"/><path d="m11 83 98 1-20 22H33Z" fill="${P.coral}"/><path d="M7 111q10-7 21 0 10-7 21 0 10-7 21 0 10-7 21 0 10-7 21 0" stroke="${P.blue}"/>`,
+    cake: `<ellipse cx="60" cy="107" rx="50" ry="7" fill="${P.pale}" stroke="none"/><path d="M19 63h82v37c-17 9-64 9-82 0Z" fill="${P.yellow}"/><path d="M19 78c8 13 16-7 25 0s15 7 22 0 14-3 21 2 10 2 14-2" stroke="${P.coralLight}" stroke-width="10"/><ellipse cx="60" cy="63" rx="41" ry="12" fill="${P.cream}"/><path d="M36 59V36h9v27m30 0V36h9v23" fill="${P.teal}"/><path d="M41 30c-12-8-2-17 0-22 2 7 14 18 0 22Zm38 0c-12-8-2-17 0-22 2 7 14 18 0 22Z" fill="${P.coral}"/><path d="m37 44 7 5m32-5 7 5" stroke="${P.cream}" stroke-width="3"/>`,
+    moon: `<path d="M78 17c-16 5-24 17-25 31-2 22 18 36 41 32-17 35-59 29-71 2C9 51 36 14 78 17Z" fill="${P.yellow}"/><path d="m94 17 3 8 9 1-7 5 2 9-7-5-8 5 3-9-7-5 9-1Zm-1 38 2 5 6 1-5 3 2 6-5-3-5 3 1-6-4-3 6-1Z" fill="${P.coralLight}" stroke="none"/><path d="M34 66q5 5 10 0"/><circle cx="32" cy="56" r="3" fill="${P.ink}" stroke="none"/>`,
+    sun,
+    hand: `<path d="M29 65V35c0-10 13-10 13 0v22-35c0-11 14-11 14 0v31-37c0-11 14-11 14 0v38-29c0-11 14-11 14 0v39l8-14c7-11 19-1 13 9L84 99c-7 12-30 17-45 8-13-8-23-29-25-41-2-11 9-16 15-1Z" fill="${P.coralLight}"/><path d="M42 79q20-15 36 5m-28 20V92" stroke="${P.brown}"/>`,
+    shoe: `<path d="M19 41c7 1 12 14 21 14 13-1 17-11 20-12l15 23c8 4 23 8 28 13 8 10 4 23-6 25H21c-10-1-12-7-12-17 0-15 5-34 10-46Z" fill="${P.teal}"/><path d="M10 86c26 8 65 7 98 1v10c0 5-6 10-12 10H21c-7 0-13-6-11-21Z" fill="${P.cream}"/><path d="m50 57 17-3m-12 13 19-2m-11 13 18-5" stroke="${P.paper}" stroke-width="5"/><path d="M22 66v10" stroke="${P.sage}" stroke-width="6"/>`,
+    banana: `<path d="M95 16c4 23-17 53-48 56-11 1-22-3-31-10-6 18 9 37 32 39 34 4 65-37 59-68l-6-18Z" fill="${P.yellow}"/><path d="M21 74c28 21 62-3 73-24" stroke="${P.brown}" stroke-width="2.8"/><path d="m94 16 1-7 8-1 3 14m-91 40-5-3-3 5 10 8" fill="${P.brown}"/>`,
+    house: `<path d="M23 52h74v56H23Z" fill="${P.cream}"/><path d="M12 55 60 13l48 42Z" fill="${P.coral}"/><path d="M48 108V74h24v34" fill="${P.teal}"/><rect x="30" y="64" width="13" height="16" rx="2" fill="${P.sky}"/><rect x="78" y="64" width="13" height="16" rx="2" fill="${P.sky}"/><circle cx="66" cy="92" r="2" fill="${P.yellow}" stroke="none"/><path d="M87 35V17h12v29" fill="${P.coral}"/><path d="M17 109h86"/>`,
+    bunny: `<g transform="translate(8 -4) scale(.65)">${rabbit('happy')}</g>`,
+    leaf,
+    speaker: `<g stroke="currentColor" stroke-width="6"><path d="M19 45h21l26-22v74L40 75H19Z" fill="currentColor" stroke="none"/><path d="M81 43q14 17 0 34m13-48q25 31 0 62"/></g>`,
+    mute: `<g stroke="currentColor" stroke-width="6"><path d="M15 45h21l26-22v74L36 75H15Z" fill="currentColor" stroke="none"/><path d="m82 46 26 28m0-28L82 74"/></g>`,
+    arrow: `<g stroke="currentColor" stroke-width="7"><path d="M23 60h72M70 34l27 26-27 26"/></g>`,
+    home: `<g stroke="currentColor" stroke-width="6"><path d="m15 52 45-37 45 37M27 44v58h24V71h19v31h23V44"/></g>`,
+    check: `<path d="m24 62 23 23 48-49" stroke="currentColor" stroke-width="10"/>`,
+    close: `<path d="m31 31 58 58m0-58L31 89" stroke="currentColor" stroke-width="8"/>`,
+    help: `<g stroke="currentColor" stroke-width="6"><circle cx="60" cy="60" r="43"/><path d="M45 45c0-18 32-20 32-2 0 13-17 12-17 27"/><circle cx="60" cy="86" r="3" fill="currentColor" stroke="none"/></g>`,
+    teacher: `<g stroke="currentColor" stroke-width="5"><circle cx="60" cy="29" r="14"/><path d="M31 65c3-22 55-22 58 0M12 62c20-6 33-1 48 9 15-10 28-15 48-9v37c-22-5-35 0-48 8-13-8-26-13-48-8Zm48 9v36"/></g>`,
+    heart: `<path d="M60 102C40 86 12 68 12 44c0-30 35-36 48-9 13-27 48-21 48 9 0 24-28 42-48 58Z" fill="${P.coral}"/><path d="M26 43c-1-8 4-13 11-13" stroke="${P.paper}" stroke-width="4"/>`,
+    paw: `<path d="M60 58c-14 0-17 17-27 24-16 13-6 28 9 25 14-3 22-3 36 0 15 3 25-12 9-25-10-7-13-24-27-24Z" fill="${P.tan}"/><ellipse cx="22" cy="54" rx="12" ry="17" transform="rotate(-23 22 54)" fill="${P.tan}"/><ellipse cx="45" cy="29" rx="12" ry="17" transform="rotate(-8 45 29)" fill="${P.tan}"/><ellipse cx="76" cy="29" rx="12" ry="17" transform="rotate(8 76 29)" fill="${P.tan}"/><ellipse cx="98" cy="54" rx="12" ry="17" transform="rotate(23 98 54)" fill="${P.tan}"/>`,
+    flag: `<path d="M28 111V14" stroke-width="5"/><path d="M30 17c24-15 43 14 66-1v48c-26 15-45-15-66 0Z" fill="${P.coral}"/><path d="M17 111h22"/><path d="m62 28 4 9 10 1-8 7 2 10-9-5-9 5 2-10-7-7 10-1Z" fill="${P.yellow}" stroke="none"/>`,
+    trophy: `<path d="M34 24H14v15c0 14 13 24 26 24m46-39h20v15c0 14-13 24-26 24" fill="${P.yellow}"/><path d="M29 14h62v31c0 22-13 33-31 33S29 67 29 45Z" fill="${P.yellow}"/><path d="M53 77v19H38v12h44V96H67V77" fill="${P.tan}"/><path d="m60 29 5 11 13 2-9 8 2 13-11-6-11 6 2-13-9-8 13-2Z" fill="${P.cream}" stroke="none"/><path d="M36 20v15" stroke="${P.paper}" stroke-width="4"/>`,
+    lock: `<g stroke="currentColor" stroke-width="5"><path d="M36 51V34c0-32 48-32 48 0v17"/><rect x="23" y="51" width="74" height="57" rx="13"/><circle cx="60" cy="75" r="6" fill="currentColor" stroke="none"/><path d="M60 79v12"/></g>`,
+    refresh: `<g stroke="currentColor" stroke-width="6"><path d="M98 49A40 40 0 0 0 27 34L17 49m0-26v26h26M22 71a40 40 0 0 0 71 15l10-15m0 26V71H77"/></g>`,
+    download: `<g stroke="currentColor" stroke-width="6"><path d="M60 14v62M36 55l24 23 24-23M21 79v25h78V79"/></g>`
+  };
+
+  function positionBody(relation) {
+    const r = ({ dentro: 'inside', acima: 'above', embaixo: 'under', lado: 'beside' })[relation] || relation;
+    const feline = (x, y, scale) => `<g transform="translate(${x} ${y}) scale(${scale})">${cat}</g>`;
+    const inside = r === 'inside';
+    return outlined(`
+      <ellipse cx="121" cy="173" rx="108" ry="5" fill="${P.ink}" stroke="none" opacity=".07"/>
+      <path d="M71 135v35h10v-33m76-2v35h10v-35" fill="${P.brown}"/>
+      <path d="M69 98 83 84h75l14 14v40H69Z" fill="#B88D61"/>
+      <path d="m69 98-17-20 34-8 34 20 35-20 34 8-17 20" fill="${P.tan}"/>
+      <path d="m84 84 36 6 37-6" stroke="${P.brown}" stroke-width="2"/>
+      ${inside ? feline(94, 69, .43) : ''}
+      <path d="M69 103h103v35H69Z" fill="${P.tan}"/>
+      <path d="M69 103 59 116l48 6 13-19 13 19 49-6-10-13" fill="#E6C89C"/>
+      <path d="M120 123v15m-41-6h17m47 0h17" stroke="${P.brown}" stroke-width="2"/>
+      ${r === 'above' ? feline(94, 3, .43) : ''}
+      ${r === 'under' ? feline(98, 131, .34) : ''}
+      ${r === 'beside' ? feline(183, 122, .43) : ''}
+    `);
+  }
+
+  function icon(name, className = '') {
+    if (name.indexOf('cat-') === 0 && ['inside', 'above', 'under', 'beside'].includes(name.slice(4))) {
+      return wrap(`<g transform="translate(0 15) scale(.5)">${positionBody(name.slice(4))}</g>`, 120, 120, `art-icon ${className}`);
+    }
+    return wrap(outlined(icons[name] || flower), 120, 120, `art-icon ${className}`);
+  }
+
+  function hero() {
+    return wrap(`
+      <path d="M37 233C14 145 96 80 192 88c67 6 71-69 163-54 53 8 73 43 126 36 100-14 169 81 144 160 35 83-18 158-100 169H158C78 407 14 338 37 233Z" fill="#EAF0DC"/>
+      <path d="M54 218c54-61 131-28 184-37 88-14 135-74 213-39 41 18 75 66 119 76l49 42-574 14Z" fill="#DDE8CF"/>
+      <path d="M48 272c80-60 154-43 232-20 60 18 94-20 155-27 71-8 147 23 189 62 1 78-57 118-129 118H162C97 405 48 350 48 272Z" fill="#B8CC9D"/>
+      <path d="M371 224c-10 17 9 24 44 32 44 11 44 42-8 63-45 18-84 28-108 76" stroke="#F3D59B" stroke-width="67" stroke-linecap="round"/>
+      <path d="M350 233c2 17 36 27 57 32" stroke="#F9E4B9" stroke-width="5" stroke-linecap="round"/>
+      <path d="M339 355c-9 4-15 12-22 21m78-72 14-6" stroke="#DEC08A" stroke-width="4" stroke-linecap="round"/>
+      <g ${outline}>
+        <path d="M103 103c-4-23 25-34 39-18 9-33 58-24 59 6 28-5 34 18 19 26H112c-15 0-24-8-9-14Z" fill="${P.paper}" stroke="none"/>
+        <path d="M353 91c-4-15 15-24 24-14 4-21 34-19 37 1 19-2 21 14 10 18h-63Z" fill="${P.paper}" stroke="none"/>
+        <g transform="translate(450 10) scale(.86)">${sun}</g>
+        <path d="M530 300c10-52 0-116-4-157h24c-9 73-9 115 3 157" fill="${P.tan}"/>
+        <path d="m538 240-29-29m28-9 33-33" stroke="${P.brown}" stroke-width="4"/>
+        <path d="M540 116c-16-35-69-29-77 6-43-4-70 31-51 64 14 25 46 24 61 19 11 27 56 25 70 3 27 17 66 5 69-24 43-17 26-62-2-65-18-26-49-18-70-3Z" fill="${P.green}"/>
+        <path d="M458 143q12-7 21 2m17-22q12-8 20 2m52 15q12-7 20 1m-79 42q12-6 22 2m37-12q10-4 17 0" stroke="${P.sage}" stroke-width="7"/>
+        <path d="M539 150c6-17 30-16 39 0-19 9-31 10-39 0Z" fill="${P.sage}" stroke="none"/>
+        <path d="M544 150h27" stroke="${P.green}" stroke-width="2"/>
+        <path d="M98 309c-3-48-1-86 3-124h18c-5 38-5 75 1 124" fill="${P.tan}"/>
+        <path d="M105 248 85 229" stroke="${P.brown}"/>
+        <path d="M104 157c-22-12-48 6-43 27-31 5-39 35-19 52 12 10 30 8 40 3 16 15 48 13 61-5 38-1 38-47 7-53-6-23-29-31-46-24Z" fill="${P.teal}"/>
+        <path d="m68 195 8 6 9-6m13-23 8 5 8-5m-16 50 8 5 8-5" stroke="#76A7A4" stroke-width="5"/>
+        <ellipse cx="265" cy="385" rx="67" ry="12" fill="${P.ink}" stroke="none" opacity=".09"/>
+      </g>
+      <g transform="translate(180 204) scale(1.11)">${rabbit('happy')}</g>
+      <g ${outline} transform="translate(433 280) scale(.9)">${bird}</g>
+      <g ${outline}>
+        <path d="M129 382c-2-22-13-36-29-42-5 23 4 38 29 42Zm0 0c1-28 13-46 30-52 8 25-2 45-30 52Z" fill="${P.teal}"/>
+        <path d="m126 377-16-24m20 24 19-31" stroke="#76A7A4" stroke-width="2.5"/>
+        <g transform="translate(71 303) scale(.53)">${flower}</g>
+        <path d="M584 400c-16-22-13-45 1-62 17 13 19 37-1 62Z" fill="${P.teal}"/>
+        <path d="M586 401c15-28 39-28 54-21-8 22-28 30-54 21Zm-2 0c-20-20-41-17-55-7 15 18 32 24 55 7Z" fill="${P.green}"/>
+        <path d="M584 394v-39m9 42 28-9m-44 11-31-1" stroke="${P.sage}" stroke-width="2.5"/>
+        <g transform="translate(558 280) scale(.38)">${flower}</g>
+        <path d="m173 322-4-12m4 12 7-8m209 61-5-11m5 11 7-6M493 266l-4-10m4 10 8-6" stroke="${P.green}" stroke-width="4"/>
+        <path d="m391 176 7-7 9 4m-11 15 11-1 5 8" stroke="${P.coral}" stroke-width="3"/>
+        <circle cx="159" cy="270" r="3" fill="${P.yellow}" stroke="none"/>
+        <circle cx="401" cy="341" r="3" fill="${P.cream}" stroke="none"/>
+        <circle cx="564" cy="319" r="3" fill="${P.yellow}" stroke="none"/>
+      </g>
+    `, 680, 460, 'art-hero');
+  }
+
+  function world(id) {
+    const ground = `<ellipse cx="131" cy="128" rx="107" ry="15" fill="${P.ink}" opacity=".06"/>`;
+    const sprig = (x, y, scale = 1) => `<g transform="translate(${x} ${y}) scale(${scale})"><path d="M0 0v-30m0 16c-16-1-18-12-17-16 13 0 16 9 17 13m0 8c15-1 18-12 17-16-13 1-16 10-17 13" fill="${P.green}"/></g>`;
+    const scenes = {
+      cores: `${ground}<path d="M53 115c-4-46 33-91 79-86 53 6 78 41 73 86Z" fill="#FBE3D4"/><g transform="translate(37 40) scale(.65)">${ball(P.coral)}</g><g transform="translate(120 55) scale(.62)">${ball(P.blue)}</g><g transform="translate(91 10) scale(.6)">${ball(P.yellow)}</g>${sprig(217, 124, .8)}<path d="m27 51 4-8m-4 8-8-3" stroke="${P.yellow}" stroke-width="4"/>`,
+      contar: `${ground}<path d="M70 118c-21-34-6-79 37-91 44-12 96 30 91 92" fill="#FAECCA" stroke="none"/><g transform="translate(29 44) scale(.56)">${icons.apple}</g><g transform="translate(98 47) scale(.56)">${icons.apple}</g><g transform="translate(169 45) scale(.56)">${icons.apple}</g><path d="m41 125 3-8m-3 8-6-4m173 4 3-8m-3 8-6-4" stroke="${P.green}"/>`,
+      espaco: `${ground}<path d="M58 36h147v83H58Z" fill="#E5ECEA" stroke="none"/><path d="M49 91h139v16H49Zm12 16v24m115-24v24" fill="${P.tan}"/><g transform="translate(69 17) scale(.68)">${cat}</g><g transform="translate(179 89) scale(.29)">${ball(P.coral)}</g><path d="m216 50 8-7m-8 7 9 6" stroke="${P.yellow}" stroke-width="4"/>`,
+      animais: `${ground}<path d="M41 119c-18-52 21-94 68-89 44-21 95 27 86 87Z" fill="#DFE8D2" stroke="none"/><g transform="translate(22 17) scale(.89)">${tree}</g><g transform="translate(102 42) scale(.75)">${bird}</g><g transform="translate(169 70) scale(.52)">${icons.pond}</g>`,
+      sons: `${ground}<path d="M52 118c-22-40 5-94 49-98 44-15 100 38 93 97Z" fill="#F6DED2" stroke="none"/><g transform="translate(45 24) scale(.83)">${bird}</g><path d="M145 58q24 18 0 40m16-54q37 32 0 67" stroke="${P.teal}" stroke-width="5"/><path d="M195 55V24l23-4v31" stroke="${P.coral}" stroke-width="5"/><ellipse cx="189" cy="56" rx="7" ry="5" fill="${P.coral}" stroke="none"/><ellipse cx="212" cy="52" rx="7" ry="5" fill="${P.coral}" stroke="none"/>${sprig(222, 124, .72)}`,
+      letras: `${ground}<path d="M37 124c-2-75 38-108 90-92 52-28 98 34 88 92Z" fill="#DDEBEC" stroke="none"/><g transform="rotate(-8 75 83)"><rect x="31" y="42" width="73" height="79" rx="12" fill="${P.coralLight}"/><path d="m49 99 18-41h4l18 41m-32-13h24" stroke="${P.ink}" stroke-width="6"/></g><g transform="rotate(7 143 91)"><rect x="111" y="62" width="62" height="64" rx="10" fill="${P.yellow}"/><path d="M131 111V77h12c16 0 16 16 0 16h-12m0 0h13c17 0 17 18 0 18h-13" stroke="${P.ink}" stroke-width="5"/></g><g transform="translate(174 22) scale(.43)">${flower}</g>`
+    };
+    const normalized = ({ colors: 'cores', counting: 'contar', space: 'espaco', animals: 'animais', sounds: 'sons', letters: 'letras' })[id] || id;
+    return wrap(outlined(scenes[normalized] || scenes.cores), 260, 150, `art-world art-world-${cls(normalized)}`);
+  }
+
+  window.Art = Object.freeze({
+    icon,
+    hero,
+    mascot: (expression = 'happy') => wrap(rabbit(expression), 160, 180, 'art-mascot'),
+    world,
+    position: (relation = 'inside', className = '') => wrap(positionBody(relation), 240, 180, `art-position ${className}`)
+  });
+})();
+
+</script>
+<script>
+/* Proposta de atividades para mediação e validação docente. */
+window.GAME_WORLDS = [
+  {
+    id: 'cores',
+    title: 'Cores e formas',
+    subtitle: 'Um jardim cheio de diferenças',
+    color: '#D97041',
+    icon: 'ball-yellow',
+    skill: 'Cores, percepção visual e sequências',
+    questions: [
+      {
+        id: 'cores-vermelho',
+        skill: 'Identificação de cores',
+        prompt: 'Qual bola é vermelha?',
+        spokenPrompt: 'Observe as três bolas. Toque na bola vermelha.',
+        choices: [
+          { id: 'azul', label: 'Azul', art: 'ball-blue', speak: 'Bola azul' },
+          { id: 'vermelho', label: 'Vermelha', art: 'ball-red', speak: 'Bola vermelha' },
+          { id: 'amarelo', label: 'Amarela', art: 'ball-yellow', speak: 'Bola amarela' }
+        ],
+        answer: 'vermelho',
+        hint: 'Olhe as cores com calma. Procure a bola da cor de um tomate maduro.',
+        success: 'Você encontrou a bola vermelha!'
+      },
+      {
+        id: 'cores-amarelo',
+        skill: 'Identificação de cores',
+        prompt: 'Qual bola é amarela?',
+        spokenPrompt: 'Agora procure a bola amarela.',
+        choices: [
+          { id: 'amarelo', label: 'Amarela', art: 'ball-yellow', speak: 'Bola amarela' },
+          { id: 'verde', label: 'Verde', art: 'ball-green', speak: 'Bola verde' },
+          { id: 'azul', label: 'Azul', art: 'ball-blue', speak: 'Bola azul' }
+        ],
+        answer: 'amarelo',
+        hint: 'Procure a cor que usamos para pintar um sol amarelinho.',
+        success: 'A bola amarela deixou o jardim mais colorido!'
+      },
+      {
+        id: 'cores-sequencia',
+        skill: 'Reconhecimento de sequência visual',
+        prompt: 'Qual bola vem agora?',
+        spokenPrompt: 'Veja a fila de bolas: vermelha, azul, vermelha. As cores se alternam. Qual bola vem agora?',
+        scene: { type: 'sequence', items: ['ball-red', 'ball-blue', 'ball-red'] },
+        choices: [
+          { id: 'vermelho', label: 'Vermelha', art: 'ball-red', speak: 'Bola vermelha' },
+          { id: 'verde', label: 'Verde', art: 'ball-green', speak: 'Bola verde' },
+          { id: 'azul', label: 'Azul', art: 'ball-blue', speak: 'Bola azul' }
+        ],
+        answer: 'azul',
+        hint: 'Fale as cores da fila. Depois da vermelha, vem a azul. Vamos continuar?',
+        success: 'Vermelha, azul, vermelha, azul. Você continuou a sequência!'
+      },
+      {
+        id: 'cores-forma',
+        skill: 'Correspondência de formas',
+        prompt: 'Encontre a forma igual.',
+        spokenPrompt: 'Olhe a forma grande. Qual das três formas é igual a ela?',
+        scene: { type: 'focus', art: 'triangle', label: 'Observe esta forma' },
+        choices: [
+          { id: 'circulo', label: 'Círculo', art: 'circle', speak: 'Círculo' },
+          { id: 'triangulo', label: 'Triângulo', art: 'triangle', speak: 'Triângulo' },
+          { id: 'quadrado', label: 'Quadrado', art: 'square', speak: 'Quadrado' }
+        ],
+        answer: 'triangulo',
+        hint: 'Compare as pontinhas e os lados das formas.',
+        success: 'As duas formas são triângulos. Elas têm três lados!'
+      }
+    ]
+  },
+  {
+    id: 'contar',
+    title: 'Vamos contar',
+    subtitle: 'Cada descoberta tem seu número',
+    color: '#598A6E',
+    icon: 'star',
+    skill: 'Contagem e relação entre quantidade e numeral',
+    questions: [
+      {
+        id: 'contar-um',
+        skill: 'Contagem de um elemento',
+        prompt: 'Quantas maçãs há no quadro?',
+        spokenPrompt: 'Conte somente as maçãs dentro do quadro. Depois, toque no número que mostra essa quantidade.',
+        scene: { type: 'items', items: [{ art: 'apple' }] },
+        choices: [{ id: '2', label: '2' }, { id: '1', label: '1' }, { id: '3', label: '3' }],
+        answer: '1',
+        hint: 'Aponte para cada maçã e conte devagar.',
+        success: 'Uma maçã. A quantidade é um!'
+      },
+      {
+        id: 'contar-tres',
+        skill: 'Contagem de três elementos',
+        prompt: 'Quantas borboletas há no quadro?',
+        spokenPrompt: 'Conte somente as borboletas dentro do quadro, uma de cada vez. Depois, toque no número.',
+        scene: { type: 'items', items: [{ art: 'butterfly' }, { art: 'butterfly' }, { art: 'butterfly' }] },
+        choices: [{ id: '2', label: '2' }, { id: '4', label: '4' }, { id: '3', label: '3' }],
+        answer: '3',
+        hint: 'Aponte para uma borboleta de cada vez, sem contar a mesma duas vezes.',
+        success: 'Um, dois, três. São três borboletas!'
+      },
+      {
+        id: 'contar-cinco',
+        skill: 'Contagem de cinco elementos',
+        prompt: 'Quantas flores há no quadro?',
+        spokenPrompt: 'Conte somente as flores dentro do quadro. Toque no número que mostra quantas flores há ali.',
+        scene: { type: 'items', items: [{ art: 'flower' }, { art: 'flower' }, { art: 'flower' }, { art: 'flower' }, { art: 'flower' }] },
+        choices: [{ id: '5', label: '5' }, { id: '4', label: '4' }, { id: '6', label: '6' }],
+        answer: '5',
+        hint: 'Conte cada flor uma vez. O último número que você disser mostra o total.',
+        success: 'Cinco flores para colorir nosso quintal!'
+      },
+      {
+        id: 'contar-seis',
+        skill: 'Contagem de seis elementos',
+        prompt: 'Quantas estrelas há no quadro?',
+        spokenPrompt: 'Conte somente as estrelas dentro do quadro. Você pode apontar para uma de cada vez.',
+        scene: { type: 'items', items: [{ art: 'star' }, { art: 'star' }, { art: 'star' }, { art: 'star' }, { art: 'star' }, { art: 'star' }] },
+        choices: [{ id: '4', label: '4' }, { id: '6', label: '6' }, { id: '5', label: '5' }],
+        answer: '6',
+        hint: 'Comece por uma estrela e siga até a última. Não precisa ter pressa.',
+        success: 'Um, dois, três, quatro, cinco, seis. São seis estrelas!'
+      }
+    ]
+  },
+  {
+    id: 'espaco',
+    title: 'Aqui e ali',
+    subtitle: 'Tamanhos e lugares para explorar',
+    color: '#8C6BAC',
+    icon: 'cat-beside',
+    skill: 'Comparação de alturas e noções espaciais',
+    questions: [
+      {
+        id: 'espaco-altura',
+        skill: 'Comparação de alturas',
+        prompt: 'Qual árvore é a mais alta?',
+        spokenPrompt: 'Compare as três árvores. Toque no número da árvore mais alta.',
+        scene: { type: 'items', items: [{ art: 'tree', label: '1', scale: 0.6 }, { art: 'tree', label: '2', scale: 1.1 }, { art: 'tree', label: '3', scale: 0.8 }] },
+        choices: [{ id: '3', label: '3' }, { id: '1', label: '1' }, { id: '2', label: '2' }],
+        answer: '2',
+        hint: 'As árvores começam na mesma linha. Qual delas chega mais alto?',
+        success: 'A árvore número dois é a mais alta!'
+      },
+      {
+        id: 'espaco-dentro',
+        skill: 'Relação espacial: dentro',
+        prompt: 'Qual gatinho está dentro da caixa?',
+        spokenPrompt: 'Olhe os gatinhos. Encontre o que está dentro da caixa.',
+        choices: [
+          { id: 'lado', label: 'Ao lado', art: 'cat-beside', speak: 'Gatinho ao lado da caixa' },
+          { id: 'dentro', label: 'Dentro', art: 'cat-inside', speak: 'Gatinho dentro da caixa' },
+          { id: 'acima', label: 'Acima', art: 'cat-above', speak: 'Gatinho acima da caixa' }
+        ],
+        answer: 'dentro',
+        hint: 'Procure o gatinho que entrou no espaço de dentro da caixa.',
+        success: 'Você encontrou o gatinho dentro da caixa!'
+      },
+      {
+        id: 'espaco-embaixo',
+        skill: 'Relação espacial: embaixo',
+        prompt: 'Qual gatinho está embaixo da caixa?',
+        spokenPrompt: 'Agora procure o gatinho que está embaixo da caixa.',
+        choices: [
+          { id: 'embaixo', label: 'Embaixo', art: 'cat-under', speak: 'Gatinho embaixo da caixa' },
+          { id: 'acima', label: 'Acima', art: 'cat-above', speak: 'Gatinho acima da caixa' },
+          { id: 'lado', label: 'Ao lado', art: 'cat-beside', speak: 'Gatinho ao lado da caixa' }
+        ],
+        answer: 'embaixo',
+        hint: 'Olhe o espaço que fica abaixo da caixa.',
+        success: 'Ali está ele: embaixo da caixa!'
+      },
+      {
+        id: 'espaco-acima',
+        skill: 'Relação espacial: acima',
+        prompt: 'Qual gatinho está acima da caixa?',
+        spokenPrompt: 'Procure a figura em que o gatinho está acima da caixa.',
+        choices: [
+          { id: 'dentro', label: 'Dentro', art: 'cat-inside', speak: 'Gatinho dentro da caixa' },
+          { id: 'lado', label: 'Ao lado', art: 'cat-beside', speak: 'Gatinho ao lado da caixa' },
+          { id: 'acima', label: 'Acima', art: 'cat-above', speak: 'Gatinho acima da caixa' }
+        ],
+        answer: 'acima',
+        hint: 'Compare o gatinho e a caixa. Procure o gatinho que aparece mais para cima.',
+        success: 'Esse gatinho está acima da caixa!'
+      }
+    ]
+  },
+  {
+    id: 'animais',
+    title: 'Bichos e lugares',
+    subtitle: 'Quem vive e brinca por aqui?',
+    color: '#458994',
+    icon: 'bird',
+    skill: 'Animais, características e ambientes',
+    questions: [
+      {
+        id: 'animais-peixe',
+        skill: 'Relação entre um animal aquático e seu ambiente',
+        prompt: 'Onde este peixe pode nadar?',
+        spokenPrompt: 'Este peixe precisa de água para nadar. Qual lugar tem água para ele?',
+        scene: { type: 'focus', art: 'fish', label: 'Um peixe' },
+        choices: [
+          { id: 'floresta', label: 'Floresta', art: 'forest', speak: 'Floresta' },
+          { id: 'lagoa', label: 'Lagoa', art: 'pond', speak: 'Lagoa' },
+          { id: 'ninho', label: 'Ninho', art: 'nest', speak: 'Ninho' }
+        ],
+        answer: 'lagoa',
+        hint: 'Procure a figura que mostra um lugar com água.',
+        success: 'Na lagoa há água para o peixe nadar!'
+      },
+      {
+        id: 'animais-ninho',
+        skill: 'Associação de um pássaro com o abrigo dos ovos',
+        prompt: 'Onde estão os ovos do passarinho?',
+        spokenPrompt: 'Nesta história, o passarinho colocou os ovos em um ninho. Encontre o ninho.',
+        scene: { type: 'focus', art: 'bird', label: 'Um passarinho' },
+        choices: [
+          { id: 'ninho', label: 'Ninho', art: 'nest', speak: 'Ninho' },
+          { id: 'lagoa', label: 'Lagoa', art: 'pond', speak: 'Lagoa' },
+          { id: 'sapato', label: 'Sapato', art: 'shoe', speak: 'Sapato' }
+        ],
+        answer: 'ninho',
+        hint: 'O ninho é feito com pequenos materiais, como gravetos. Ele acolhe os ovos desta história.',
+        success: 'Os ovos deste passarinho estão no ninho!'
+      },
+      {
+        id: 'animais-penas',
+        skill: 'Observação de características dos animais',
+        prompt: 'Quem tem penas e bico?',
+        spokenPrompt: 'Observe estes animais. Qual deles tem penas no corpo e um bico?',
+        choices: [
+          { id: 'gato', label: 'Gato', art: 'cat', speak: 'Gato' },
+          { id: 'peixe', label: 'Peixe', art: 'fish', speak: 'Peixe' },
+          { id: 'pato', label: 'Pato', art: 'duck', speak: 'Pato' }
+        ],
+        answer: 'pato',
+        hint: 'Olhe o rosto e o corpo de cada animal. Procure o bico e as asas.',
+        success: 'O pato tem penas e bico!'
+      },
+      {
+        id: 'animais-floresta',
+        skill: 'Reconhecimento de ambiente em uma narrativa',
+        prompt: 'Onde está a floresta do coelho?',
+        spokenPrompt: 'O coelho desta história mora numa floresta, entre muitas árvores. Encontre a floresta.',
+        scene: { type: 'focus', art: 'bunny', label: 'O coelho da história' },
+        choices: [
+          { id: 'lagoa', label: 'Lagoa', art: 'pond', speak: 'Lagoa' },
+          { id: 'floresta', label: 'Floresta', art: 'forest', speak: 'Floresta' },
+          { id: 'ninho', label: 'Ninho', art: 'nest', speak: 'Ninho' }
+        ],
+        answer: 'floresta',
+        hint: 'Procure o lugar com muitas árvores juntas.',
+        success: 'É a floresta! Nesta história, o coelho mora entre as árvores.'
+      }
+    ]
+  },
+  {
+    id: 'sons',
+    title: 'Sons e palminhas',
+    subtitle: 'Escutar também é uma brincadeira',
+    color: '#BE6C86',
+    icon: 'hand',
+    skill: 'Rimas, consciência silábica e compreensão auditiva',
+    questions: [
+      {
+        id: 'sons-rima',
+        skill: 'Reconhecimento de rima',
+        prompt: 'O que rima com GATO?',
+        spokenPrompt: 'Escute a palavra: GATO. Qual destas palavras termina com um som parecido: pato, peixe ou mão?',
+        scene: { type: 'focus', art: 'cat', label: 'GATO' },
+        choices: [
+          { id: 'pato', label: 'Pato', art: 'duck', speak: 'Pato' },
+          { id: 'peixe', label: 'Peixe', art: 'fish', speak: 'Peixe' },
+          { id: 'mao', label: 'Mão', art: 'hand', speak: 'Mão' }
+        ],
+        answer: 'pato',
+        hint: 'Fale GATO devagar e escute o final. Depois, diga o nome de cada figura.',
+        success: 'GATO e PATO terminam com um som parecido. Eles rimam!'
+      },
+      {
+        id: 'sons-bola',
+        skill: 'Percepção de duas sílabas',
+        prompt: 'Quantas palmas tem BOLA?',
+        spokenPrompt: 'Fale a palavra BOLA. Bata uma palma para cada pedacinho que você fala. Quantas palmas?',
+        scene: { type: 'focus', art: 'ball-blue', label: 'BOLA' },
+        choices: [{ id: '3', label: '3' }, { id: '2', label: '2' }, { id: '1', label: '1' }],
+        answer: '2',
+        hint: 'Fale devagar: BO... LA. Dê uma palma em cada pedacinho.',
+        success: 'BO-LA. Duas partes, duas palminhas!'
+      },
+      {
+        id: 'sons-banana',
+        skill: 'Percepção de três sílabas',
+        prompt: 'Quantas palmas tem BANANA?',
+        spokenPrompt: 'Agora fale BANANA. Bata uma palma para cada pedacinho da palavra. Quantas palmas?',
+        scene: { type: 'focus', art: 'banana', label: 'BANANA' },
+        choices: [{ id: '2', label: '2' }, { id: '1', label: '1' }, { id: '3', label: '3' }],
+        answer: '3',
+        hint: 'Fale devagar: BA... NA... NA. Acompanhe cada pedacinho com uma palma.',
+        success: 'BA-NA-NA. Três partes, três palminhas!'
+      },
+      {
+        id: 'sons-historia',
+        skill: 'Compreensão de uma narrativa oral breve',
+        prompt: 'Quem pegou a bola?',
+        spokenPrompt: 'Escute a história: o gato pegou uma bola. O pato foi nadar. Quem pegou a bola?',
+        choices: [
+          { id: 'pato', label: 'Pato', art: 'duck', speak: 'Pato' },
+          { id: 'gato', label: 'Gato', art: 'cat', speak: 'Gato' },
+          { id: 'cachorro', label: 'Cachorro', art: 'dog', speak: 'Cachorro' }
+        ],
+        answer: 'gato',
+        hint: 'Ouça a história de novo. Um animal pegou a bola e o outro foi nadar.',
+        success: 'Foi o gato! Na história, ele pegou a bola.'
+      }
+    ]
+  },
+  {
+    id: 'letras',
+    title: 'Letras curiosas',
+    subtitle: 'Palavras começam uma nova aventura',
+    color: '#C39132',
+    icon: 'boat',
+    skill: 'Letras iniciais e sons no começo das palavras',
+    questions: [
+      {
+        id: 'letras-bola',
+        skill: 'Identificação visual da letra inicial B',
+        prompt: 'Qual é a primeira letra de BOLA?',
+        spokenPrompt: 'Veja a palavra BOLA. Qual letra aparece no começo dela?',
+        scene: { type: 'focus', art: 'ball-blue', label: 'BOLA' },
+        choices: [{ id: 'D', label: 'D', speak: 'Letra D' }, { id: 'B', label: 'B', speak: 'Letra B' }, { id: 'P', label: 'P', speak: 'Letra P' }],
+        answer: 'B',
+        hint: 'Olhe para BOLA. A primeira letra fica no começo da palavra, do lado esquerdo.',
+        success: 'B é a primeira letra de BOLA!'
+      },
+      {
+        id: 'letras-sol',
+        skill: 'Identificação visual da letra inicial S',
+        prompt: 'Qual é a primeira letra de SOL?',
+        spokenPrompt: 'Veja a palavra SOL. Toque na letra que aparece no começo dela.',
+        scene: { type: 'focus', art: 'sun', label: 'SOL' },
+        choices: [{ id: 'S', label: 'S', speak: 'Letra S' }, { id: 'M', label: 'M', speak: 'Letra M' }, { id: 'A', label: 'A', speak: 'Letra A' }],
+        answer: 'S',
+        hint: 'Observe a primeira letra escrita em SOL. Compare com as três opções.',
+        success: 'SOL começa com a letra S!'
+      },
+      {
+        id: 'letras-banana',
+        skill: 'Associação da letra B com o início de uma palavra',
+        prompt: 'Qual figura começa com a letra B?',
+        spokenPrompt: 'A letra é B, de BOLA. Qual destas figuras tem um nome que começa com B: banana, peixe ou casa?',
+        choices: [
+          { id: 'peixe', label: 'Peixe', art: 'fish', speak: 'Peixe' },
+          { id: 'casa', label: 'Casa', art: 'house', speak: 'Casa' },
+          { id: 'banana', label: 'Banana', art: 'banana', speak: 'Banana' }
+        ],
+        answer: 'banana',
+        hint: 'Diga BOLA e depois os nomes das figuras. Procure um começo parecido.',
+        success: 'BANANA começa com B, assim como BOLA!'
+      },
+      {
+        id: 'letras-barco',
+        skill: 'Comparação de sons iniciais',
+        prompt: 'Qual palavra começa como BOLA?',
+        spokenPrompt: 'Escute o começo de BOLA. Qual palavra começa com um som parecido: barco, sol ou sapato?',
+        scene: { type: 'focus', art: 'ball-red', label: 'BOLA' },
+        choices: [
+          { id: 'barco', label: 'Barco', art: 'boat', speak: 'Barco' },
+          { id: 'sol', label: 'Sol', art: 'sun', speak: 'Sol' },
+          { id: 'sapato', label: 'Sapato', art: 'shoe', speak: 'Sapato' }
+        ],
+        answer: 'barco',
+        hint: 'Fale BOLA e BARCO devagar. Escute o primeiro som dessas palavras.',
+        success: 'BOLA e BARCO começam com o som da letra B!'
+      }
+    ]
+  }
+];
+
+</script>
+<script>
+(function (root) {
+  'use strict';
+  const worlds = root.GAME_WORLDS || [];
+  const worldById = new Map(worlds.map(world => [world.id, world]));
+  const questionById = new Map(worlds.flatMap(world => world.questions.map(question => [question.id, question])));
+  const avatars = new Set(['bunny', 'cat', 'bird']);
+  const own = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
+  const now = () => new Date().toISOString();
+  const emptyRecord = () => ({ attempts: 0, hints: 0, solved: false });
+  const cloneRecords = records => Object.fromEntries(Object.entries(records).map(([id, record]) => [id, { ...record }]));
+  const cloneArrays = entries => Object.fromEntries(Object.entries(entries).map(([id, values]) => [id, values.slice()]));
+
+  function createState() {
+    const timestamp = now();
+    return { version: 1, started: false, avatar: 'bunny', soundEnabled: true, startedAt: timestamp, updatedAt: timestamp, records: {}, active: null };
+  }
+
+  function clone(state) {
+    return {
+      version: 1,
+      started: state.started,
+      avatar: state.avatar,
+      soundEnabled: state.soundEnabled,
+      startedAt: state.startedAt,
+      updatedAt: state.updatedAt,
+      records: cloneRecords(state.records),
+      active: state.active ? {
+        worldId: state.active.worldId,
+        index: state.active.index,
+        replay: state.active.replay,
+        records: cloneRecords(state.active.records),
+        choiceOrder: cloneArrays(state.active.choiceOrder),
+        wrongChoices: cloneArrays(state.active.wrongChoices)
+      } : null
+    };
+  }
+
+  function current(state) {
+    if (!state.active) return null;
+    const world = worldById.get(state.active.worldId);
+    return world ? world.questions[state.active.index] || null : null;
+  }
+
+  function recordsFor(state) {
+    return state.active && state.active.replay ? state.active.records : state.records;
+  }
+
+  function recordFor(state, questionId) {
+    return recordsFor(state)[questionId] || emptyRecord();
+  }
+
+  function shuffle(values) {
+    const result = values.slice();
+    for (let i = result.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
+  function start(state, avatar) {
+    const result = clone(state);
+    const selected = avatar === undefined ? result.avatar : avatar;
+    if (!avatars.has(selected)) return result;
+    const timestamp = now();
+    if (!result.started) result.startedAt = timestamp;
+    result.started = true;
+    result.avatar = selected;
+    result.updatedAt = timestamp;
+    return result;
+  }
+
+  function startWorld(state, worldId) {
+    const result = clone(state);
+    const world = worldById.get(worldId);
+    if (!result.started || !world) return result;
+    if (result.active && result.active.worldId === worldId) return result;
+    const firstUnsolved = world.questions.findIndex(question => !result.records[question.id]?.solved);
+    result.active = {
+      worldId,
+      index: firstUnsolved < 0 ? 0 : firstUnsolved,
+      replay: firstUnsolved < 0,
+      records: {},
+      choiceOrder: Object.fromEntries(world.questions.map(question => [question.id, shuffle(question.choices.map(choice => choice.id))])),
+      wrongChoices: {}
+    };
+    result.updatedAt = now();
+    return result;
+  }
+
+  function answer(state, choiceId) {
+    const result = clone(state);
+    const question = current(result);
+    if (!question || !question.choices.some(choice => choice.id === choiceId)) return result;
+    const record = recordFor(result, question.id);
+    const wrong = result.active.wrongChoices[question.id] || [];
+    if (record.solved || wrong.includes(choiceId)) return result;
+    const correct = choiceId === question.answer;
+    recordsFor(result)[question.id] = { ...record, attempts: Math.min(Number.MAX_SAFE_INTEGER, record.attempts + 1), solved: correct };
+    if (!correct) result.active.wrongChoices[question.id] = [...wrong, choiceId];
+    result.updatedAt = now();
+    return result;
+  }
+
+  function hint(state) {
+    const result = clone(state);
+    const question = current(result);
+    if (!question) return result;
+    const record = recordFor(result, question.id);
+    if (record.solved || record.hints === 1) return result;
+    recordsFor(result)[question.id] = { ...record, hints: 1 };
+    result.updatedAt = now();
+    return result;
+  }
+
+  function next(state) {
+    const result = clone(state);
+    const question = current(result);
+    if (!question || !recordFor(result, question.id).solved) return result;
+    const world = worldById.get(result.active.worldId);
+    if (result.active.index + 1 >= world.questions.length) result.active = null;
+    else result.active.index += 1;
+    result.updatedAt = now();
+    return result;
+  }
+
+  function summary(state) {
+    const summaries = worlds.map(world => {
+      const records = world.questions.map(question => state.records[question.id] || emptyRecord());
+      const solved = records.filter(record => record.solved).length;
+      return {
+        id: world.id,
+        total: world.questions.length,
+        solved,
+        attempts: records.reduce((total, record) => total + record.attempts, 0),
+        hints: records.reduce((total, record) => total + record.hints, 0),
+        completed: solved === world.questions.length
+      };
+    });
+    return {
+      total: summaries.reduce((total, world) => total + world.total, 0),
+      solved: summaries.reduce((total, world) => total + world.solved, 0),
+      attempts: summaries.reduce((total, world) => total + world.attempts, 0),
+      hints: summaries.reduce((total, world) => total + world.hints, 0),
+      completedWorlds: summaries.filter(world => world.completed).length,
+      worlds: summaries
+    };
+  }
+
+  function reset(state) {
+    const result = createState();
+    if (state && avatars.has(state.avatar)) result.avatar = state.avatar;
+    if (state && typeof state.soundEnabled === 'boolean') result.soundEnabled = state.soundEnabled;
+    return result;
+  }
+
+  function isObject(value) {
+    return value !== null && typeof value === 'object' && !Array.isArray(value);
+  }
+
+  function exactKeys(value, keys) {
+    return isObject(value) && Object.keys(value).length === keys.length && keys.every(key => own(value, key));
+  }
+
+  function isIso(value) {
+    if (typeof value !== 'string') return false;
+    const date = new Date(value);
+    return Number.isFinite(date.getTime()) && date.toISOString() === value;
+  }
+
+  function validRecords(records, allowedIds) {
+    return isObject(records) && Object.entries(records).every(([id, record]) => {
+      return allowedIds.has(id)
+        && exactKeys(record, ['attempts', 'hints', 'solved'])
+        && Number.isSafeInteger(record.attempts) && record.attempts >= 0
+        && (record.hints === 0 || record.hints === 1)
+        && typeof record.solved === 'boolean'
+        && (!record.solved || record.attempts >= 1);
+    });
+  }
+
+  function validActive(active, globalRecords) {
+    if (active === null) return true;
+    if (!exactKeys(active, ['worldId', 'index', 'replay', 'records', 'choiceOrder', 'wrongChoices'])) return false;
+    const world = worldById.get(active.worldId);
+    if (!world || !Number.isInteger(active.index) || active.index < 0 || active.index >= world.questions.length || typeof active.replay !== 'boolean') return false;
+    const ids = new Set(world.questions.map(question => question.id));
+    if (!validRecords(active.records, ids) || (!active.replay && Object.keys(active.records).length > 0)) return false;
+    if (active.replay && !world.questions.every(question => globalRecords[question.id]?.solved)) return false;
+    const records = active.replay ? active.records : globalRecords;
+    if (!world.questions.slice(0, active.index).every(question => records[question.id]?.solved)) return false;
+    if (!isObject(active.choiceOrder) || Object.keys(active.choiceOrder).length !== world.questions.length) return false;
+    for (const question of world.questions) {
+      const order = active.choiceOrder[question.id];
+      const choiceIds = new Set(question.choices.map(choice => choice.id));
+      if (!Array.isArray(order) || order.length !== choiceIds.size || new Set(order).size !== choiceIds.size || !order.every(id => choiceIds.has(id))) return false;
+    }
+    if (!isObject(active.wrongChoices)) return false;
+    return Object.entries(active.wrongChoices).every(([id, wrong]) => {
+      if (!ids.has(id) || !Array.isArray(wrong) || new Set(wrong).size !== wrong.length) return false;
+      const question = questionById.get(id);
+      const incorrect = new Set(question.choices.filter(choice => choice.id !== question.answer).map(choice => choice.id));
+      const record = records[id] || emptyRecord();
+      return wrong.every(choiceId => incorrect.has(choiceId)) && record.attempts >= wrong.length + (record.solved ? 1 : 0);
+    });
+  }
+
+  function restore(raw) {
+    try {
+      if (typeof raw !== 'string') return createState();
+      const state = JSON.parse(raw);
+      if (!exactKeys(state, ['version', 'started', 'avatar', 'soundEnabled', 'startedAt', 'updatedAt', 'records', 'active'])) return createState();
+      if (state.version !== 1 || typeof state.started !== 'boolean' || !avatars.has(state.avatar) || typeof state.soundEnabled !== 'boolean') return createState();
+      if (!isIso(state.startedAt) || !isIso(state.updatedAt)) return createState();
+      if (!validRecords(state.records, new Set(questionById.keys())) || !validActive(state.active, state.records)) return createState();
+      if (!state.started && (Object.keys(state.records).length > 0 || state.active !== null)) return createState();
+      return clone(state);
+    } catch (_) {
+      return createState();
+    }
+  }
+
+  root.GameCore = Object.freeze({ createState, restore, start, startWorld, answer, hint, next, summary, reset });
+})(typeof window !== 'undefined' ? window : globalThis);
+
+</script>
+<script>
+/* Interface do jogo. Sem cadastro, bibliotecas remotas ou chamadas de rede. */
+(function () {
+  'use strict';
+  const W = window.GAME_WORLDS;
+  const A = window.Art;
+  const C = window.GameCore;
+  const KEY = 'quintal-descobertas:v1';
+  const main = document.getElementById('main');
+  const header = document.getElementById('header');
+  const footer = document.getElementById('footer');
+  const dialog = document.getElementById('overlay');
+  const live = document.getElementById('live-status');
+  const buddies = { bunny: { name: 'Lupi', detail: 'O coelhinho' }, cat: { name: 'Mimi', detail: 'A gatinha' }, bird: { name: 'Pipo', detail: 'O passarinho' } };
+  let storageWorks = true;
+  let saved = null;
+  try { saved = window.localStorage.getItem(KEY); } catch (_) { storageWorks = false; }
+  let state = C.restore(saved);
+  let screen = 'home';
+  let selectedAvatar = state.avatar;
+  let celebratedWorld = null;
+  let celebrationReplay = false;
+  let feedbackKind = '';
+  let audioMessage = '';
+  let previousFocus = null;
+  let teacherReturn = 'home';
+  let requestedWorld = null;
+  let speechId = 0;
+  let speechTimer;
+  let activeUtterance = null;
+  let voices = [];
+
+  const esc = value => String(value == null ? '' : value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const icon = name => A.icon(name, 'icon');
+  const artIcon = name => A.icon(name, 'art-icon');
+  const worldById = id => W.find(w => w.id === id);
+  const worldStats = id => C.summary(state).worlds.find(w => w.id === id);
+  const recordFor = qid => ((state.active && state.active.replay ? state.active.records : state.records)[qid] || { attempts:0, hints:0, solved:false });
+  const current = () => {
+    if (!state.active) return null;
+    const world = worldById(state.active.worldId);
+    return world ? { world, q: world.questions[state.active.index] } : null;
+  };
+  const buddyArt = expression => state.avatar === 'bunny' ? A.mascot(expression || 'happy') : A.icon(state.avatar);
+
+  function showStorageNotice() {
+    const notice = document.getElementById('storage-notice');
+    notice.hidden = storageWorks;
+    notice.textContent = storageWorks ? '' : 'O navegador não conseguiu salvar esta aventura. Você pode continuar jogando, mas o progresso pode se perder ao fechar ou atualizar. Para guardar as observações, use o CSV em Para educadores.';
+  }
+  function save(nextState) {
+    state = nextState;
+    try { window.localStorage.setItem(KEY, JSON.stringify(state)); storageWorks = true; }
+    catch (_) { storageWorks = false; }
+    showStorageNotice();
+  }
+  function announce(text) { live.textContent = text; }
+  function headerHTML() {
+    return `<div class="shell header-inner">
+      <button class="brand" data-action="home" aria-label="Quintal das Descobertas — início"><span class="brand-art">${A.icon('flower')}</span><span class="brand-word">Quintal<small>DAS DESCOBERTAS</small></span></button>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-link home-nav ${screen === 'home' ? 'active' : ''}" data-action="home" ${screen === 'home' ? 'aria-current="page"' : ''}>Início</button>
+        <button class="nav-link ${screen === 'map' ? 'active' : ''}" data-action="map" ${screen === 'map' ? 'aria-current="page"' : ''}>Meu quintal</button>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <button class="nav-link teacher-nav ${screen === 'teacher' ? 'active' : ''}" data-action="teacher" aria-label="Para educadores">${icon('teacher')}<span class="nav-text">Para educadores</span></button>
+        <button class="sound-button" data-action="sound" aria-label="Narração automática" aria-pressed="${state.soundEnabled}" title="${state.soundEnabled ? 'Desativar' : 'Ativar'} narração automática">${icon(state.soundEnabled ? 'speaker' : 'mute')}</button>
+      </nav>
+    </div>`;
+  }
+  function footerHTML() {
+    return `<div class="shell footer-inner"><div class="footer-project"><strong>Aprender, brincar e descobrir juntos.</strong><br>Projeto de Curricularização da Extensão · Sistemas de Informação<br>Contexto do projeto: UNIFEBE e Secretaria Municipal de Educação de Brusque</div><button class="footer-about" data-action="about">Sobre este jogo</button></div>`;
+  }
+  function trailCard(world, index, compact) {
+    const stats = worldStats(world.id);
+    const action = state.started ? 'world' : 'choose-world';
+    const resuming = state.active && state.active.worldId === world.id;
+    const label = compact ? 'Vamos explorar' : resuming || stats.solved && !stats.completed ? 'Continuar' : stats.completed ? 'Brincar de novo' : 'Explorar';
+    return `<button class="trail-card" style="--trail-color:${world.color};--trail-pale:${world.color}15" data-action="${action}" data-world="${world.id}" aria-label="${esc(world.title)}: ${stats.solved} de ${stats.total} atividades concluídas. ${label}">
+      <span class="trail-top"><span class="trail-number">0${index + 1}</span><span>${stats.completed ? 'DESCOBERTA!' : '4 BRINCADEIRAS'}</span></span>
+      <span class="trail-art">${A.world(world.id)}</span>
+      <span class="trail-title">${esc(world.title)}</span><span class="trail-subtitle">${esc(world.subtitle)}</span>
+      <span class="trail-bottom"><span>${label}${!compact ? `<span class="trail-dots" aria-hidden="true">${world.questions.map(q => `<i class="${state.records[q.id] && state.records[q.id].solved ? 'filled' : ''}"></i>`).join('')}</span>` : ''}</span><span class="round-arrow">${icon(stats.completed && !resuming ? 'refresh' : 'arrow')}</span></span>
+    </button>`;
+  }
+  function homeHTML() {
+    const summary = C.summary(state);
+    return `<div class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy"><div class="eyebrow"><span class="dot"></span>Pequenos passos, grandes descobertas</div>
+          <h1 id="page-title">Um quintal inteiro<br>para <span class="accent">descobrir.</span></h1>
+          <p>Cores, números, bichinhos e muitas surpresas.<br>Vem aprender brincando com a gente!</p>
+          <div class="hero-actions"><button class="btn btn-primary" data-action="start">${state.started ? 'Continuar aventura' : 'Vamos brincar!'} ${icon('arrow')}</button><button class="btn btn-text" data-action="how"><span class="play-small" aria-hidden="true">▶</span>Como brincar</button></div>
+          <div class="hero-meta"><span>Para crianças de 5 a 6 anos</span><b aria-hidden="true">·</b><span>No seu ritmo</span><b aria-hidden="true">·</b><span>Com muita curiosidade</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><span class="little-star">${A.icon('star')}</span><span class="hero-bubble">Oi! Eu sou o Lupi.</span>${A.hero()}</div>
+      </section>
+      <div class="intro-strip"><span class="strip-art">${A.icon('leaf')}</span><p><strong>${state.started ? `Seu quintal já tem ${summary.solved} descobertas!` : 'Cada brincadeira, uma nova descoberta.'}</strong><br>${state.started ? 'Vamos continuar de onde a curiosidade nos levou?' : 'Um lugar para explorar, tentar e aprender com alegria.'}</p><span class="strip-note">${icon('heart')}Sem pressa. Do seu jeitinho.</span></div>
+      <section aria-labelledby="trails-title"><div class="section-title"><div><h2 id="trails-title">O que vamos descobrir hoje?</h2><p>Escolha uma trilha e deixe a curiosidade guiar.</p></div><span class="side-note">6 TRILHAS PARA EXPLORAR</span></div><div class="trail-grid">${W.map((w,i) => trailCard(w,i,!state.started)).join('')}</div></section>
+      <div class="home-bottom"><strong>Um convite para aprender juntos.</strong> Educadores e famílias podem acompanhar cada descoberta.</div>
+    </div>`;
+  }
+  function welcomeHTML() {
+    return `<div class="shell"><section class="welcome" aria-labelledby="page-title"><div class="welcome-mascot">${A.mascot('happy')}</div><div class="eyebrow" style="justify-content:center;margin-bottom:13px">A aventura vai começar</div><h1 id="page-title">Quem vai brincar com você?</h1><p>Escolha um amigo para explorar o quintal.<br>Vocês podem descobrir tudo com calma!</p>
+      <div class="friend-list" role="group" aria-label="Escolha seu companheiro">${Object.entries(buddies).map(([id,b])=>`<button class="friend" data-action="avatar" data-avatar="${id}" aria-pressed="${selectedAvatar === id}" aria-label="${b.name}, ${b.detail}">${selectedAvatar === id ? `<span class="friend-tick">${icon('check')}</span>` : ''}${A.icon(id)}<strong>${b.name}</strong><span>${b.detail}</span></button>`).join('')}</div>
+      <div class="tutorial-mini"><span><b>1</b>Olhe e escute</span><span><b>2</b>Toque na resposta</span><span><b>3</b>Faça descobertas!</span></div>
+      <button class="btn btn-primary" data-action="welcome-next">Vamos explorar! ${icon('arrow')}</button><p class="small-note">Você pode pedir uma dica e tentar de novo. O quintal espera por você.</p>
+    </section></div>`;
+  }
+  function mapHTML() {
+    const s = C.summary(state);
+    return `<div class="shell"><section class="page-top map-heading"><div><div class="eyebrow"><span class="dot"></span>Seu mapa de descobertas</div><h1 id="page-title">Por onde vamos brincar?</h1><p>Todos os caminhos estão abertos. Escolha o seu!</p></div><div class="garden-progress">${artIcon('flower')}<div><strong>${s.completedWorlds} de 6</strong><span>trilhas exploradas</span></div></div></section>
+      <div class="progress-band"><div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="${s.total}" aria-valuenow="${s.solved}" aria-label="Descobertas da aventura"><span style="width:${s.solved / s.total * 100}%"></span></div><span>${s.solved} de ${s.total} descobertas</span></div>
+      <div class="trail-grid">${W.map((w,i)=>trailCard(w,i,false)).join('')}</div>
+      ${s.completedWorlds === W.length ? `<div class="finish-link"><button class="btn btn-primary" data-action="finish">Ver minha conquista ${icon('star')}</button></div>` : ''}
+      <p class="map-note">${icon('leaf')}<span>Cada trilha tem quatro brincadeiras. Você pode parar e voltar depois.</span></p>
+    </div>`;
+  }
+  const sceneNames = { apple:'maçã',butterfly:'borboleta',flower:'flor',star:'estrela',tree:'árvore',fish:'peixe',bird:'passarinho',cat:'gato',bunny:'coelho',banana:'banana',sun:'sol',triangle:'triângulo','ball-blue':'bola azul','ball-red':'bola vermelha','ball-yellow':'bola amarela' };
+  function sceneHTML(scene) {
+    if (!scene) return '';
+    if (scene.type === 'focus') return `<div class="scene scene-focus" role="img" aria-label="${esc(sceneNames[scene.art] || scene.art)}${scene.label ? `: ${esc(scene.label)}` : ''}">${A.icon(scene.art)}${scene.label ? `<span class="scene-label ${scene.label === scene.label.toUpperCase() ? '' : 'sentence'}">${esc(scene.label)}</span>` : ''}</div>`;
+    if (scene.type === 'sequence') return `<div class="scene scene-sequence" role="img" aria-label="Sequência: ${esc(scene.items.map(a=>sceneNames[a] || a).join(', '))}. Qual é a próxima?">${scene.items.map((art,i)=>`${i ? '<span class="sequence-arrow" aria-hidden="true">→</span>' : ''}${A.icon(art)}`).join('')}<span class="sequence-arrow" aria-hidden="true">→</span><span class="sequence-missing" aria-hidden="true">?</span></div>`;
+    if (scene.type === 'position') return `<div class="scene scene-position" role="img" aria-label="Gatinho em relação a uma caixa">${A.position(scene.relation)}</div>`;
+    if (scene.type === 'items') {
+      const compare = scene.items.some(item => item.scale);
+      return `<div class="scene scene-items ${compare ? 'comparison' : ''}" role="group" aria-label="${compare ? 'Árvores com bases na mesma linha' : 'Elementos para contar'}">${scene.items.map((item,i)=>`<span class="scene-item" role="img" aria-label="${esc(sceneNames[item.art] || item.art)}${item.label ? ` ${esc(item.label)}` : ` ${i+1}`}${compare ? item.scale === 1.1 ? ', a mais alta' : item.scale === .6 ? ', baixa' : ', de altura intermediária' : ''}">${compare ? `<span class="tree-base" style="--item-size:${120 * (item.scale || 1)}px">${A.icon(item.art)}</span>` : A.icon(item.art)}${item.label ? `<span class="scene-label">${esc(item.label)}</span>` : ''}</span>`).join('')}</div>`;
+    }
+    return '';
+  }
+  function audioFallbackHTML() { return audioMessage ? `<div class="audio-notice" role="status">${esc(audioMessage)}</div>` : ''; }
+  function questionHTML() {
+    const x = current();
+    if (!x) { screen = 'map'; return mapHTML(); }
+    const {world,q} = x;
+    const r = recordFor(q.id);
+    const order = state.active.choiceOrder[q.id] || q.choices.map(c => c.id);
+    const wrong = state.active.wrongChoices[q.id] || [];
+    const choices = order.map(id=>q.choices.find(c=>c.id===id));
+    const helper = feedbackKind === 'hint' || r.hints || wrong.length > 0;
+    const feedback = r.solved ? q.success : helper ? q.hint : '';
+    return `<div class="question-wrap"><div class="question-nav"><button class="back-button" data-action="map">${icon('arrow')}Meu quintal</button><div class="world-tag">${icon(world.icon)}${esc(world.title)} ${state.active.replay ? '<span class="replay-note">Brincando de novo</span>' : ''}</div><div class="question-meter"><span class="step-dots" aria-hidden="true">${world.questions.map((a,i)=>`<i class="${i < state.active.index || (i === state.active.index && r.solved) ? 'done' : i === state.active.index ? 'current' : ''}"></i>`).join('')}</span><span>${state.active.index+1} de ${world.questions.length}</span></div></div>
+      <section class="play-panel" aria-labelledby="page-title"><div class="question-title-row"><div><h1 id="page-title">${esc(q.prompt)}</h1><p class="question-subtitle">Olhe as opções e toque na sua resposta.</p></div></div>
+        <button class="listen-button" data-action="listen">${icon('speaker')}<span data-listen-label>Ouvir a pergunta</span></button><div id="audio-notice-slot">${audioFallbackHTML()}</div>
+        ${sceneHTML(q.scene)}
+        <div class="choices" role="group" aria-label="Opções de resposta">${choices.map(choice=>`<button class="choice ${!choice.art ? 'numeric' : ''} ${choice.art && choice.art.startsWith('cat-') ? 'spatial' : ''} ${r.solved && choice.id === q.answer ? 'correct' : wrong.includes(choice.id) ? 'wrong' : ''}" data-action="answer" data-choice="${esc(choice.id)}" aria-label="${esc(choice.speak || choice.label)}" ${r.solved || wrong.includes(choice.id) ? 'disabled' : ''}>${r.solved && choice.id === q.answer ? `<span class="choice-mark" aria-hidden="true">${icon('check')}</span>` : ''}${choice.art ? A.icon(choice.art) : ''}<span class="choice-label">${esc(choice.label)}</span>${wrong.includes(choice.id) ? '<span class="choice-note">Vamos olhar de novo</span>' : ''}</button>`).join('')}</div>
+        ${!r.solved ? `<div class="hint-row"><button class="hint-button" data-action="hint">${icon('help')}${helper ? state.soundEnabled ? 'Ouvir a dica' : 'Ver a dica' : 'Quero uma dica'}</button></div>` : ''}
+        ${feedback ? `<div id="feedback" class="feedback ${r.solved ? 'good' : ''}" tabindex="-1"><span class="feedback-art">${buddyArt(r.solved ? 'celebrate' : 'happy')}</span><div><strong>${r.solved ? 'Que descoberta!' : feedbackKind === 'wrong' ? 'Vamos tentar mais uma vez?' : 'Uma ajudinha para você'}</strong>${esc(feedback)}</div></div>` : ''}
+        ${r.solved ? `<div class="question-actions"><button class="btn btn-primary" data-action="next">${state.active.index === world.questions.length - 1 ? 'Terminar esta trilha' : 'Próxima brincadeira'} ${icon('arrow')}</button></div>` : ''}
+      </section>
+      <details class="support-text" id="text-support" ${audioMessage ? 'open' : ''}><summary>Apoio do educador: ler a instrução completa</summary><p>${esc(q.spokenPrompt || q.prompt)}</p></details>
+      <p class="companion-line">${A.icon(state.avatar)}<span>${esc(buddies[state.avatar].name)} está com você. Pode pensar com calma!</span></p>
+    </div>`;
+  }
+  function badgesHTML() {
+    return `<div class="badge-row" role="list" aria-label="Trilhas exploradas">${W.map(w=>`<div class="earned-badge ${worldStats(w.id).completed ? '' : 'locked'}" role="listitem" aria-label="${esc(w.title)}: ${worldStats(w.id).completed ? 'explorada' : 'a explorar'}">${A.icon(w.icon)}${worldStats(w.id).completed ? `<span class="tiny-tick">${icon('check')}</span>` : ''}</div>`).join('')}</div>`;
+  }
+  function celebrateHTML(finish) {
+    const world = worldById(celebratedWorld) || W[0];
+    const s = C.summary(state);
+    const all = s.completedWorlds === W.length;
+    return `<div class="shell"><section class="celebrate" aria-labelledby="page-title"><div class="celebrate-art">${buddyArt('celebrate')}<span class="celebrate-star">${A.icon('star')}</span><span class="celebrate-flower">${A.icon('flower')}</span><div class="confetti" aria-hidden="true">${'<i></i>'.repeat(6)}</div></div>
+      <div class="eyebrow">${finish ? 'Uma aventura cheia de descobertas' : celebrationReplay ? 'Brincar de novo também é descobrir' : 'Mais uma trilha explorada'}</div><h1 id="page-title">${finish ? 'Olha quanta coisa<br>você descobriu!' : 'Você fez o quintal florescer!'}</h1>
+      <p>${finish ? 'Você brincou com cores, números, lugares, bichos, sons e letras. Cada tentativa fez parte dessa aventura!' : `Você explorou <strong>${esc(world.title)}</strong> e completou as quatro brincadeiras. ${all ? 'Todas as trilhas do quintal estão floridas!' : 'Que tal descobrir outro cantinho?'}`}</p>
+      ${badgesHTML()}
+      ${finish ? `<div class="celebrate-card"><h2>Uma conquista do seu jeito.</h2><div class="celebrate-stats"><div><strong>6</strong><span>trilhas exploradas</span></div><div><strong>24</strong><span>descobertas</span></div></div><p>Conte para alguém: de qual brincadeira você mais gostou?</p></div>` : ''}
+      <div class="celebrate-actions">${!finish && all ? `<button class="btn btn-primary" data-action="finish">Ver minha conquista ${icon('star')}</button>` : `<button class="btn btn-primary" data-action="map">${finish ? 'Brincar mais um pouco' : 'Escolher outra trilha'} ${icon('arrow')}</button>`}${finish ? '<button class="btn btn-secondary" data-action="home">Voltar ao início</button>' : `<button class="btn btn-secondary" data-action="world" data-world="${world.id}">Brincar de novo ${icon('refresh')}</button>`}</div>
+      ${!finish ? `<p class="small-note">${s.completedWorlds} de 6 trilhas exploradas. Seu próximo caminho está esperando.</p>` : '<p class="small-note">A aventura termina aqui. A curiosidade vai com você!</p>'}
+    </section></div>`;
+  }
+  function prettyDate(value) {
+    try { return new Date(value).toLocaleString('pt-BR', { dateStyle:'short',timeStyle:'short' }); }
+    catch (_) { return ''; }
+  }
+  function teacherHTML() {
+    const s = C.summary(state);
+    return `<div class="shell teacher-page"><div class="page-top teacher-heading"><div><span class="teacher-label">${icon('teacher')}Espaço do educador</span><h1 id="page-title">Acompanhar as descobertas</h1><p>Um registro simples para apoiar sua observação e a conversa com a criança.</p></div><button class="btn btn-secondary" data-action="teacher-back">Voltar à brincadeira ${icon('arrow')}</button></div>
+      <div class="teacher-notice"><strong>Uma aventura por vez, neste navegador.</strong> Este jogo não pede nome, idade exata ou cadastro. Os registros ficam no armazenamento local deste navegador e não são enviados a um servidor pelo jogo. Em um computador compartilhado, exporte o que precisa e inicie uma nova aventura antes de outra criança jogar.</div>
+      <div class="stats-grid"><div class="stat-card"><strong>${s.completedWorlds}<span>de 6 trilhas</span></strong><span>Exploradas</span></div><div class="stat-card"><strong>${s.solved}<span>de 24 brincadeiras</span></strong><span>Concluídas</span></div><div class="stat-card"><strong>${s.attempts}</strong><span>Respostas selecionadas</span></div><div class="stat-card"><strong>${s.hints}</strong><span>Atividades com dica solicitada</span></div></div>
+      ${!state.started ? '<div class="no-records">A aventura ainda não começou. Depois que a criança brincar, os registros aparecerão aqui.</div>' : ''}
+      <div class="section-title"><div><h2 style="font-size:25px">Observações por trilha</h2><p>Registros da primeira exploração. Repetições de trilhas concluídas não alteram estes números.</p></div></div>
+      ${W.map(w=>{
+        const st = worldStats(w.id);
+        return `<details class="report-world"><summary><span class="report-icon">${A.icon(w.icon)}</span><span><strong>${esc(w.title)}</strong><small>${esc(w.skill)}</small></span><span class="report-count">${st.solved} / ${st.total}</span><span class="report-expand" aria-hidden="true">+</span></summary><div class="report-table-wrap"><table class="report-table"><caption class="sr-only">Registros da trilha ${esc(w.title)}</caption><thead><tr><th scope="col">Atividade</th><th scope="col">Respostas</th><th scope="col">Dica solicitada</th><th scope="col">Situação</th></tr></thead><tbody>${w.questions.map(q=>{const r=state.records[q.id]||{attempts:0,hints:0,solved:false};return `<tr><td>${esc(q.prompt)}<small>${esc(q.skill)}</small></td><td>${r.attempts}</td><td>${r.hints ? 'Sim' : 'Não'}</td><td><span class="status-label ${r.solved ? '' : 'todo'}">${r.solved ? 'Concluída' : r.attempts || r.hints ? 'Em exploração' : 'A explorar'}</span></td></tr>`;}).join('')}</tbody></table></div></details>`;
+      }).join('')}
+      <div class="teacher-tools"><button class="btn btn-primary" data-action="export" ${!state.started ? 'disabled' : ''}>${icon('download')}Exportar observações (CSV)</button><p class="session-note">${state.started ? `Início desta aventura: ${esc(prettyDate(state.startedAt))}<br>Último registro: ${esc(prettyDate(state.updatedAt))}` : 'Nenhuma aventura iniciada.'}</p></div>
+      <section class="teacher-guide"><h2>Como usar estes registros</h2><p>Uma atividade concluída mostra que a resposta esperada foi selecionada, inclusive após dicas e novas tentativas. Esses números <strong>não são notas nem diagnóstico de aprendizagem</strong>. Observe as estratégias, a linguagem, a participação e a necessidade de mediação da criança. Uma dica pode aparecer após uma tentativa; a coluna de dicas conta somente pedidos no botão.</p>
+        <ul><li><strong>Leitura e escuta:</strong> as instruções podem ser narradas. A voz depende do dispositivo e pode precisar de internet. Se não houver voz em português ou ela falhar, abra o apoio textual e leia para a criança.</li><li><strong>Atividades orais:</strong> repita as palavras com naturalidade, nomeie as figuras e acompanhe as palmas. O jogo não grava a fala e não reconhece palmas.</li><li><strong>Participação:</strong> adapte a mediação para crianças com dificuldades de visão, audição, leitura, percepção de cores ou uso do mouse. O teclado também pode selecionar os controles.</li><li><strong>Validação:</strong> o banco de atividades é uma proposta inicial para revisão docente e teste com o público. Não há validação institucional ou pedagógica concluída nesta versão.</li></ul>
+        <div class="teacher-links"><a href="data:text/markdown;charset=utf-8;base64,IyBRdWludGFsIGRhcyBEZXNjb2JlcnRhcwoKIyMgR3VpYSBwYXJhIG1lZGlhw6fDo28gZSB2YWxpZGHDp8OjbyBwZWRhZ8OzZ2ljYQoKRXN0ZSBtYXRlcmlhbCBhcHJlc2VudGEgdW1hIHByb3Bvc3RhIGF1dG9yYWwgZGUgam9nbyBlZHVjYWNpb25hbCBwYXJhIG8gcMO6YmxpY28gZGUgUHLDqS1lc2NvbGEgSUksIGRlIDUgYSA2IGFub3MsIGNvbmZvcm1lIG8gZXNjb3BvIGluZm9ybWFkbyBwYXJhIG8gUHJvamV0byBkZSBDdXJyaWN1bGFyaXphw6fDo28gZGEgRXh0ZW5zw6NvIGRvIGN1cnNvIGRlIFNpc3RlbWFzIGRlIEluZm9ybWHDp8OjbyBkYSBVTklGRUJFIGVtIHBhcmNlcmlhIGNvbSBhIFNlY3JldGFyaWEgTXVuaWNpcGFsIGRlIEVkdWNhw6fDo28gZGUgQnJ1c3F1ZS4gTyBjb250ZcO6ZG8gcHJlY2lzYSBwYXNzYXIgcGVsYSBhbsOhbGlzZSBlIHBlbGEgdmFsaWRhw6fDo28gZGFzIHBlc3NvYXMgcmVzcG9uc8OhdmVpcyBwZWxhIHByw6F0aWNhIHBlZGFnw7NnaWNhLiBOw6NvIHJlcHJlc2VudGEgYXByb3Zhw6fDo28gZGFzIGluc3RpdHVpw6fDtWVzIG5lbSBjZXJ0aWZpY2HDp8OjbyBjdXJyaWN1bGFyLgoKTyBqb2dvIHJlw7puZSAqKjI0IGF0aXZpZGFkZXMgY3VydGFzIGVtIHNlaXMgcGVyY3Vyc29zKiosIGNvbSB0csOqcyBhbHRlcm5hdGl2YXMgcG9yIGF0aXZpZGFkZS4gQSBwcm9wb3N0YSBvZmVyZWNlIGluw61jaW8sIGV4cGxvcmHDp8OjbyBkb3MgcGVyY3Vyc29zIGUgZW5jZXJyYW1lbnRvLCBjb20gZGljYXMgcGFyYSBub3ZhcyB0ZW50YXRpdmFzLiBOw6NvIGjDoSBleGlnw6puY2lhIGRlIGxlaXR1cmEgYXV0w7Rub21hLCBsaW1pdGUgZGUgdGVtcG8gb3UgcGVyZGEgZGUgcG9udG9zIHBvciB0ZW50YXRpdmEuIEEgcGVzc29hIGFkdWx0YSBwb2RlIGxlciBvcyBlbnVuY2lhZG9zIGUgYXBvaWFyIG8gdXNvIGRvIG1vdXNlLCBkbyB0ZWNsYWRvIG91IGRvIHRvcXVlLgoKQXMgYXRpdmlkYWRlcyBjb252aWRhbSBhIG9ic2VydmFyLCBjb250YXIsIGNvbXBhcmFyLCBlc2N1dGFyIGUgZXhwZXJpbWVudGFyLiBFbGFzIGNvbnN0aXR1ZW0gdW1hIGV4cGVyacOqbmNpYSBwb250dWFsOiBxdWF0cm8gcXVlc3TDtWVzIHBvciBwZXJjdXJzbyBuw6NvIGVzZ290YW0gb3MgY29udGXDumRvcyBuZW0gcGVybWl0ZW0gYXZhbGlhciBzb3ppbmhhcyBvIGRlc2Vudm9sdmltZW50byBkYSBjcmlhbsOnYS4gKipBY2VydG9zLCB0ZW50YXRpdmFzLCBwZWRpZG9zIGRlIGFqdWRhIGUgcGVyY3Vyc29zIGNvbmNsdcOtZG9zIG7Do28gc8OjbyBkaWFnbsOzc3RpY28gZGUgYXByZW5kaXphZ2VtLioqIFVtYSBlc2NvbGhhIHBvZGUgcmVmbGV0aXIgdm9jYWJ1bMOhcmlvLCBmYW1pbGlhcmlkYWRlIGNvbSBvIGRpc3Bvc2l0aXZvLCBjb21wcmVlbnPDo28gZGEgaWx1c3RyYcOnw6NvLCBwcmVmZXLDqm5jaWEsIGNhbnNhw6dvIG91IGN1cmlvc2lkYWRlLgoKIyMgUGVyY3Vyc29zIGUgaW50ZW7Dp8O1ZXMKCnwgUGVyY3Vyc28gfCBPIHF1ZSBhIGNyaWFuw6dhIMOpIGNvbnZpZGFkYSBhIGZhemVyIHwgTWVkaWHDp8OjbyBwb3Nzw612ZWwgfAp8IC0tLSB8IC0tLSB8IC0tLSB8CnwgQ29yZXMgZSBmb3JtYXMgfCBJZGVudGlmaWNhciB2ZXJtZWxobyBlIGFtYXJlbG87IGNvbnRpbnVhciB1bWEgYWx0ZXJuw6JuY2lhOyByZWNvbmhlY2VyIHVtYSBmb3JtYSBpZ3VhbC4gfCBOb21lYXIgY29yZXMgY29tIG9iamV0b3MgcHLDs3hpbW9zIGUgY29tcGFyYXIgbGFkb3MgZSBwb250YXMgc2VtIGV4aWdpciBhIG1lbW9yaXphw6fDo28gZGUgdGVybW9zLiB8CnwgVmFtb3MgY29udGFyIHwgQ29udGFyIGNvbmp1bnRvcyBkZSAxLCAzLCA1IGUgNiBlbGVtZW50b3MgZSByZWxhY2lvbmFyIGEgcXVhbnRpZGFkZSBhIHVtIG51bWVyYWwuIHwgQ29udGFyIHNvbWVudGUgb3MgZWxlbWVudG9zIGRlbnRybyBkbyBxdWFkcm8gZGEgYXRpdmlkYWRlLCBhcG9udGFyIGNhZGEgdW0gdW1hIHZleiBlIHJldG9tYXIgbyDDumx0aW1vIG7Dum1lcm8gZmFsYWRvIGNvbW8gcXVhbnRpZGFkZSB0b3RhbC4gfAp8IEFxdWkgZSBhbGkgfCBDb21wYXJhciB0csOqcyBhbHR1cmFzIGUgcmVjb25oZWNlciBkZW50cm8sIGVtYmFpeG8gZSBhY2ltYS4gfCBGYXplciBleHBlcmnDqm5jaWFzIGNvbSBvYmpldG9zIHJlYWlzIGUgdXNhciBvIG1lc21vIHBvbnRvIGRlIHJlZmVyw6puY2lhIGRhIGltYWdlbS4gfAp8IEJpY2hvcyBlIGx1Z2FyZXMgfCBSZWxhY2lvbmFyIHVtIHBlaXhlIGNvbSBhIMOhZ3VhOyBpZGVudGlmaWNhciB1bSBuaW5obzsgb2JzZXJ2YXIgcGVuYXMgZSBiaWNvOyByZWNvbmhlY2VyIHVtYSBmbG9yZXN0YS4gfCBDb252ZXJzYXIgc29icmUgb3MgYW5pbWFpcyBlIG9zIGFtYmllbnRlcyBzZW0gdHJhdGFyIGNhZGEgZXNww6ljaWUgY29tbyBtb3JhZG9yYSBleGNsdXNpdmEgZGUgdW0gbHVnYXIuIHwKfCBTb25zIGUgcGFsbWluaGFzIHwgUmVjb25oZWNlciB1bWEgcmltYSwgYWNvbXBhbmhhciBzw61sYWJhcyBjb20gcGFsbWFzIGUgY29tcHJlZW5kZXIgdW1hIG5hcnJhdGl2YSBicmV2ZS4gfCBGYWxhciBuYXR1cmFsbWVudGUsIHJlcGV0aXIgcXVhbmRvIG5lY2Vzc8OhcmlvIGUgcGVybWl0aXIgZ2VzdG9zIGRpZmVyZW50ZXMgZGUgYmF0ZXIgcGFsbWFzLiB8CnwgTGV0cmFzIGN1cmlvc2FzIHwgTG9jYWxpemFyIGxldHJhcyBpbmljaWFpcyBlbSBwYWxhdnJhcyB2aXPDrXZlaXMgZSBjb21wYXJhciBzb25zIG5vIGluw61jaW8gZGUgbm9tZXMgZGUgZmlndXJhcy4gfCBOb21lYXIgYXMgaW1hZ2VucyBlIHZhbG9yaXphciBhIGV4cGxvcmHDp8OjbyBkYSBlc2NyaXRhIHNlbSBjb2JyYXIgYWxmYWJldGl6YcOnw6NvIGNvbnZlbmNpb25hbC4gfAoKT3MgbnVtZXJhaXMgZGUgMSBhIDYgYXBhcmVjZW0gbm8gcGVyY3Vyc28gZGUgY29udGFnZW0sIG1hcyBvcyBjb25qdW50b3MgYSBjb250YXIgc8OjbyBlc3BlY2lmaWNhbWVudGUgMSwgMywgNSBlIDYuIFBvcnRhbnRvLCBlc3RhIHZlcnPDo28gbsOjbyB2ZXJpZmljYSBjYWRhIHF1YW50aWRhZGUgZGUgMSBhIDYgZW0gdW1hIHBlcmd1bnRhIHByw7NwcmlhLiBPcyBuw7ptZXJvcyAxIGEgMyB0YW1iw6ltIGFwYXJlY2VtIGVtIGF0aXZpZGFkZXMgZGUgY29tcGFyYcOnw6NvIGUgZGUgc8OtbGFiYXMuCgpOYXMgcXVhdHJvIHF1ZXN0w7VlcyBkZSBjb250YWdlbSwgbyBlbnVuY2lhZG8gcGVyZ3VudGEgcXVhbnRvcyBlbGVtZW50b3MgaMOhICoqbm8gcXVhZHJvKiouIE1vc3RyZSBhIMOhcmVhIGRhIGF0aXZpZGFkZSBhbnRlcyBkZSBjb21lw6dhciBlIGNvbnRlIHNvbWVudGUgb3MgZWxlbWVudG9zIGRlbnRybyBkZWxhLiBBIGZsb3IgZGEgbWFyY2EsIGEgZXN0cmVsYSBxdWUgaWRlbnRpZmljYSBhIHRyaWxoYSBlIG91dHJvcyBkZXNlbmhvcyBmb3JhIGRvIHF1YWRybyBuw6NvIGZhemVtIHBhcnRlIGRvIGNvbmp1bnRvIHBlZGlkby4KCiMjIENvbW8gY29uZHV6aXIgdW1hIHNlc3PDo28KCjEuICoqQXByZXNlbnRlIGEgcHJvcG9zdGEuKiogQ29udGUgcXVlIGEgY3JpYW7Dp2EgdmFpIGV4cGxvcmFyIHVtIHF1aW50YWwgZSBkZXNjb2JyaXIgY29yZXMsIG7Dum1lcm9zLCBsdWdhcmVzIGUgcGFsYXZyYXMuIE1vc3RyZSBjb21vIG91dmlyIHVtYSBwZXJndW50YSBlIGVzY29saGVyIHVtYSBmaWd1cmEuIE7Do28gw6kgbmVjZXNzw6FyaW8gZXhwbGljYXIgdG9kb3Mgb3MgY29udHJvbGVzIGRlIHVtYSB2ZXouCjIuICoqRXNjb2xoYSB1bSBwZXJjdXJzby4qKiBDb21lY2UgcGVsbyBpbnRlcmVzc2UgZGEgY3JpYW7Dp2Egb3UgcG9yIHVtIGNvbnRlw7pkbyB0cmFiYWxoYWRvIG5hIHR1cm1hLiBVbSBwZXJjdXJzbyBkZSBxdWF0cm8gYXRpdmlkYWRlcyBwb2RlIHNlciBzdWZpY2llbnRlIHBhcmEgYSBwcmltZWlyYSBleHBlcmnDqm5jaWEuIE8gam9nbyBjb21wbGV0byBwb2RlIHNlciBleHBsb3JhZG8gZW0gbWFpcyBkZSB1bSBlbmNvbnRyby4KMy4gKipEw6ogdGVtcG8gcGFyYSBvYnNlcnZhci4qKiBMZWlhIG91IHJlcHJvZHV6YSBhIGluc3RydcOnw6NvLCBlc3BlcmUgYSBpbmljaWF0aXZhIGRhIGNyaWFuw6dhIGUgcGVybWl0YSBxdWUgZWxhIGRpZ2EsIGFwb250ZSBvdSBtb3N0cmUgbyBxdWUgcGVuc2EgYW50ZXMgZGUgdG9jYXIgbmEgYWx0ZXJuYXRpdmEuCjQuICoqVXNlIGEgZGljYSBjb21vIGNvbnZpdGUuKiogRW0gdW1hIGVzY29saGEgZGlmZXJlbnRlIGRhIGVzcGVyYWRhLCByZXRvbWUgbyBvYmpldG8gb3UgYSByZWxhw6fDo28gZGEgcGVyZ3VudGEuIEV2aXRlIHRyYW5zZm9ybWFyIGEgc2l0dWHDp8OjbyBlbSBzZXF1w6puY2lhIGRlIHBhbHBpdGVzIG91IHJlc3BvbmRlciBwZWxhIGNyaWFuw6dhIGltZWRpYXRhbWVudGUuCjUuICoqQ29udmVyc2UgZHVyYW50ZSBlIGRlcG9pcy4qKiBQZXJndW50ZSwgcG9yIGV4ZW1wbG86IOKAnENvbW8gdm9jw6ogY29udG91P+KAnSwg4oCcTyBxdWUgdm9jw6ogb2JzZXJ2b3U/4oCdIG91IOKAnFZhbW9zIGV4cGVyaW1lbnRhciBjb20gZXN0YSBjYWl4YT/igJ0uIEEgZXhwbGljYcOnw6NvIHBvZGUgc2VyIHVtIGdlc3RvLCB1bWEgZmFsYSBicmV2ZSBvdSB1bWEgZGVtb25zdHJhw6fDo28uCjYuICoqRW5jZXJyZSBxdWFuZG8gZml6ZXIgc2VudGlkby4qKiBDZWxlYnJlIGEgcGFydGljaXBhw6fDo28gZSBhcyBkZXNjb2JlcnRhcy4gUGF1c2FzLCBhanVkYSBlIHJldG9tYWRhcyBmYXplbSBwYXJ0ZSBkYSBwcm9wb3N0YS4gTsOjbyBjb21wYXJlIHZlbG9jaWRhZGUgb3UgcXVhbnRpZGFkZSBkZSB0ZW50YXRpdmFzIGVudHJlIGNyaWFuw6dhcy4KCkVtIGR1cGxhcywgYXMgY3JpYW7Dp2FzIHBvZGVtIGFsdGVybmFyIHF1ZW0gb2JzZXJ2YSwgcXVlbSBjb250YSBlIHF1ZW0gZXNjb2xoZS4gTyBhZHVsdG8gcG9kZSByZWdpc3RyYXIgY29tbyBhIGludGVyYcOnw6NvIGFjb250ZWNldSBlIHF1YWlzIGludGVydmVuw6fDtWVzIGZvcmFtIMO6dGVpcy4gRXNzZXMgcmVnaXN0cm9zIGRlc2NyaXRpdm9zIHByZWNpc2FtIHNlciBpbnRlcnByZXRhZG9zIG5vIGNvbnRleHRvIGRlIG91dHJhcyBleHBlcmnDqm5jaWFzLCBjb25mb3JtZSBhcyBwcsOhdGljYXMgZGEgZXF1aXBlIHBlZGFnw7NnaWNhLgoKIyMgTmFycmHDp8OjbyBlIGNvbXByZWVuc8OjbyBhdWRpdGl2YQoKT3MgZW51bmNpYWRvcyBwb3NzdWVtIHRleHRvIGN1cnRvIG5hIHRlbGEgZSB1bSB0ZXh0byBkZSBuYXJyYcOnw6NvIG1haXMgZXhwbGljYXRpdm8uIEEgcmVwcm9kdcOnw6NvIGRhIHZveiBkZXBlbmRlIGRvcyByZWN1cnNvcyBkZSBmYWxhIGRpc3BvbsOtdmVpcyBubyBkaXNwb3NpdGl2byBlIG5vIG5hdmVnYWRvci4gUXVhbmRvIGEgbmFycmHDp8OjbyBuw6NvIHB1ZGVyIHNlciB1c2FkYSwgbyBhZHVsdG8gZGV2ZSBsZXIgYSBpbnN0cnXDp8OjbyBjb3JyZXNwb25kZW50ZS4gQXMgYXRpdmlkYWRlcyBjb20gc29ucyBlIHBhbGF2cmFzIHByZWNpc2FtIGRlIHVtIG1vZGVsbyBvcmFsIGNvbXByZWVuc8OtdmVsOyBuw6NvIGRldmVtIHNlIHRvcm5hciB1bWEgdGFyZWZhIGRlIGxlaXR1cmEgYXV0w7Rub21hLgoKTyBqb2dvIGRpc3BvbmliaWxpemEgYXBvaW8gdGV4dHVhbCBhbyBlZHVjYWRvci4gTmEgYXRpdmlkYWRlICoqUXVlbSBwZWdvdSBhIGJvbGE/KiosIG8gZW51bmNpYWRvIGN1cnRvIHByZWNpc2Egc2VyIGFjb21wYW5oYWRvIGRlc3RhIGhpc3TDs3JpYSBjb21wbGV0YToKCj4gRXNjdXRlIGEgaGlzdMOzcmlhOiBvIGdhdG8gcGVnb3UgdW1hIGJvbGEuIE8gcGF0byBmb2kgbmFkYXIuIFF1ZW0gcGVnb3UgYSBib2xhPwoKQSByZXNwb3N0YSBlc3BlcmFkYSDDqSBvIGdhdG8uIExlaWEgYXMgZHVhcyBhw6fDtWVzLCBtYW50ZW5kbyB1bSByaXRtbyBuYXR1cmFsLCBlIHJlcGl0YSBhIGhpc3TDs3JpYSBzZW1wcmUgcXVlIGEgY3JpYW7Dp2EgcGVkaXIuIFByaW1laXJvLCBwZXJtaXRhIHVtYSByZXNwb3N0YSBvcmFsIG91IHBvciBnZXN0bzsgZGVwb2lzLCBhanVkZSBhIGxvY2FsaXphciBhIGZpZ3VyYSBjb3JyZXNwb25kZW50ZSBzZSBuZWNlc3PDoXJpby4gQSBhdGl2aWRhZGUgcHJvcMO1ZSByZWNvbmhlY2VyIHVtYSBpbmZvcm1hw6fDo28gZXhwbMOtY2l0YSBlbSB1bWEgbmFycmF0aXZhIGN1cnRhLiBFbGEgbsOjbyBwZXJtaXRlIGNvbmNsdWlyLCBpc29sYWRhbWVudGUsIGNvbW8gZXN0w6EgYSBjb21wcmVlbnPDo28gYXVkaXRpdmEgZGEgY3JpYW7Dp2EuCgpOYSBhdGl2aWRhZGUgZGUgcmltYSwgb3Mgbm9tZXMgdXNhZG9zIHPDo28gKipHQVRPLCBQQVRPLCBQRUlYRSBlIE3Dg08qKi4gTm9tZWllIGFzIGZpZ3VyYXMgY29tIGVzc2FzIHBhbGF2cmFzIGFudGVzIGRlIGNvbXBhcmFyIG9zIHNvbnMsIHBvaXMgdW1hIGltYWdlbSBwb2RlIHJlY2ViZXIgbm9tZXMgZGlmZXJlbnRlcy4gRW0gYXRpdmlkYWRlcyBjb20gcGFsYXZyYXMgaW5pY2lhaXMsIG9zIG5vbWVzIHByZXZpc3RvcyBzw6NvICoqQk9MQSwgU09MLCBCQU5BTkEsIFBFSVhFLCBDQVNBLCBCQVJDTyBlIFNBUEFUTyoqLgoKTmFzIGF0aXZpZGFkZXMgZGUgc8OtbGFiYXMsIGFzIGRpdmlzw7VlcyBwcm9wb3N0YXMgc8OjbyAqKkJPLUxBOiAyKiogZSAqKkJBLU5BLU5BOiAzKiouIEFjb21wYW5oZSBjYWRhIHPDrWxhYmEgZmFsYWRhIGNvbSB1bWEgcGFsbWEsIGJhdGlkYSBzdWF2ZSBuYSBtZXNhLCBtYXJjYSB2aXN1YWwgb3Ugb3V0cm8gZ2VzdG8gY29uZm9ydMOhdmVsLiBDb250YXIgbGV0cmFzIG7Do28gcmVzcG9uZGUgw6AgdGFyZWZhLiBTZSBhIHZveiBzaW50ZXRpemFkYSBwcm9udW5jaWFyIGFzIHBhbGF2cmFzIG91IGEgZGl2aXPDo28gZGUgbW9kbyBwb3VjbyBjbGFybywgdXNlIGEgdm96IGRvIGFkdWx0by4KCiMjIEdhYmFyaXRvIGRlIHJlZmVyw6puY2lhIGUgb2JzZXJ2YcOnw7VlcwoKTyBnYWJhcml0byBzZXJ2ZSDDoCBwcmVwYXJhw6fDo28gZGEgcGVzc29hIG1lZGlhZG9yYSBlIMOgIGNvbmZlcsOqbmNpYSBkbyBjb250ZcO6ZG8uIEEgcG9zacOnw6NvIGRhcyBhbHRlcm5hdGl2YXMgbmEgdGVsYSBuw6NvIGZheiBwYXJ0ZSBkYSByZXNwb3N0YS4gQ2FkYSBwZXJndW50YSB1c2EgdW0gaWRlbnRpZmljYWRvciBkZSByZXNwb3N0YSBwcsOzcHJpby4KCnwgSUQgZGEgYXRpdmlkYWRlIHwgUmVzcG9zdGEgZXNwZXJhZGEgfCBPIHF1ZSBvYnNlcnZhciBuYSBtZWRpYcOnw6NvIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IGNvcmVzLXZlcm1lbGhvIHwgQm9sYSB2ZXJtZWxoYSB8IFNlIGEgY3JpYW7Dp2EgaWRlbnRpZmljYSBhIGNvciBlIGNvbXByZWVuZGUgbyBub21lIHVzYWRvLiB8CnwgY29yZXMtYW1hcmVsbyB8IEJvbGEgYW1hcmVsYSB8IFNlIG8gYW1hcmVsbyDDqSBkaXN0aW5ndcOtdmVsIG5hIHRlbGEgdXRpbGl6YWRhLiB8CnwgY29yZXMtc2VxdWVuY2lhIHwgQm9sYSBhenVsIHwgQSBmaWxhIMOpIHZlcm1lbGhhLCBhenVsLCB2ZXJtZWxoYTsgYSBwcsOzeGltYSDDqSBhenVsLiB8CnwgY29yZXMtZm9ybWEgfCBUcmnDom5ndWxvIHwgQSB0YXJlZmEgw6kgZW5jb250cmFyIGEgZm9ybWEgaWd1YWwsIHNlbSBkZXBlbmRlciBkZSBzYWJlciBvIG5vbWUuIHwKfCBjb250YXItdW0gfCAxIHwgTyBxdWFkcm8gZGEgYXRpdmlkYWRlIHRlbSBleGF0YW1lbnRlIHVtYSBtYcOnw6MuIHwKfCBjb250YXItdHJlcyB8IDMgfCBPIHF1YWRybyBkYSBhdGl2aWRhZGUgdGVtIGV4YXRhbWVudGUgdHLDqnMgYm9yYm9sZXRhcy4gfAp8IGNvbnRhci1jaW5jbyB8IDUgfCBPIHF1YWRybyBkYSBhdGl2aWRhZGUgdGVtIGV4YXRhbWVudGUgY2luY28gZmxvcmVzLiB8CnwgY29udGFyLXNlaXMgfCA2IHwgTyBxdWFkcm8gZGEgYXRpdmlkYWRlIHRlbSBleGF0YW1lbnRlIHNlaXMgZXN0cmVsYXMuIHwKfCBlc3BhY28tYWx0dXJhIHwgMiB8IEEgw6Fydm9yZSAyIMOpIGEgbWFpcyBhbHRhOyBhcyBiYXNlcyBkZXZlbSBlc3RhciBhbGluaGFkYXMuIHwKfCBlc3BhY28tZGVudHJvIHwgR2F0aW5obyBkZW50cm8gZGEgY2FpeGEgfCBDb21wYXJhciBhIHBvc2nDp8OjbyBkbyBnYXRvIGVtIHJlbGHDp8OjbyDDoCBjYWl4YS4gfAp8IGVzcGFjby1lbWJhaXhvIHwgR2F0aW5obyBlbWJhaXhvIGRhIGNhaXhhIHwgQSBjYWl4YSDDqSBhIHJlZmVyw6puY2lhLCBlIG8gZ2F0byBlc3TDoSBhYmFpeG8gZGVsYS4gfAp8IGVzcGFjby1hY2ltYSB8IEdhdGluaG8gYWNpbWEgZGEgY2FpeGEgfCDigJxBY2ltYeKAnSBpbmRpY2EgcG9zacOnw6NvIHN1cGVyaW9yOyBuw6NvIMOpIGV4aWdpZG8gY29udGF0byBjb20gYSBjYWl4YS4gfAp8IGFuaW1haXMtcGVpeGUgfCBMYWdvYSB8IEVudHJlIGFzIGFsdGVybmF0aXZhcywgYSBsYWdvYSBvZmVyZWNlIMOhZ3VhIHBhcmEgbmFkYXIuIHwKfCBhbmltYWlzLW5pbmhvIHwgTmluaG8gfCBBIGhpc3TDs3JpYSBpbmZvcm1hIG9uZGUgZXNzZSBwYXNzYXJpbmhvIGNvbG9jb3Ugc2V1cyBvdm9zLiB8CnwgYW5pbWFpcy1wZW5hcyB8IFBhdG8gfCBFbnRyZSBnYXRvLCBwZWl4ZSBlIHBhdG8sIG8gcGF0byB0ZW0gcGVuYXMgZSBiaWNvLiB8CnwgYW5pbWFpcy1mbG9yZXN0YSB8IEZsb3Jlc3RhIHwgQSBuYXJyYXRpdmEgc2l0dWEgZXNzZSBjb2VsaG8gbmEgZmxvcmVzdGE7IG7Do28gYWZpcm1hIHF1ZSB0b2RvcyBvcyBjb2VsaG9zIHZpdmFtIG5lbGEuIHwKfCBzb25zLXJpbWEgfCBQYXRvIHwgQ29tcGFyYXIgb3Mgc29ucyBmaW5haXMgZGUgR0FUTyBlIFBBVE8uIHwKfCBzb25zLWJvbGEgfCAyIHwgQk8tTEEsIHVtYSBtYXJjYSBwYXJhIGNhZGEgc8OtbGFiYS4gfAp8IHNvbnMtYmFuYW5hIHwgMyB8IEJBLU5BLU5BLCB1bWEgbWFyY2EgcGFyYSBjYWRhIHPDrWxhYmEuIHwKfCBzb25zLWhpc3RvcmlhIHwgR2F0byB8IEEgcmVzcG9zdGEgZGVwZW5kZSBkYSBoaXN0w7NyaWEgZmFsYWRhIG91IGxpZGEgcGVsbyBhZHVsdG8uIHwKfCBsZXRyYXMtYm9sYSB8IEIgfCBMb2NhbGl6YXIgYSBsZXRyYSBpbmljaWFsIG5hIHBhbGF2cmEgQk9MQSBhcHJlc2VudGFkYSBuYSB0ZWxhLiB8CnwgbGV0cmFzLXNvbCB8IFMgfCBMb2NhbGl6YXIgYSBsZXRyYSBpbmljaWFsIG5hIHBhbGF2cmEgU09MIGFwcmVzZW50YWRhIG5hIHRlbGEuIHwKfCBsZXRyYXMtYmFuYW5hIHwgQmFuYW5hIHwgUmVsYWNpb25hciBCIGNvbSBvIGluw61jaW8gZGUgQkFOQU5BLCBhcG9pYW5kbyBhIG5vbWVhw6fDo28gZGFzIGltYWdlbnMuIHwKfCBsZXRyYXMtYmFyY28gfCBCYXJjbyB8IEJPTEEgZSBCQVJDTyBjb21wYXJ0aWxoYW0gbyBzb20gY29uc29uYW50YWwgaW5pY2lhbCwgZSBuw6NvIGEgc8OtbGFiYSBpbmljaWFsIGludGVpcmEuIHwKCiMjIERlY2lzw7VlcyBkZSBjb250ZcO6ZG8gcXVlIHByZWNpc2FtIHNlciBwcmVzZXJ2YWRhcwoKLSAqKlJlc3Bvc3RhcyBwZWxhIGZpZ3VyYSBvdSBwZWxvIHPDrW1ib2xvLioqIEFzIG9ww6fDtWVzIHVzYW0gaW1hZ2VucywgbnVtZXJhaXMgb3UgbGV0cmFzIGlzb2xhZGFzLCBjb20gcGFsYXZyYXMgZGUgYXBvaW8uIEEgbGVpdHVyYSBkZSBwYWxhdnJhcyBuw6NvIMOpIG8gcHJpbmNpcGFsIG1laW8gZGUgZXNjb2xoZXIgdW1hIHJlc3Bvc3RhLgotICoqQ29udGFnZW0gcmVzdHJpdGEgYW8gcXVhZHJvLioqIE9zIHF1YXRybyBlbnVuY2lhZG9zIGUgc3VhcyBuYXJyYcOnw7VlcyBkZWxpbWl0YW0gbyBjb25qdW50byBkZW50cm8gZG8gcXVhZHJvIGRhIGF0aXZpZGFkZS4gUHJlc2VydmUgZXNzYSBpbmRpY2HDp8OjbyBlIGEgc2VwYXJhw6fDo28gdmlzdWFsIGRhIMOhcmVhIHBhcmEgcXVlIGZpZ3VyYXMgZGVjb3JhdGl2YXMgZXh0ZXJuYXMgbsOjbyBlbnRyZW0gbmEgY29udGFnZW0uCi0gKipDb21wYXJhw6fDo28gZGUgYWx0dXJhIGNvbSByZWZlcsOqbmNpYSBjb211bS4qKiBOYSBjZW5hIGRhcyDDoXJ2b3JlcywgYXMgZXNjYWxhcyB2aXN1YWlzIHPDo28gMCw2LCAxLDEgZSAwLDgsIHJlc3BlY3RpdmFtZW50ZS4gQSDDoXJ2b3JlIDIgZGV2ZSBjb250aW51YXIgbWFpb3IgZSB0b2RhcyBhcyBiYXNlcyBwcmVjaXNhbSBmaWNhciBuYSBtZXNtYSBsaW5oYS4gT3MgcsOzdHVsb3MgMSwgMiBlIDMgZGV2ZW0gcGVybWFuZWNlciBsZWfDrXZlaXMgZSBsaWdhZG9zIGEgc3VhcyDDoXJ2b3Jlcy4KLSAqKk5vw6fDtWVzIGVzcGFjaWFpcyBpbHVzdHJhZGFzLioqIEFzIG9ww6fDtWVzIG1vc3RyYW0gbyBnYXRvIGRlbnRybywgYWNpbWEsIGVtYmFpeG8gb3UgYW8gbGFkbyBkZSB1bWEgY2FpeGEuIOKAnEFjaW1h4oCdIG7Do28gZGV2ZSBzZXIgdHJvY2FkbyBwb3Ig4oCcc29icmXigJ0gb3Ug4oCcZW0gY2ltYeKAnSBzZSBhIGlsdXN0cmHDp8OjbyBuw6NvIG1vc3RyYXIgY29udGF0by4gVXNhciDigJxmb3Jh4oCdIGNvbW8gYWx0ZXJuYXRpdmEgw6AgcmVzcG9zdGEg4oCcYWNpbWHigJ0gcG9kZXJpYSBjcmlhciBzb2JyZXBvc2nDp8OjbyBkZSBzaWduaWZpY2Fkb3M7IGVzc2EgYWx0ZXJuYXRpdmEgZm9pIGV2aXRhZGEuCi0gKipBbmltYWlzIGVtIHNpdHVhw6fDtWVzIGRlbGltaXRhZGFzLioqIE8gam9nbyBuw6NvIGFwcmVzZW50YSBhIGxhZ29hIGNvbW8gw7puaWNvIGFtYmllbnRlIGRlIHRvZG9zIG9zIHBlaXhlcywgbyBuaW5obyBjb21vIGx1Z2FyIG9uZGUgdG9kbyBww6Fzc2FybyB2aXZlIHBlcm1hbmVudGVtZW50ZSBvdSBhIGZsb3Jlc3RhIGNvbW8gaGFiaXRhdCBkZSB0b2RvcyBvcyBjb2VsaG9zLiBBbGd1bWFzIGFzc29jaWHDp8O1ZXMgcGVydGVuY2VtIMOgIHBlcXVlbmEgaGlzdMOzcmlhIG5hcnJhZGEuCi0gKipTb20gaW5pY2lhbCBlIHPDrWxhYmEgaW5pY2lhbCBzw6NvIGRpZmVyZW50ZXMuKiogQk9MQSBlIEJBUkNPIGNvbXBhcnRpbGhhbSBvIHNvbSBjb25zb25hbnRhbCAvYi8sIG1hcyBjb21lw6dhbSBwZWxhcyBzw61sYWJhcyBCTyBlIEJBUi4gQSBhdGl2aWRhZGUgcGVkZSB1bSBzb20gcGFyZWNpZG8gbm8gY29tZcOnbzsgbsOjbyBwZWRlIGEgbWVzbWEgc8OtbGFiYS4gRXZpdGUgdHJhbnNmb3JtYXIgYSBwZXJndW50YSBlbSDigJxxdWFsIGNvbWXDp2EgY29tIEJPP+KAnS4KLSAqKkRpY2FzIGV4cGzDrWNpdGFzIGZhemVtIHBhcnRlIGRhIG1lZGlhw6fDo28uKiogQWxndW1hcyBkaWNhcyBtb3N0cmFtIGNvbW8gc2VnbWVudGFyIG91IGNvbXBhcmFyIGUgcG9kZW0gdG9ybmFyIGEgcmVzcG9zdGEgZXZpZGVudGUuIElzc28gw6kgYXBvaW8gcGFyYSBleHBlcmltZW50YXIgbyBwcm9jZWRpbWVudG87IHVtYSByZXNwb3N0YSBhcMOzcyBhIGRpY2EgbsOjbyBjb21wcm92YSBkZXNlbXBlbmhvIGluZGVwZW5kZW50ZS4KCiMjIEFjZXNzaWJpbGlkYWRlIGUgcGFydGljaXBhw6fDo28KCk9mZXJlw6dhIHVtYSBmb3JtYSBkZSBwYXJ0aWNpcGHDp8OjbyBjb25mb3J0w6F2ZWw6IGEgY3JpYW7Dp2EgcG9kZSB0b2NhciwgY2xpY2FyLCB1c2FyIHRlY2xhZG8gY29tIGFqdWRhLCByZXNwb25kZXIgb3JhbG1lbnRlIG91IGFwb250YXIgcGFyYSBxdWUgYSBwZXNzb2EgbWVkaWFkb3JhIHNlbGVjaW9uZS4gQSBkaWZpY3VsZGFkZSBtb3RvcmEgcGFyYSBvcGVyYXIgdW0gY29udHJvbGUgbsOjbyBkZXZlIHNlciBpbnRlcnByZXRhZGEgY29tbyBkaWZpY3VsZGFkZSBjb20gbyBjb250ZcO6ZG8uCgpBcyBwZXJndW50YXMgZGUgY29yZXMgZGVwZW5kZW0gZGEgcGVyY2Vww6fDo28gY3JvbcOhdGljYS4gQSBub21lYcOnw6NvIGRhcyBhbHRlcm5hdGl2YXMgcGVsYSB2b3ogcG9kZSBhcG9pYXIgYSBwYXJ0aWNpcGHDp8OjbywgbWFzIG11ZGEgbyBxdWUgZXN0w6Egc2VuZG8gb2JzZXJ2YWRvOiB1bWEgZXNjb2xoYSBhcG9pYWRhIHBlbG8gbm9tZSBmYWxhZG8gbsOjbyBlcXVpdmFsZSBhIGRpc3Rpbmd1aXIgYSBjb3IgdmlzdWFsbWVudGUuIFF1YW5kbyBuZWNlc3PDoXJpbywgYWRhcHRlIGEgYXRpdmlkYWRlIGNvbSBtYXRlcmlhaXMgdMOhdGVpcywgZGlmZXJlbsOnYXMgZGUgdGV4dHVyYSBvdSBvdXRyYSBwcm9wb3N0YSBkZWZpbmlkYSBwZWxhIGVxdWlwZSBwZWRhZ8OzZ2ljYS4KCkFzIHBlcmd1bnRhcyBjb20gc29ucyBwcmVjaXNhbSBzZXIgbWVkaWFkYXMgY29uZm9ybWUgYSBmb3JtYSBkZSBjb211bmljYcOnw6NvIGRhIGNyaWFuw6dhLiBFeGliaXIgYSBoaXN0w7NyaWEgZW0gdGV4dG8gb3Ugb2ZlcmVjZXIgY29tdW5pY2HDp8OjbyB2aXN1YWwgYW1wbGlhIGFzIGZvcm1hcyBkZSBwYXJ0aWNpcGHDp8OjbywgbWFzIG7Do28gdHJhbnNmb3JtYSBhdXRvbWF0aWNhbWVudGUgYSB0YXJlZmEgYWRhcHRhZGEgZW0gYXZhbGlhw6fDo28gZGUgY29tcHJlZW5zw6NvIGF1ZGl0aXZhLiBSZWdpc3RyZSBhIGFkYXB0YcOnw6NvLCBzZSBob3V2ZXIgcmVnaXN0cm8gcGVkYWfDs2dpY28uCgpBIHBlcmNlcMOnw6NvIGRhcyBpbWFnZW5zLCBvIHRhbWFuaG8gZG9zIGNvbnRyb2xlcyBlIGEgY2xhcmV6YSBkYSB2b3ogZGV2ZW0gc2VyIG9ic2VydmFkb3Mgbm8gZXF1aXBhbWVudG8gcmVhbCBkYSBlc2NvbGEuIE7Do28gZm9pIHJlYWxpemFkYSB2YWxpZGHDp8OjbyBkZXN0ZSBjb250ZcO6ZG8gY29tIGNyaWFuw6dhcyBvdSBlZHVjYWRvcmVzIG5vIGNvbnRleHRvIG11bmljaXBhbDsgYSByZXZpc8OjbyB0w6ljbmljYSBkbyBjw7NkaWdvIG7Do28gc3Vic3RpdHVpIGVzc2EgZXRhcGEuCgojIyBSb3RlaXJvIGRlIHZhbGlkYcOnw6NvIGNvbSBhIGVxdWlwZSBlc2NvbGFyCgpBbnRlcyBkZSB0cmF0YXIgZXN0YSB2ZXJzw6NvIGNvbW8gbWF0ZXJpYWwgYXByb3ZhZG8sIGEgZXF1aXBlIHJlc3BvbnPDoXZlbCBwb2RlIG9ic2VydmFyOgoKfCBBc3BlY3RvIHwgUGVyZ3VudGEgcGFyYSBvcmllbnRhciBhIHZhbGlkYcOnw6NvIHwKfCAtLS0gfCAtLS0gfAp8IFZvY2FidWzDoXJpbyB8IEFzIGNyaWFuw6dhcyBjb25oZWNlbSBvcyBub21lcyB1c2Fkb3Mgb3UgcmVjZWJlbSBhcG9pbyBwYXJhIG5vbWVhciBhcyBpbWFnZW5zPyB8CnwgSW1hZ2VucyB8IEJvbGEsIGJvcmJvbGV0YSwgbmluaG8sIGZsb3Jlc3RhIGUgcmVsYcOnw7VlcyBjb20gYSBjYWl4YSBzw6NvIHJlY29uaGVjw612ZWlzIHNlbSBleHBsaWNhw6fDtWVzIGV4Y2Vzc2l2YXM/IHwKfCBDb21hbmRvcyB8IEEgY3JpYW7Dp2EgZW50ZW5kZSBvIHF1ZSBmYXplciBhcMOzcyBvdXZpciBhIGluc3RydcOnw6NvPyB8CnwgRmx1eG8gfCBFbGEgY29uc2VndWUgaW5pY2lhciwgZXNjb2xoZXIgdW1hIGFsdGVybmF0aXZhLCBjb21wcmVlbmRlciBvIHJldG9ybm8gZSBlbmNlcnJhciBjb20gYWp1ZGEgYWRlcXVhZGE/IHwKfCBSZXRvcm5vIHwgQXMgZGljYXMgZmF2b3JlY2VtIHVtYSBub3ZhIG9ic2VydmHDp8OjbyBlIHByZXNlcnZhbSBvIGludGVyZXNzZT8gfAp8IFBhcnRpY2lwYcOnw6NvIHwgUXVlbSBwcmVjaXNhIGRlIG91dHJhIGZvcm1hIGRlIGludGVyYcOnw6NvIG91IGRlIGNvbXVuaWNhw6fDo28gY29uc2VndWUgcGFydGljaXBhcj8gfAp8IEVxdWlwYW1lbnRvcyB8IEEgZXhwZXJpw6puY2lhIGZ1bmNpb25hIG5vcyBuYXZlZ2Fkb3JlcyBlIG5hcyB0ZWxhcyBlZmV0aXZhbWVudGUgZGlzcG9uw612ZWlzPyB8CnwgQXByZW5kaXphZ2VtIGVtIGNvbnRleHRvIHwgQSBjb252ZXJzYSBlIGFzIGHDp8O1ZXMgZGEgY3JpYW7Dp2EgYWNyZXNjZW50YW0gaW5mb3JtYcOnw6NvIGFsw6ltIGRvIHJlc3VsdGFkbyByZWdpc3RyYWRvIHBlbG8gam9nbz8gfAoKRGVzY3JldmEgb3MgcHJvYmxlbWFzIG9ic2VydmFkb3MgZGUgZm9ybWEgY29uY3JldGE6IGF0aXZpZGFkZSwgaW5zdHJ1w6fDo28gcXVlIGdlcm91IGTDunZpZGEsIGNvbXBvcnRhbWVudG8gcGVyY2ViaWRvLCBhcG9pbyBvZmVyZWNpZG8gZSByZXN1bHRhZG8gZGEgbm92YSB0ZW50YXRpdmEuIFVzZSBlc3NhcyBvYnNlcnZhw6fDtWVzIHBhcmEgYWp1c3RhciBlbnVuY2lhZG9zLCBkZXNlbmhvcywgb3JkZW0gZGUgYXByZXNlbnRhw6fDo28gZSBpbnRlcmHDp8Ojby4gQSB2YWxpZGHDp8OjbyBkZXZlIGRpc3Rpbmd1aXIgY2xhcmV6YSBkYSBpbnRlcmZhY2UsIGFkZXF1YcOnw6NvIGRvIGNvbnRlw7pkbyBlIGV2aWTDqm5jaWFzIHBlZGFnw7NnaWNhczsgbmVuaHVtYSBkZXNzYXMgZGltZW5zw7VlcyBzZSByZXN1bWUgYW8gdG90YWwgZGUgYWNlcnRvcy4K" download="GUIA_PEDAGOGICO.md">Baixar guia pedagógico</a><a href="data:text/markdown;charset=utf-8;base64,IyBSb3RlaXJvIGRlIHZhbGlkYcOnw6NvIOKAlCBRdWludGFsIGRhcyBEZXNjb2JlcnRhcwoKIyMgT2JqZXRpdm8gZSBsaW1pdGVzCgpWZXJpZmljYXIgbyBmdW5jaW9uYW1lbnRvIGRvIGpvZ28gZGUgRWR1Y2HDp8OjbyBJbmZhbnRpbCBubyBlcXVpcGFtZW50byBkYSBlc2NvbGE6IGluw61jaW8sIGVzY29saGEgZGUgdHJpbGhhcywgcmVzcG9zdGFzLCByZXRvbWFkYSBlIGNvbmNsdXPDo28uIE8gcGVyY3Vyc28gY29tcGxldG8gY29udMOpbSAqKnNlaXMgdHJpbGhhcyBjb20gcXVhdHJvIHF1ZXN0w7VlcyBjYWRhKiosIHRvdGFsaXphbmRvIDI0IHF1ZXN0w7Vlcy4KCk9zIGNhc29zIGRlc3RlIGFycXVpdm8gc8OjbyB1bSByb3RlaXJvIGEgZXhlY3V0YXIuICoqTmVuaHVtYSBsaW5oYSBtYXJjYWRhIGNvbW8gcGVuZGVudGUgcmVwcmVzZW50YSB1bSB0ZXN0ZSBjb25jbHXDrWRvLioqIFJlZ2lzdHJlIGV2aWTDqm5jaWFzIGRhIHZlcnPDo28gZWZldGl2YW1lbnRlIHRlc3RhZGEuIFRlc3RlcyBhdXRvbWF0aXphZG9zIGVtIENocm9taXVtIG91IGVtIG1vdG9yZXMgZGUgbmF2ZWdhZG9yIGFqdWRhbSBhIGxvY2FsaXphciBmYWxoYXMsIG1hcyBuw6NvIGNvbXByb3ZhbSB0ZXN0ZXMgbWFudWFpcyBub3MgYXBsaWNhdGl2b3MgQ2hyb21lLCBGaXJlZm94IGUgRWRnZS4gVW1hIHJldmlzw6NvIHTDqWNuaWNhIHRhbWLDqW0gbsOjbyBjb21wcm92YSBhZGVxdWHDp8OjbyBwZWRhZ8OzZ2ljYSBuZW0gdmFsaWRhw6fDo28gY29tIGNyaWFuw6dhcyBlIHByb2Zlc3NvcmVzLgoKIyMgMS4gSWRlbnRpZmljYXIgYSBleGVjdcOnw6NvCgp8IENhbXBvIHwgUHJlZW5jaGltZW50byB8CnwgLS0tIHwgLS0tIHwKfCBWZXJzw6NvIGRvIGPDs2RpZ28gLyBjb21taXQgfCB8CnwgVVJMIG91IHNlcnZpZG9yIGRlIHRlc3RlIHwgfAp8IERhdGEgZSByZXNwb25zw6F2ZWwgfCB8CnwgU2lzdGVtYSBvcGVyYWNpb25hbCB8IHwKfCBEaXNwb3NpdGl2byBlIHJlc29sdcOnw6NvIHwgfAp8IE5hdmVnYWRvciBlIHZlcnPDo28gY29tcGxldGEgfCB8CnwgTW91c2UsIHRlY2xhZG8gb3UgdG9xdWUgfCB8CnwgU2HDrWRhIGRlIMOhdWRpbyBlIHZveiBkaXNwb27DrXZlbCB8IHwKfCBQZXJmaWwgZGUgbmF2ZWdhZG9yIGxpbXBvIG91IGNvbSBwcm9ncmVzc28gYW50ZXJpb3IgfCB8CgpVc2UgdW0gcGVyZmlsIGRlIHRlc3RlIGRlZGljYWRvLiBQYXJhIHRlc3RhciByZXRvbWFkYSwgYWJyYSBvIGpvZ28gcG9yIEhUVFAvSFRUUFMgbmEgbWVzbWEgb3JpZ2VtLCBubyBtZXNtbyBwZXJmaWwuIE8gY29tcG9ydGFtZW50byBkbyBhcm1hemVuYW1lbnRvIGVtIGFycXVpdm9zIGFiZXJ0b3MgZGlyZXRhbWVudGUgcG9yIGBmaWxlOmAgbsOjbyDDqSBnYXJhbnRpZG8gZW50cmUgbmF2ZWdhZG9yZXMuIE8gYGxvY2FsU3RvcmFnZWAgY29uc2VydmEgZGFkb3MgZW50cmUgc2Vzc8O1ZXMgY29tdW5zLCBtYXMgcG9kZSBzZXIgYmxvcXVlYWRvIHBvciBjb25maWd1cmHDp8O1ZXMgZG8gbmF2ZWdhZG9yOyBlbSBuYXZlZ2HDp8OjbyBwcml2YXRpdmEsIG9zIGRhZG9zIHPDo28gcmVtb3ZpZG9zIHF1YW5kbyBhIMO6bHRpbWEgYWJhIHByaXZhdGl2YSDDqSBmZWNoYWRhLiBbUmVmZXLDqm5jaWE6IE1ETiDigJQgbG9jYWxTdG9yYWdlXShodHRwczovL2RldmVsb3Blci5tb3ppbGxhLm9yZy9lbi1VUy9kb2NzL1dlYi9BUEkvV2luZG93L2xvY2FsU3RvcmFnZSkuCgojIyAyLiBNYXRyaXogZG9zIG5hdmVnYWRvcmVzIGV4aWdpZG9zCgpFeGVjdXRlIG9zIGNhc29zIGZ1bmNpb25haXMgZSBkZSBhY2Vzc2liaWxpZGFkZSBhYmFpeG8gZW0gY2FkYSBuYXZlZ2Fkb3IgaW5zdGFsYWRvLCByZWdpc3RyYW5kbyBzdWEgdmVyc8Ojby4gTyBkaXNwb3NpdGl2byBmw61zaWNvIGRhIGVzY29sYSDDqSBhIHJlZmVyw6puY2lhIHBhcmEgbyBhY2VpdGUgZGUgY29tcGF0aWJpbGlkYWRlLgoKfCBBbWJpZW50ZSB8IEZsdXhvIGNvbXBsZXRvIHwgUmV0b21hZGEgZSBhY29tcGFuaGFtZW50byB8IFRlY2xhZG8gfCDDgXVkaW8gZSBhbHRlcm5hdGl2YSB2aXN1YWwgfCBSZXN1bHRhZG8gLyBldmlkw6puY2lhIHwKfCAtLS0gfCAtLS0gfCAtLS0gfCAtLS0gfCAtLS0gfCAtLS0gfAp8IENocm9tZSBkZXNrdG9wIOKAlCB2ZXJzw6NvOiBfX19fX18gfCBQZW5kZW50ZSB8IFBlbmRlbnRlIHwgUGVuZGVudGUgfCBQZW5kZW50ZSB8IHwKfCBGaXJlZm94IGRlc2t0b3Ag4oCUIHZlcnPDo286IF9fX19fXyB8IFBlbmRlbnRlIHwgUGVuZGVudGUgfCBQZW5kZW50ZSB8IFBlbmRlbnRlIHwgfAp8IEVkZ2UgZGVza3RvcCDigJQgdmVyc8OjbzogX19fX19fIHwgUGVuZGVudGUgfCBQZW5kZW50ZSB8IFBlbmRlbnRlIHwgUGVuZGVudGUgfCB8CgpSZWdpc3RyZSB0ZXN0ZXMgYWRpY2lvbmFpcyBkZSB0b3F1ZSBlbSB1bSB0YWJsZXQgb3UgY2VsdWxhciBkaXNwb27DrXZlbCBlIGVtIHN1YSB2ZXJzw6NvIHJlYWwgZGUgbmF2ZWdhZG9yLiBBIHNpbXVsYcOnw6NvIGRlIHRhbWFuaG8gZGUgdGVsYSBubyBkZXNrdG9wIHZlcmlmaWNhIHBhcnRlIGRvIGxheW91dDsgYSBpbnRlcmHDp8OjbyBwb3IgdG9xdWUgcHJlY2lzYSBkZSBkaXNwb3NpdGl2byBmw61zaWNvIHBhcmEgY29uZmlybWHDp8Ojby4KCiMjIDMuIEluw61jaW8sIG1laW8gZSBmaW0KCnwgSUQgfCBBw6fDo28gfCBSZXN1bHRhZG8gZXNwZXJhZG8gfAp8IC0tLSB8IC0tLSB8IC0tLSB8CnwgRjAxIHwgQWJyYSBvIGpvZ28gc2VtIHByb2dyZXNzbyBhbnRlcmlvci4gfCBBIHRlbGEgaW5pY2lhbCBhcGFyZWNlIGNvbXBsZXRhLCBjb20gYcOnw6NvIGRlIGluaWNpYXIgZSBvcmllbnRhw6fDo28gY29tcHJlZW5zw612ZWwuIE5lbmh1bSBjYWRhc3RybyDDqSBuZWNlc3PDoXJpby4gfAp8IEYwMiB8IEluaWNpZSBvIGpvZ28gZSBhYnJhIG8gbWFwYS4gfCBBcyBzZWlzIHRyaWxoYXMgZXN0w6NvIGlkZW50aWZpY2FkYXMgZSBwb2RlbSBzZXIgZXNjb2xoaWRhcy4gTyBwcm9ncmVzc28gaW5pY2lhbCBjb3JyZXNwb25kZSBhIHplcm8gcXVlc3TDtWVzIGNvbmNsdcOtZGFzLiB8CnwgRjAzIHwgRW50cmUgZW0gdW1hIHRyaWxoYS4gfCBBIHByaW1laXJhIGRhcyBxdWF0cm8gcXVlc3TDtWVzIG1vc3RyYSBlbnVuY2lhZG8sIGlsdXN0cmHDp8OjbyBwZXJ0aW5lbnRlIGUgb3DDp8O1ZXMgYWNlc3PDrXZlaXMuIEEgaW5kaWNhw6fDo28gZGUgcHJvZ3Jlc3NvIGNvcnJlc3BvbmRlIMOgIHF1ZXN0w6NvIGF0dWFsLiB8CnwgRjA0IHwgRXNjb2xoYSB1bWEgcmVzcG9zdGEgaW5jb3JyZXRhLiB8IE8gcmV0b3JubyDDqSBhY29saGVkb3IsIG9yaWVudGEgbm92YSB0ZW50YXRpdmEgZSBtYW50w6ltIGEgcXVlc3TDo28gZGlzcG9uw612ZWwuIEEgcmVzcG9zdGEgaW5jb3JyZXRhIG7Do28gY29uY2x1aSBhIHF1ZXN0w6NvIG5lbSBlbmNlcnJhIGEgYnJpbmNhZGVpcmEuIHwKfCBGMDUgfCBBY2VydGUgYSBxdWVzdMOjbyBlIGF2YW5jZS4gfCBIw6EgcmV0b3JubyBkZSBhY2VydG8gZSB1bWEgYcOnw6NvIGNsYXJhIHBhcmEgY29udGludWFyLiBVbWEgcXVlc3TDo28gY29udGEgY29tbyBjb25jbHXDrWRhIHVtYSDDum5pY2EgdmV6LiBUb3F1ZXMgcsOhcGlkb3MgcmVwZXRpZG9zIG7Do28gcHVsYW0gcGVyZ3VudGFzLiB8CnwgRjA2IHwgUmVzb2x2YSBhcyBxdWF0cm8gcXVlc3TDtWVzIGRhIHRyaWxoYS4gfCBBIGNvbmNsdXPDo28gZGEgdHJpbGhhIGFwYXJlY2UgY29tIHJlY29uaGVjaW1lbnRvIGRhIHBhcnRpY2lwYcOnw6NvLiBPIG1hcGEgaWRlbnRpZmljYSBlc3NhIHRyaWxoYSBjb21vIGNvbmNsdcOtZGEuIHwKfCBGMDcgfCBDb21wbGV0ZSBhcyBzZWlzIHRyaWxoYXMuIHwgQXDDs3MgMjQgcXVlc3TDtWVzIGNvbmNsdcOtZGFzLCBow6EgdW1hIHRlbGEgZmluYWwgY2xhcmEsIGNvbSBjZWxlYnJhw6fDo28gZSB1bSBjYW1pbmhvIHBhcmEgY29udGludWFyIGV4cGxvcmFuZG8gb3UgaW5pY2lhciBub3ZhIGJyaW5jYWRlaXJhLiB8CnwgRjA4IHwgRGVwb2lzIGRlIGVuY2VycmFyIGEgdHJpbGhhIGVtIOKAnFRlcm1pbmFyIGVzdGEgdHJpbGhh4oCdLCBlc2NvbGhhIOKAnEJyaW5jYXIgZGUgbm92b+KAnS4gfCBBIHRyaWxoYSBpbmljaWEgdW1hIHJlcGV0acOnw6NvIGlkZW50aWZpY2FkYSBjb21vIOKAnEJyaW5jYW5kbyBkZSBub3Zv4oCdLiBPIGFjb21wYW5oYW1lbnRvIGRhIHByaW1laXJhIGV4cGxvcmHDp8OjbyBwZXJtYW5lY2UgaW5hbHRlcmFkbzsgb3MgdG90YWlzIG7Do28gdWx0cmFwYXNzYW0gc2VpcyB0cmlsaGFzIGUgMjQgcXVlc3TDtWVzIGNvbmNsdcOtZGFzLiB8CnwgRjA5IHwgRHVyYW50ZSB1bWEgcHJpbWVpcmEgZXhwbG9yYcOnw6NvIGUgZGVwb2lzIGR1cmFudGUgdW1hIHJlcGV0acOnw6NvLCB2b2x0ZSBhIOKAnE1ldSBxdWludGFs4oCdIGUgZW50cmUgbmEgbWVzbWEgdHJpbGhhIGF0aXZhLiB8IEEgcXVlc3TDo28gYXR1YWwsIGEgb3JkZW0gZGFzIG9ww6fDtWVzIGUgYXMgcmVzcG9zdGFzIGrDoSBkZXNjYXJ0YWRhcyBwZXJtYW5lY2VtIGlndWFpcy4gTyBhY29tcGFuaGFtZW50byBuw6NvIMOpIGR1cGxpY2Fkby4gfAp8IEYxMCB8IEF0dWFsaXplIGEgcMOhZ2luYSBhcMOzcyB1bSBhY2VydG8gZSwgZW0gb3V0cm8gbW9tZW50bywgYXDDs3MgdW0gZXJybzsgdXNlIOKAnENvbnRpbnVhciBhdmVudHVyYeKAnS4gfCBBIGF0aXZpZGFkZSBlbSBhbmRhbWVudG8gcG9kZSBzZXIgcmV0b21hZGEgZG8gZXN0YWRvIHNhbHZvLiBBIGF0dWFsaXphw6fDo28gbsOjbyBjcmlhIGFjZXJ0bywgdGVudGF0aXZhIG91IGNvbmNsdXPDo28gYWRpY2lvbmFsLiB8CnwgRjExIHwgRmVjaGUgYSBhYmEsIHJlYWJyYSBvIG1lc21vIGVuZGVyZcOnbyBubyBtZXNtbyBwZXJmaWwgZSB1c2Ug4oCcQ29udGludWFyIGF2ZW50dXJh4oCdLiB8IE8gcHJvZ3Jlc3NvIHNhbHZvIGNvbnRpbnVhIGRpc3BvbsOtdmVsIHF1YW5kbyBvIG5hdmVnYWRvciBwZXJtaXRlIGFybWF6ZW5hbWVudG8sIGluY2x1c2l2ZSBvIGVzdGFkbyBkYSByZXBldGnDp8OjbyBxdWUgZXN0YXZhIGVtIGFuZGFtZW50by4gfAp8IEYxMiB8IEF0dWFsaXplIGRlcG9pcyBkYSBjb25jbHVzw6NvIGRlIHRvZGFzIGFzIHRyaWxoYXMuIHwgTyBlc3RhZG8gZGUgY29uY2x1c8OjbyBwZXJtYW5lY2UgY29lcmVudGUgZSBhIGNyaWFuw6dhIGVuY29udHJhIHVtIGNhbWluaG8gY2xhcm8gcGFyYSBicmluY2FyIG5vdmFtZW50ZS4gfAp8IEYxMyB8IFBhcmUgbm8gbWVpbyBkZSB1bWEgdHJpbGhhLCBlbnRyZSBlbSBvdXRyYSBlIGRlcG9pcyB2b2x0ZSDDoCBhbnRlcmlvci4gUmVwaXRhIG8gcHJvY2VkaW1lbnRvIGNvbSB1bWEgdHJpbGhhIGrDoSBjb25jbHXDrWRhLiB8IEjDoSB1bWEgdHJpbGhhIGF0aXZhIHBvciB2ZXouIEEgcHJpbWVpcmEgZXhwbG9yYcOnw6NvIGFudGVyaW9yIHZvbHRhIMOgIHByaW1laXJhIHF1ZXN0w6NvIHBlbmRlbnRlOyB1bWEgdHJpbGhhIGrDoSBjb25jbHXDrWRhIGluaWNpYSBvdXRyYSByZXBldGnDp8Ojby4gT3MgcmVnaXN0cm9zIGRvIHByaW1laXJvIHBlcmN1cnNvIHPDo28gcHJlc2VydmFkb3MuIHwKfCBGMTQgfCBBYnJhIGFzIGF0aXZpZGFkZXMgZGUgY29udGFnZW0gZSBjb25maXJhIG8gZW51bmNpYWRvIGUgYSDDoXJlYSBjb20gb3MgZWxlbWVudG9zIHBhcmEgY29udGFyLiB8IEEgaW5zdHJ1w6fDo28gZGVsaW1pdGEgb3MgZWxlbWVudG9zIOKAnG5vIHF1YWRyb+KAnTsgbWFzY290ZXMsIMOtY29uZXMgZGUgbmF2ZWdhw6fDo28gZSBkZXNlbmhvcyBkZWNvcmF0aXZvcyBuw6NvIHRvcm5hbSBhIHF1YW50aWRhZGUgc29saWNpdGFkYSBhbWLDrWd1YS4gfAoKIyMgNC4gVGVudGF0aXZhcyBlIGFjb21wYW5oYW1lbnRvIGxvY2FsCgpPIGFjb21wYW5oYW1lbnRvIGRlc3RhIHZlcnPDo28gZGVzY3JldmUgYSBicmluY2FkZWlyYSBzYWx2YSBuYXF1ZWxlIG5hdmVnYWRvci4gRWxlIG7Do28gaWRlbnRpZmljYSB1bWEgY3JpYW7Dp2EgZSBuw6NvIHJlcHJlc2VudGEgdW0gcHJvbnR1w6FyaW8sIGRpYWduw7NzdGljbywgYXZhbGlhw6fDo28gZm9ybWFsIG91IHJlbGF0w7NyaW8gZGUgdHVybWEuIEVtIHVtYSBtw6FxdWluYSBjb21wYXJ0aWxoYWRhLCByZXN1bHRhZG9zIGRlIHBlc3NvYXMgZGlmZXJlbnRlcyBzZSBtaXN0dXJhbSBzZSBhIGJyaW5jYWRlaXJhIGFudGVyaW9yIGZvciBjb250aW51YWRhLgoKRW0gKipQYXJhIGVkdWNhZG9yZXMqKiwg4oCcUmVzcG9zdGFzIHNlbGVjaW9uYWRhc+KAnSBjb250YSBlc2NvbGhhcyBhY2VpdGFzIGR1cmFudGUgYSBwcmltZWlyYSBleHBsb3Jhw6fDo28uIFVtYSBvcMOnw6NvIGluY29ycmV0YSBqw6EgZGVzYXRpdmFkYSBuw6NvIGFjcmVzY2VudGEgb3V0cmEgdGVudGF0aXZhIG5hIG1lc21hIGF0aXZpZGFkZSBlbSBhbmRhbWVudG8uIOKAnEF0aXZpZGFkZXMgY29tIGRpY2Egc29saWNpdGFkYeKAnSBjb250YSB1bWEgdmV6IGNhZGEgYXRpdmlkYWRlIGVtIHF1ZSBvIGJvdMOjbyBkZSBkaWNhIGZvaSB1c2FkbzsgYSBkaWNhIGV4aWJpZGEgYXV0b21hdGljYW1lbnRlIGFww7NzIHVtIGVycm8gbsOjbyDDqSB1bSBwZWRpZG8gbmVzc2UgYm90w6NvLiBBIHJlcGV0acOnw6NvIGRlIHVtYSB0cmlsaGEgY29uY2x1w61kYSB1c2EgcmVnaXN0cm9zIHNlcGFyYWRvcyBlIG7Do28gYWx0ZXJhIG9zIGluZGljYWRvcmVzIGRlIHJlc3Bvc3RhcywgZGljYXMgZSBjb25jbHVzw7VlcyBkbyBwcmltZWlybyBwZXJjdXJzbywgaW5jbHVzaXZlIG5vIENTVi4KCnwgSUQgfCBBw6fDo28gfCBSZXN1bHRhZG8gZXNwZXJhZG8gfAp8IC0tLSB8IC0tLSB8IC0tLSB8CnwgUDAxIHwgRW0gdW1hIHF1ZXN0w6NvIG5vdmEsIGVycmUgdW1hIHZleiBlIGRlcG9pcyBhY2VydGUuIHwgTyBhY29tcGFuaGFtZW50byBtb3N0cmEgZHVhcyB0ZW50YXRpdmFzIHBhcmEgZXNzYSBxdWVzdMOjbyBlIHVtYSDDum5pY2EgY29uY2x1c8Ojby4gQ29uZmlyYSB0YW1iw6ltIG9zIHRvdGFpcyBkYSB0cmlsaGEuIHwKfCBQMDIgfCBBY2VydGUgdW1hIHF1ZXN0w6NvIG5vdmEgbmEgcHJpbWVpcmEgcmVzcG9zdGEuIHwgTyBhY29tcGFuaGFtZW50byByZWdpc3RyYSB1bWEgdGVudGF0aXZhIGUgdW1hIGNvbmNsdXPDo28sIHNlbSBpbmNsdWlyIHRlbnRhdGl2YXMgZGUgb3V0cmFzIHF1ZXN0w7Vlcy4gfAp8IFAwMyB8IENvbnN1bHRlIG8gYWNvbXBhbmhhbWVudG8gZGVwb2lzIGRlIHZvbHRhciBhbyBtYXBhIGUgZGVwb2lzIGRlIGF0dWFsaXphciBhIHDDoWdpbmEuIHwgT3MgdG90YWlzIGNvbmZlcmVtIGNvbSBhcyBhw6fDtWVzIHJlYWxpemFkYXMgZSBzZSBtYW50w6ptIGFvIHJlY2FycmVnYXIuIHwKfCBQMDQgfCBMZWlhIHRvZGFzIGFzIGluZm9ybWHDp8O1ZXMgZG8gYWNvbXBhbmhhbWVudG8uIHwgTsOjbyBow6Egc29saWNpdGHDp8OjbyBkZSBub21lLCBpZGFkZSBpbmRpdmlkdWFsLCBtYXRyw61jdWxhLCBlLW1haWwsIGZvdG8gb3Ugb3V0cm8gZGFkbyBpZGVudGlmaWNhZG9yLiBPcyByw7N0dWxvcyBleHBsaWNhbSBvIHNpZ25pZmljYWRvIGRvcyBuw7ptZXJvcy4gfAp8IFAwNSB8IE5vIG1lc21vIGNvbXB1dGFkb3IsIHByZXBhcmUgYSBicmluY2FkZWlyYSBwYXJhIG91dHJhIGNyaWFuw6dhIHVzYW5kbyBhIGHDp8OjbyBleHBsw61jaXRhIGRlIHJlaW7DrWNpbyBvZmVyZWNpZGEgcGVsbyBqb2dvLiB8IE8gYWR1bHRvIGVudGVuZGUgcXVlIG8gcmVpbsOtY2lvIGFwYWdhIG8gcHJvZ3Jlc3NvIGxvY2FsIGRhIGJyaW5jYWRlaXJhIGFudGVyaW9yLiBBcMOzcyBjb25maXJtYXIgbyByZWluw61jaW8sIG9zIGluZGljYWRvcmVzIGNvbWXDp2FtIG5vdmFtZW50ZS4gfAp8IFAwNiB8IEFicmEgbyBqb2dvIGVtIG91dHJvIG5hdmVnYWRvciBvdSBwZXJmaWwuIHwgQSBhdXPDqm5jaWEgZG8gcHJvZ3Jlc3NvIGFudGVyaW9yIMOpIGNvbXByZWVuc8OtdmVsOiBlc3RhIHZlcnPDo28gbsOjbyBzaW5jcm9uaXphIG9zIGRhZG9zLiB8CnwgUDA3IHwgRW0gcGVyZmlsIGRlIHRlc3RlLCBibG9xdWVpZSBvIGFybWF6ZW5hbWVudG8gZGUgZGFkb3MgZG8gc2l0ZSBlIGFicmEgbyBqb2dvLiB8IEEgYnJpbmNhZGVpcmEgcGVybWFuZWNlIHV0aWxpesOhdmVsIGR1cmFudGUgYSBzZXNzw6NvLiBBIGludGVyZmFjZSBpbmZvcm1hIHF1YW5kbyBuw6NvIHB1ZGVyIHNhbHZhcjsgYSByZXRvbWFkYSBuw6NvIMOpIHByb21ldGlkYSBuZXNzZSBhbWJpZW50ZS4gfAp8IFAwOCB8IEVtIHBlcmZpbCBkZXNjYXJ0w6F2ZWwsIHNpbXVsZSBkYWRvcyBsb2NhaXMgaW52w6FsaWRvcyBhcGVuYXMgbmEgY2hhdmUgdXNhZGEgcGVsbyBhcGxpY2F0aXZvLiB8IE8gam9nbyByZWN1cGVyYSB1bSBlc3RhZG8gdXRpbGl6w6F2ZWwsIHNlbSB0cmF2YXIgYSB0ZWxhIGluaWNpYWwgbmVtIGFsdGVyYXIgZGFkb3MgZGUgb3V0cm9zIHNpdGVzIG91IGFwbGljYXRpdm9zLiB8CnwgUDA5IHwgRW0gdW1hIGF0aXZpZGFkZSBub3ZhLCBlcnJlIHNlbSBwZWRpciBkaWNhOyBkZXBvaXMgc29saWNpdGUgYSBkaWNhIGR1YXMgdmV6ZXMuIHwgTyBlcnJvIHNvemluaG8gbsOjbyBtYXJjYSDigJxEaWNhIHNvbGljaXRhZGHigJ0uIEFww7NzIG8gcHJpbWVpcm8gcGVkaWRvLCBhIGF0aXZpZGFkZSBjb250YSB1bWEgdmV6IG5lc3NlIGluZGljYWRvcjsgbyBzZWd1bmRvIHBlZGlkbyBuw6NvIGF1bWVudGEgZXNzYSBjb250YWdlbS4gfAp8IFAxMCB8IENvbmNsdWEgdW1hIHRyaWxoYSwgcmVnaXN0cmUgc2V1IGFjb21wYW5oYW1lbnRvIGUgam9ndWUtYSBub3ZhbWVudGUgY29tIHJlc3Bvc3RhcyBkaWZlcmVudGVzLiB8IFRlbnRhdGl2YXMsIGRpY2FzIGUgY29uY2x1c8O1ZXMgZGEgcHJpbWVpcmEgZXhwbG9yYcOnw6NvIHBlcm1hbmVjZW0gaWd1YWlzIG5vIGFjb21wYW5oYW1lbnRvLiBSZXBldGlyIG7Do28gaW5mbGEgb3MgcmVzdWx0YWRvcy4gfAp8IFAxMSB8IEVtIOKAnFBhcmEgZWR1Y2Fkb3Jlc+KAnSwgdXNlIOKAnEV4cG9ydGFyIG9ic2VydmHDp8O1ZXMgKENTVinigJ0gZSBhYnJhIG8gYXJxdWl2by4gfCBPIENTViBjb250w6ltIGFzIDI0IGF0aXZpZGFkZXMsIGNvbSB0cmlsaGEsIGhhYmlsaWRhZGUsIGVudW5jaWFkbywgcmVzcG9zdGFzIHNlbGVjaW9uYWRhcywgZGljYSBzb2xpY2l0YWRhLCBjb25jbHVzw6NvIGUgZGF0YXMgZGEgYXZlbnR1cmE7IG7Do28gY29udMOpbSBub21lIGRlIGNyaWFuw6dhLiBPcyBuw7ptZXJvcyBjb3JyZXNwb25kZW0gw6AgcHJpbWVpcmEgZXhwbG9yYcOnw6NvLiB8CgpQYXJhIGF0aXZpZGFkZXMgY29tIHbDoXJpYXMgY3JpYW7Dp2FzLCBvIGFkdWx0byBkZXZlIGNvbmZlcmlyIGUgcmVpbmljaWFyIGEgYnJpbmNhZGVpcmEgYW50ZXMgZGEgdHJvY2EgZGUgcGFydGljaXBhbnRlIHF1YW5kbyBkZXNlamFyIG9ic2VydmHDp8O1ZXMgc2VwYXJhZGFzLiBBIGFwbGljYcOnw6NvIG7Do28gYXJtYXplbmEgaWRlbnRpZmljYcOnw6NvIGRlIGVzdHVkYW50ZSBwYXJhIGRpc3Rpbmd1aXIgc2Vzc8O1ZXMuIExpbXBhciBvcyBkYWRvcyBkbyBuYXZlZ2Fkb3Igb3UgbXVkYXIgZGUgcGVyZmlsIHBvZGUgcmVtb3ZlciBvdSB0b3JuYXIgaW5kaXNwb27DrXZlbCBlc3NlIGFjb21wYW5oYW1lbnRvLiBbUmVmZXLDqm5jaWEgdMOpY25pY2EgZG8gYXJtYXplbmFtZW50bzogTUROXShodHRwczovL2RldmVsb3Blci5tb3ppbGxhLm9yZy9lbi1VUy9kb2NzL1dlYi9BUEkvV2luZG93L2xvY2FsU3RvcmFnZSkuCgojIyA1LiDDgXVkaW8sIHBvcnR1Z3XDqnMgZSBhdXPDqm5jaWEgZGUgdm96CgpBIGxlaXR1cmEgZW0gdm96IGFsdGEgdXNhIGEgc8OtbnRlc2UgZGUgZmFsYSBkbyBuYXZlZ2Fkb3IuIEEgTUROIGNsYXNzaWZpY2EgYSBBUEkgY29tbyBhbXBsYW1lbnRlIGRpc3BvbsOtdmVsLCBtYXMgYSBsaXN0YSBkZSB2b3plcyB2ZW0gZG8gZGlzcG9zaXRpdm8uIENvbmZpZ3VyYXIgbyBpZGlvbWEgY29tbyBgcHQtQlJgIGV4cHJlc3NhIGEgcHJlZmVyw6puY2lhIGRlIHBvcnR1Z3XDqnMgYnJhc2lsZWlybzsgaXNzbyBuw6NvIGluc3RhbGEgbmVtIGdhcmFudGUgdW1hIHZveiBjb20gZXNzZSBpZGlvbWEuIFtSZWZlcsOqbmNpYXM6IFNwZWVjaFN5bnRoZXNpc10oaHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvQVBJL1NwZWVjaFN5bnRoZXNpcyksIFtnZXRWb2ljZXNdKGh0dHBzOi8vZGV2ZWxvcGVyLm1vemlsbGEub3JnL2VuLVVTL2RvY3MvV2ViL0FQSS9TcGVlY2hTeW50aGVzaXMvZ2V0Vm9pY2VzKSBlIFtpZGlvbWEgZGEgZmFsYV0oaHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvQVBJL1NwZWVjaFN5bnRoZXNpc1V0dGVyYW5jZS9sYW5nKS4KCkFzIHZvemVzIHBvZGVtIGZpY2FyIGRpc3BvbsOtdmVpcyBkZXBvaXMgZG8gY2FycmVnYW1lbnRvIGluaWNpYWwgZSBnZXJhciBvIGV2ZW50byBgdm9pY2VzY2hhbmdlZGAuIFRhbWLDqW0gcG9kZW0gb2NvcnJlciBmYWxoYXMgZGUgdm96LCBpZGlvbWEsIHNhw61kYSBkZSDDoXVkaW8sIHJlZGUgb3UgcGVybWlzc8Ojby4gW1JlZmVyw6puY2lhczogdm9pY2VzY2hhbmdlZF0oaHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvQVBJL1NwZWVjaFN5bnRoZXNpcy92b2ljZXNjaGFuZ2VkX2V2ZW50KSBlIFtlcnJvcyBkYSBzw61udGVzZSBkZSBmYWxhXShodHRwczovL2RldmVsb3Blci5tb3ppbGxhLm9yZy9lbi1VUy9kb2NzL1dlYi9BUEkvU3BlZWNoU3ludGhlc2lzRXJyb3JFdmVudC9lcnJvcikuCgp8IElEIHwgQcOnw6NvIHwgUmVzdWx0YWRvIGVzcGVyYWRvIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IEEwMSB8IEF0aXZlIGEgbGVpdHVyYSBkbyBlbnVuY2lhZG8gZW0gdW0gZXF1aXBhbWVudG8gY29tIHZveiBlbSBwb3J0dWd1w6pzLiB8IEEgZmFsYSDDqSBjb21wcmVlbnPDrXZlbCBlIGNvcnJlc3BvbmRlIGFvIHRleHRvIGRhIHF1ZXN0w6NvLiBVbSBhZHVsdG8gY29uZmVyZSBhIHByb27Dum5jaWEsIHByaW5jaXBhbG1lbnRlIGVtIGF0aXZpZGFkZXMgY29tIHPDrWxhYmFzIGUgc29ucy4gfAp8IEEwMiB8IFNvbGljaXRlIGEgbGVpdHVyYSBub3ZhbWVudGUgZSB0cm9xdWUgZGUgcXVlc3TDo28gZHVyYW50ZSBhIGZhbGEuIHwgQXMgbGVpdHVyYXMgbsOjbyBzZSBhY3VtdWxhbSBkZSBtYW5laXJhIGNvbmZ1c2E7IGEgZmFsYSBhbnRlcmlvciBuw6NvIGNvbnRpbnVhIGRlc2NyZXZlbmRvIGEgcXVlc3TDo28gbm92YS4gfAp8IEEwMyB8IERlc2F0aXZlIGEg4oCcTmFycmHDp8OjbyBhdXRvbcOhdGljYeKAnSwgYXZhbmNlIGUgc29saWNpdGUgdW1hIGRpY2E7IGRlcG9pcyB1c2Ug4oCcT3V2aXIgYSBwZXJndW50YeKAnS4gfCBOw6NvIGjDoSBmYWxhIGF1dG9tw6F0aWNhIGFvIGF2YW7Dp2FyLCByZXNwb25kZXIgb3UgcGVkaXIgZGljYS4gQXMgb3JpZW50YcOnw7VlcyBhcGFyZWNlbSBlbSB0ZXh0bywgZSBhIGRpY2EgasOhIGFwcmVzZW50YWRhIHVzYSDigJxWZXIgYSBkaWNh4oCdLiBBIHNvbGljaXRhw6fDo28gZXhwbMOtY2l0YSBlbSDigJxPdXZpciBhIHBlcmd1bnRh4oCdIGNvbnRpbnVhIGRpc3BvbsOtdmVsLiB8CnwgQTA0IHwgVXNlIHVtIGFtYmllbnRlIHNlbSB2b3ogZW0gcG9ydHVndcOqcyBvdSBzZW0gQVBJIGRlIHPDrW50ZXNlIGRlIGZhbGEuIHwgQSBhdXPDqm5jaWEgZGUgbmFycmHDp8OjbyBuw6NvIGJsb3F1ZWlhIG8gZmx1eG8uIEVudW5jaWFkb3MsIGlsdXN0cmHDp8O1ZXMgZSBjb250cm9sZXMgcGVybWFuZWNlbSBkaXNwb27DrXZlaXMgcGFyYSBtZWRpYcOnw6NvIHBvciB1bSBhZHVsdG8uIHwKfCBBMDUgfCBTaW11bGUgZmFsaGEgZG8gc2VydmnDp28gZGUgZmFsYSBvdSBwZXJtaXNzw6NvIG5lZ2FkYSBlbSBhbWJpZW50ZSBkZSB0ZXN0ZS4gfCBPIGVycm8gZGV0ZWN0w6F2ZWwgcmVjZWJlIG9yaWVudGHDp8OjbyBjb21wcmVlbnPDrXZlbCBlIHBlcm1pdGUgY29udGludWFyIHNlbSDDoXVkaW8uIE7Do28gaMOhIHRyYXZhbWVudG8gbmVtIGVzcGVyYSBpbmRlZmluaWRhLiB8CnwgQTA2IHwgVGVzdGUgY29tIG8gc29tIGRvIHNpc3RlbWEgZGVzbGlnYWRvIG91IHNlbSBjYWl4YSBkZSBzb20uIHwgQSBhbHRlcm5hdGl2YSB2aXN1YWwgY29udGludWEgdXRpbGl6w6F2ZWwuIE7Do28gw6kgbmVjZXNzw6FyaW8gcXVlIG8gYXBsaWNhdGl2byBkZXRlY3RlIG8gdm9sdW1lIGbDrXNpY28gZG8gZXF1aXBhbWVudG8uIHwKfCBBMDcgfCBBYnJhIG8gam9nbyBlIGVzcGVyZSBhIGxpc3RhIGRlIHZvemVzIHNlciBjYXJyZWdhZGE7IGRlcG9pcyBzb2xpY2l0ZSBhIGxlaXR1cmEuIHwgQSBkaXNwb25pYmlsaWRhZGUgdGFyZGlhIGRhIHZveiBwb2RlIHNlciBhcHJvdmVpdGFkYSBzZW0gZXhpZ2lyIHF1ZSBhIGNyaWFuw6dhIHJlaW5pY2llIGEgYnJpbmNhZGVpcmEuIHwKCkEgYWx0ZXJuYXRpdmEgdmlzdWFsIHBlcm1pdGUgcXVlIHVtIGFkdWx0byBsZWlhIGUgYWNvbXBhbmhlIGEgYXRpdmlkYWRlLiBQYXJhIGNyaWFuw6dhcyBxdWUgYWluZGEgbsOjbyBsZWVtIGNvbSBhdXRvbm9taWEsIGVsYSBuw6NvIGNvbXByb3ZhIHVzbyBpbmRlcGVuZGVudGUuIEEgYXRpdmlkYWRlIGF1ZGl0aXZhIHByZWNpc2Egc2VyIHZhbGlkYWRhIGNvbSBhIGZhbGEgcmVhbG1lbnRlIHByb2R1emlkYSBubyBlcXVpcGFtZW50byBlc2NvbGFyOyBhIGNvbmZlcsOqbmNpYSBkbyB0ZXh0byBpc29sYWRhbWVudGUgbsOjbyBiYXN0YS4KCiMjIDYuIFRlY2xhZG8sIHRvcXVlIGUgdGVsYXMKCnwgSUQgfCBBw6fDo28gfCBSZXN1bHRhZG8gZXNwZXJhZG8gfAp8IC0tLSB8IC0tLSB8IC0tLSB8CnwgVTAxIHwgUGVyY29ycmEgaW7DrWNpbywgbWFwYSwgb3DDp8O1ZXMsIGF2YW7Dp28gZSBhY29tcGFuaGFtZW50byB1c2FuZG8gVGFiIGUgU2hpZnQrVGFiLiB8IFRvZG9zIG9zIGNvbnRyb2xlcyBlc3NlbmNpYWlzIHBvZGVtIHJlY2ViZXIgZm9jbyBlbSBvcmRlbSBjb21wcmVlbnPDrXZlbCwgY29tIGZvY28gdmlzw612ZWwuIHwKfCBVMDIgfCBBY2lvbmUgYm90w7VlcyBjb20gRW50ZXIgZSBFc3Bhw6dvLiB8IEFzIGHDp8O1ZXMgZXF1aXZhbGVtIGFvIGNsaXF1ZSBlIG7Do28gcHJvdm9jYW0gYXZhbsOnbyBkdXBsaWNhZG8uIHwKfCBVMDMgfCBBYnJhIGUgZmVjaGUgcXVhbHF1ZXIgcGFpbmVsIG91IGNvbmZpcm1hw6fDo28gdXNhbmRvIG8gdGVjbGFkby4gfCDDiSBwb3Nzw612ZWwgc2FpciBkbyBwYWluZWwsIGNvbXByZWVuZGVyIG9uZGUgbyBmb2NvIGVzdMOhIGUgY29udGludWFyIGEgbmF2ZWdhw6fDo28uIHwKfCBVMDQgfCBBbXBsaWUgbyBuYXZlZ2Fkb3IgcGFyYSAyMDAlLiB8IEVudW5jaWFkb3MgZSBib3TDtWVzIGNvbnRpbnVhbSBsZWfDrXZlaXMgZSBhY2Vzc8OtdmVpczsgYSByb2xhZ2VtIHBlcm1pdGUgYWxjYW7Dp2FyIHRvZG8gbyBjb250ZcO6ZG8uIHwKfCBVMDUgfCBDb25maXJhIHRlbGFzIGRlIGFwcm94aW1hZGFtZW50ZSAzNjAsIDc2OCwgMTAyNCBlIDEzNjYgcGl4ZWxzIGRlIGxhcmd1cmEuIHwgTyBsYXlvdXQgc2UgcmVvcmdhbml6YSBzZW0gY29ydGFyIHJlc3Bvc3RhcywgZXNjb25kZXIgYm90w7VlcyBvdSBwcm9kdXppciByb2xhZ2VtIGhvcml6b250YWwgZGVzbmVjZXNzw6FyaWEuIHwKfCBVMDYgfCBFbSBkaXNwb3NpdGl2byBmw61zaWNvLCBqb2d1ZSBwb3IgdG9xdWUgZSBhbHRlcm5lIGVudHJlIG9yaWVudGHDp8OjbyB2ZXJ0aWNhbCBlIGhvcml6b250YWwuIHwgT3MgYWx2b3Mgc8OjbyBmw6FjZWlzIGRlIHRvY2FyLCBuw6NvIGRlcGVuZGVtIGRlIHBhc3NhciBvIG1vdXNlIGUgcGVybWFuZWNlbSBhY2lvbsOhdmVpcyBhcMOzcyBhIHJvdGHDp8Ojby4gfAp8IFUwNyB8IEF0aXZlIGEgcHJlZmVyw6puY2lhIGRlIHJlZHXDp8OjbyBkZSBtb3ZpbWVudG8gZG8gc2lzdGVtYS4gfCBPIGNvbnRlw7pkbyBlc3NlbmNpYWwgcGVybWFuZWNlIGNvbXByZWVuc8OtdmVsIGUgbW92aW1lbnRvcyBkZWNvcmF0aXZvcyByZXNwZWl0YW0gYSBwcmVmZXLDqm5jaWEgcXVhbmRvIGFwbGljw6F2ZWwuIHwKfCBVMDggfCBPYnNlcnZlIHJlc3Bvc3RhcyBkZSBhY2VydG8gZSBlcnJvIHNlbSBkZXBlbmRlciBzb21lbnRlIGRlIHN1YSBjb3IuIHwgw41jb25lIGUvb3UgdGV4dG8gcGVybWl0ZW0gZGlzdGluZ3VpciBvcyBlc3RhZG9zLiBBcyBpbnN0cnXDp8O1ZXMgY29tYmluYW0gbGluZ3VhZ2VtIGN1cnRhIGUgZWxlbWVudG9zIHZpc3VhaXMgcGVydGluZW50ZXMuIHwKCiMjIDcuIE9ic2VydmHDp8OjbyBjb20gZWR1Y2Fkb3JlcyBlIGNyaWFuw6dhcwoKRGVwb2lzIGRvcyB0ZXN0ZXMgdMOpY25pY29zLCBhIGVxdWlwZSBkZXZlIGNvbWJpbmFyIHVtYSBzZXNzw6NvIGFjb21wYW5oYWRhIGNvbSBvcyBlZHVjYWRvcmVzIHJlc3BvbnPDoXZlaXMgZSBzZWd1aXIgb3MgcHJvY2VkaW1lbnRvcyBkYSBpbnN0aXR1acOnw6NvIHBhcmEgcGFydGljaXBhw6fDo28gZGFzIGNyaWFuw6dhcy4gVXNlIG8gam9nbyBub3MgZXF1aXBhbWVudG9zIGUgY29uZGnDp8O1ZXMgcXVlIGVzdGFyw6NvIHByZXNlbnRlcyBuYSBlc2NvbGEuCgpSZWdpc3RyZSBvYnNlcnZhw6fDtWVzIHNlbSBpZGVudGlmaWNhciBwYXJ0aWNpcGFudGVzOgoKLSBBIGNyaWFuw6dhIGVuY29udHJhIGEgYcOnw6NvIGluaWNpYWwgZSBjb21wcmVlbmRlIGNvbW8gc2VsZWNpb25hciB1bWEgcmVzcG9zdGE/Ci0gRWxhIHJlY29uaGVjZSBxdWFuZG8gYWNlcnRvdSwgcXVhbmRvIHBvZGUgdGVudGFyIG5vdmFtZW50ZSBlIGNvbW8gY29udGludWFyPwotIE8gYWR1bHRvIHByZWNpc2EgZXhwbGljYXIgYSBpbnRlcmZhY2Ugb3UgYXBlbmFzIG1lZGlhciBvIGNvbnRlw7pkbz8KLSBIw6EgaW1hZ2VucywgcGFsYXZyYXMsIHNvbnMsIGNvbXBhcmHDp8O1ZXMgb3UgaGFiaXRhdHMgY29tIGludGVycHJldGHDp8OjbyBhbWLDrWd1YT8KLSBBcyBhdGl2aWRhZGVzIHTDqm0gYWRlcXVhw6fDo28gYW8gcmVwZXJ0w7NyaW8gZGEgdHVybWEgZSBhb3Mgb2JqZXRpdm9zIGRlZmluaWRvcyBwZWxvcyBlZHVjYWRvcmVzPwotIE8gcml0bW8sIGEgcXVhbnRpZGFkZSBkZSBxdWVzdMO1ZXMgZSBvIHJldG9ybm8gYXDDs3MgbyBlcnJvIG1hbnTDqm0gdW1hIGV4cGVyacOqbmNpYSBhY29saGVkb3JhPwotIEEgY29uY2x1c8OjbyBkYSB0cmlsaGEgZSBvIGZpbmFsIGRvIGpvZ28gc8OjbyBwZXJjZWJpZG9zIGNvbW8gZW5jZXJyYW1lbnRvcz8KCk9zIHJlc3BvbnPDoXZlaXMgcGVkYWfDs2dpY29zIGRldmVtIHJldmlzYXIgcGVyZ3VudGFzLCByZXNwb3N0YXMsIGltYWdlbnMsIHByb27Dum5jaWEgZSBjcml0w6lyaW9zIGRlIGFjb21wYW5oYW1lbnRvLiBSZWdpc3RyZSBhanVzdGVzIG5lY2Vzc8OhcmlvcyBlIHJlcGl0YSBzb21lbnRlIG9zIGNlbsOhcmlvcyBhZmV0YWRvcy4gQSBjb21wYXRpYmlsaWRhZGUgdMOpY25pY2EgZSBhIGFwcm92YcOnw6NvIHBlZGFnw7NnaWNhIHPDo28gcmVzdWx0YWRvcyBkaXN0aW50b3MuCgojIyA4LiBSZWdpc3RybyBkZSBmYWxoYSBlIGFjZWl0ZQoKfCBDYW1wbyBkYSBvY29ycsOqbmNpYSB8IFJlZ2lzdHJvIHwKfCAtLS0gfCAtLS0gfAp8IElEIGRvIGNhc28gfCB8CnwgQW1iaWVudGUgZSB2ZXJzw6NvIGRvIGpvZ28gfCB8CnwgUGFzc29zIHJlYWxpemFkb3MgfCB8CnwgUmVzdWx0YWRvIGVzcGVyYWRvIHwgfAp8IFJlc3VsdGFkbyBvYnNlcnZhZG8gfCB8CnwgRXZpZMOqbmNpYSBzZW0gZGFkb3MgcGVzc29haXMgfCB8CnwgQ29ycmXDp8OjbyBhcGxpY2FkYSAvIHZlcnPDo28gfCB8CnwgUmVzdWx0YWRvIGRhIG5vdmEgZXhlY3XDp8OjbyB8IHwKCk8gYWNlaXRlIHTDqWNuaWNvIGV4aWdlIGNvbmNsdWlyIG8gcGVyY3Vyc28sIHByZXNlcnZhciBhIGNvbnRhZ2VtIGUgYSByZXRvbWFkYSBubyBhcm1hemVuYW1lbnRvIHBlcm1pdGlkbywgbWFudGVyIG8gdXNvIGNvbSB0ZWNsYWRvL3RvcXVlIG5vcyBhbWJpZW50ZXMgcHJldmlzdG9zIGUgb2ZlcmVjZXIgY29udGludWlkYWRlIHNlbSDDoXVkaW8uIEluZm9ybWUgcXVhbHF1ZXIgbGltaXRhw6fDo28gb2JzZXJ2YWRhIGUgcmVnaXN0cmUgYSB2ZXJpZmljYcOnw6NvIG5vcyB0csOqcyBuYXZlZ2Fkb3JlcyBleGlnaWRvcy4gTyBhY2VpdGUgcGVkYWfDs2dpY28gZSBhIG9ic2VydmHDp8OjbyBlbSBzYWxhIGRldmVtIHNlciByZWdpc3RyYWRvcyBwZWxhIGVxdWlwZSByZXNwb25zw6F2ZWwgYXDDs3Mgc3VhIGV4ZWN1w6fDo28uCgpEb2N1bWVudGHDp8OjbyB0w6ljbmljYSBjb25zdWx0YWRhIGVtICoqMTkgZGUgb3V0dWJybyBkZSAyMDI2KiouIFN0YXR1cyBpbmljaWFsIGRlc3RlIHJvdGVpcm86ICoqZXhlY3XDp8OjbyBtYW51YWwgcGVuZGVudGUqKi4K" download="ROTEIRO_VALIDACAO.md">Baixar roteiro de validação</a></div>
+      </section><section class="teacher-guide"><h2>Preparar para outra criança</h2><p>Iniciar uma nova aventura apaga somente os registros atuais deste jogo neste navegador. Se quiser guardá-los, exporte o CSV antes. Não há recuperação dos registros após o reinício.</p><div style="margin-top:18px"><button class="btn btn-secondary" data-action="reset-confirm">${icon('refresh')}Iniciar uma nova aventura</button></div></section>
+    </div>`;
+  }
+
+  function render(options) {
+    const opts = options || {};
+    header.innerHTML = headerHTML();
+    const screens = {home:homeHTML,welcome:welcomeHTML,map:mapHTML,question:questionHTML,celebrate:()=>celebrateHTML(false),finish:()=>celebrateHTML(true),teacher:teacherHTML};
+    main.innerHTML = (screens[screen] || homeHTML)();
+    footer.innerHTML = footerHTML();
+    document.body.className = `page-${screen}`;
+    const pageName = main.querySelector('#page-title');
+    document.title = `${pageName ? pageName.textContent.replace(/\s+/g,' ').trim() : 'Vamos brincar?'} · Quintal das Descobertas`;
+    if (!opts.keepScroll) window.scrollTo({top:0,behavior:'instant'});
+    if (opts.focus !== false) {
+      const target = main.querySelector(opts.focusSelector || '#page-title') || main;
+      if (!target.matches('button,a,input,summary')) target.setAttribute('tabindex','-1');
+      target.focus({preventScroll:true});
+    }
+    showStorageNotice();
+  }
+  function navigate(nextScreen, options) {
+    cancelSpeech();
+    feedbackKind = '';
+    audioMessage = '';
+    screen = nextScreen;
+    render(options);
+  }
+  function beginWorld(worldId) {
+    if (!worldById(worldId)) return;
+    if (!state.started) save(C.start(state,selectedAvatar));
+    save(C.startWorld(state,worldId));
+    navigate('question');
+    narrateCurrent();
+  }
+  function narrateCurrent() {
+    const x = current();
+    if (screen === 'question' && x && state.soundEnabled) speak(recordFor(x.q.id).solved ? x.q.success : x.q.spokenPrompt || x.q.prompt);
+  }
+  function updateVoices() {
+    if ('speechSynthesis' in window) {
+      try { voices = window.speechSynthesis.getVoices(); } catch (_) { voices = []; }
+    }
+  }
+  function speakingUI(on) {
+    const b = main.querySelector('[data-action="listen"]');
+    if (b) {
+      b.classList.toggle('speaking', on);
+      const label = b.querySelector('[data-listen-label]');
+      if (label) label.textContent = on ? 'Repetir a pergunta' : 'Ouvir a pergunta';
+    }
+  }
+  function cancelSpeech() {
+    speechId++;
+    clearTimeout(speechTimer);
+    try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch (_) {}
+    activeUtterance = null;
+    speakingUI(false);
+  }
+  function audioFallback(message) {
+    audioMessage = message || 'Não conseguimos reproduzir a voz. Peça a um adulto para ler a instrução completa abaixo.';
+    const slot = document.getElementById('audio-notice-slot');
+    if (slot) slot.innerHTML = audioFallbackHTML();
+    const support = document.getElementById('text-support');
+    if (support) support.open = true;
+    speakingUI(false);
+    announce(audioMessage);
+  }
+  function speak(text) {
+    cancelSpeech();
+    const thisSpeech = speechId;
+    if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+      audioFallback('Este navegador não oferece narração. Um adulto pode ler a instrução completa abaixo.');
+      return;
+    }
+    updateVoices();
+    const voice = voices.find(v=>v.lang.replace('_','-').toLowerCase()==='pt-br') || voices.find(v=>/^pt[-_]?/i.test(v.lang));
+    if (voices.length && !voice) {
+      audioFallback('Não encontramos uma voz em português neste dispositivo. Um adulto pode ler a instrução completa abaixo.');
+      return;
+    }
+    try {
+      const utterance = new SpeechSynthesisUtterance(text);
+      activeUtterance = utterance;
+      utterance.lang = 'pt-BR';
+      utterance.rate = .86;
+      utterance.pitch = 1.04;
+      if (voice) utterance.voice = voice;
+      utterance.onstart = () => {
+        if (thisSpeech !== speechId) return;
+        clearTimeout(speechTimer);
+        audioMessage = '';
+        const slot = document.getElementById('audio-notice-slot');
+        if (slot) slot.innerHTML = '';
+        speakingUI(true);
+      };
+      utterance.onend = () => { if(thisSpeech === speechId) { clearTimeout(speechTimer); activeUtterance = null; speakingUI(false); } };
+      utterance.onerror = event => {
+        if (thisSpeech !== speechId || ['canceled','interrupted'].includes(event.error)) return;
+        clearTimeout(speechTimer);
+        audioFallback();
+      };
+      speechTimer = window.setTimeout(()=>{ if(thisSpeech===speechId) { cancelSpeech(); audioFallback(); } },3500);
+      window.speechSynthesis.speak(utterance);
+    } catch (_) { clearTimeout(speechTimer); audioFallback(); }
+  }
+  function showDialog(type) {
+    cancelSpeech();
+    previousFocus = document.activeElement;
+    const close = `<button class="dialog-close" data-action="modal-close" aria-label="Fechar">${icon('close')}</button>`;
+    if (type === 'how') dialog.innerHTML = `${close}<h2 id="dialog-title">Vamos brincar juntos?</h2><ol class="dialog-steps"><li><strong>Escolha um caminho</strong><span>São seis trilhas. Você pode começar por qualquer uma!</span></li><li><strong>Olhe e escute</strong><span>Toque no alto-falante para ouvir a pergunta. Se precisar, peça ajuda a um adulto.</span></li><li><strong>Toque na sua resposta</strong><span>Você pode pedir uma dica e tentar novamente. Depois, siga para a próxima brincadeira.</span></li></ol><p>Ao terminar as seis trilhas, você terá um quintal cheio de descobertas. Pode fazer pausas!</p><div class="dialog-actions"><button class="btn btn-primary" data-action="modal-close">Entendi! ${icon('check')}</button></div>`;
+    if (type === 'about') dialog.innerHTML = `${close}<h2 id="dialog-title">Quintal das Descobertas</h2><p>Versão inicial de um jogo educacional para crianças de 5 a 6 anos, desenvolvida a partir do escopo do Projeto de Curricularização da Extensão de Sistemas de Informação da UNIFEBE, em parceria com a Secretaria Municipal de Educação de Brusque.</p><p>São seis trilhas e 24 atividades com cores, formas, quantidades, noções espaciais, animais, sons e letras. As ilustrações desta versão foram criadas para o jogo.</p><p>O conteúdo ainda deve ser validado pelos educadores. Esta versão não representa aprovação institucional. Os registros da aventura ficam neste navegador; não há cadastro.</p><div class="dialog-actions"><button class="btn btn-primary" data-action="modal-close">Voltar ao quintal</button></div>`;
+    if (type === 'reset') dialog.innerHTML = `${close}<h2 id="dialog-title">Começar uma nova aventura?</h2><p>As descobertas e observações desta aventura serão apagadas deste navegador. Essa ação não tem volta. Exporte o CSV antes se precisar guardar os registros.</p><div class="dialog-actions"><button class="btn btn-secondary" data-action="modal-close">Manter esta aventura</button><button class="btn btn-danger" data-action="reset">Apagar e recomeçar</button></div>`;
+    dialog.showModal();
+    const safe = dialog.querySelector('[data-action="modal-close"]');
+    if (safe) safe.focus();
+  }
+  function closeDialog() {
+    dialog.close();
+    if (previousFocus && previousFocus.isConnected) previousFocus.focus();
+  }
+  function exportCSV() {
+    const rows = [['Trilha','Habilidade','Atividade','Respostas selecionadas','Dica solicitada','Concluída','Início da aventura','Último registro']];
+    W.forEach(w=>w.questions.forEach(q=>{
+      const r=state.records[q.id]||{attempts:0,hints:0,solved:false};
+      rows.push([w.title,q.skill,q.prompt,r.attempts,r.hints?'Sim':'Não',r.solved?'Sim':'Não',state.startedAt,state.updatedAt]);
+    }));
+    const csv='\uFEFF'+rows.map(row=>row.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(';')).join('\r\n');
+    const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;
+    a.download=`quintal-observacoes-${new Date().toISOString().slice(0,10)}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.setTimeout(()=>URL.revokeObjectURL(url),2000);
+    announce('Arquivo de observações preparado para download.');
+  }
+
+  document.addEventListener('click', event=>{
+    const button=event.target.closest('[data-action]');
+    if(!button || button.disabled) return;
+    const action=button.dataset.action;
+    if(action==='home') { requestedWorld=null; return navigate('home'); }
+    if(action==='map') { requestedWorld=null; return navigate(state.started ? 'map' : 'welcome'); }
+    if(action==='start') { requestedWorld=null; navigate(state.started ? state.active ? 'question' : C.summary(state).completedWorlds===W.length ? 'finish' : 'map' : 'welcome'); if(screen==='question')narrateCurrent(); return; }
+    if(action==='choose-world') { selectedAvatar=state.avatar; requestedWorld=button.dataset.world; navigate('welcome'); return; }
+    if(action==='avatar') { selectedAvatar=button.dataset.avatar; render({keepScroll:true,focusSelector:`[data-avatar="${selectedAvatar}"]`}); return; }
+    if(action==='welcome-next') { save(C.start(state,selectedAvatar)); if(requestedWorld){ const target=requestedWorld;requestedWorld=null;beginWorld(target); } else navigate('map'); return; }
+    if(action==='world') return beginWorld(button.dataset.world);
+    if(action==='listen') { const x=current(); if(x) speak(x.q.spokenPrompt || x.q.prompt); return; }
+    if(action==='sound') {
+      save({...state,soundEnabled:!state.soundEnabled,updatedAt:new Date().toISOString()});
+      header.innerHTML=headerHTML();
+      header.querySelector('[data-action="sound"]').focus();
+      if(!state.soundEnabled)cancelSpeech(); else narrateCurrent();
+      announce(state.soundEnabled?'Narração automática ativada.':'Narração automática desativada. O botão Ouvir a pergunta continua disponível.');
+      return;
+    }
+    if(action==='answer') {
+      const x=current(); if(!x)return;
+      const r=recordFor(x.q.id); if(r.solved)return;
+      const correct=button.dataset.choice===x.q.answer;
+      cancelSpeech();
+      save(C.answer(state,button.dataset.choice));
+      feedbackKind=correct?'correct':'wrong';
+      render({keepScroll:true,focusSelector:correct?'[data-action="next"]':'#feedback'});
+      const message=correct?x.q.success:`Vamos tentar mais uma vez? ${x.q.hint}`;
+      announce(message);
+      if(state.soundEnabled)speak(message);
+      return;
+    }
+    if(action==='hint') {
+      const x=current(); if(!x)return;
+      save(C.hint(state)); feedbackKind='hint';
+      render({keepScroll:true,focusSelector:'#feedback'});
+      announce(x.q.hint);
+      if(state.soundEnabled)speak(x.q.hint);
+      return;
+    }
+    if(action==='next') {
+      const x=current(); if(!x||!recordFor(x.q.id).solved)return;
+      const last=state.active.index===x.world.questions.length-1;
+      celebratedWorld=x.world.id; celebrationReplay=state.active.replay;
+      save(C.next(state));
+      navigate(last?'celebrate':'question');
+      if(!last)narrateCurrent();
+      else if(state.soundEnabled)speak('Você completou esta trilha! Que tal descobrir outro cantinho?');
+      return;
+    }
+    if(action==='finish') { if(C.summary(state).completedWorlds===W.length)navigate('finish'); return; }
+    if(action==='teacher') { if(screen!=='teacher')teacherReturn=screen; navigate('teacher'); return; }
+    if(action==='teacher-back') { navigate(teacherReturn==='question'&&!state.active?'map':teacherReturn); if(screen==='question')narrateCurrent(); return; }
+    if(action==='how'||action==='about') return showDialog(action);
+    if(action==='modal-close') return closeDialog();
+    if(action==='reset-confirm') return showDialog('reset');
+    if(action==='reset') { closeDialog(); save(C.reset(state)); selectedAvatar=state.avatar; requestedWorld=null; navigate('welcome'); announce('Uma nova aventura está pronta para começar.'); return; }
+    if(action==='export') return exportCSV();
+  });
+  dialog.addEventListener('cancel', ()=>cancelSpeech());
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelSpeech();});
+  window.addEventListener('pagehide',cancelSpeech);
+  updateVoices();
+  if('speechSynthesis' in window && typeof window.speechSynthesis.addEventListener==='function')window.speechSynthesis.addEventListener('voiceschanged',updateVoices);
+  render({focus:false});
+})();
+
+</script>
+</body>
+</html>
